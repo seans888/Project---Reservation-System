@@ -3,9 +3,15 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
+<<<<<<< HEAD
 -- Generation Time: Aug 18, 2016 at 05:52 PM
 -- Server version: 10.0.17-MariaDB
 -- PHP Version: 5.6.14
+=======
+-- Generation Time: Aug 11, 2016 at 08:46 AM
+-- Server version: 10.1.13-MariaDB
+-- PHP Version: 7.0.6
+>>>>>>> origin/master
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
@@ -23,10 +29,17 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
+<<<<<<< HEAD
 -- Table structure for table `backend`
 --
 
 CREATE TABLE `backend` (
+=======
+-- Table structure for table `back_end`
+--
+
+CREATE TABLE `back_end` (
+>>>>>>> origin/master
   `id` int(11) NOT NULL,
   `username` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
   `auth_key` varchar(32) COLLATE utf8_unicode_ci NOT NULL,
@@ -41,6 +54,7 @@ CREATE TABLE `backend` (
 -- --------------------------------------------------------
 
 --
+<<<<<<< HEAD
 -- Table structure for table `frontend`
 --
 
@@ -59,6 +73,27 @@ CREATE TABLE `frontend` (
   `number_of_adults` int(10) NOT NULL,
   `email` varchar(30) NOT NULL,
   `requests` text
+=======
+-- Table structure for table `front_end`
+--
+
+CREATE TABLE `front_end` (
+  `id` int(11) NOT NULL,
+  `last` varchar(20) NOT NULL,
+  `first` varchar(20) NOT NULL,
+  `middle_name                                                ame` varchar(20) DEFAULT NULL,
+  `email_address` varchar(30) NOT NULL,
+  `address` varchar(60) NOT NULL,
+  `city` varchar(30) NOT NULL,
+  `check_in` date NOT NULL,
+  `check_out` date NOT NULL,
+  `room_type` varchar(11) NOT NULL,
+  `room_number` varchar(11) NOT NULL,
+  `contact_number` varchar(11) NOT NULL,
+  `number_of_kids` int(11) DEFAULT NULL,
+  `number_of_adults` int(11) NOT NULL,
+  `request` text
+>>>>>>> origin/master
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
@@ -77,8 +112,8 @@ CREATE TABLE `migration` (
 --
 
 INSERT INTO `migration` (`version`, `apply_time`) VALUES
-('m000000_000000_base', 1470304249),
-('m130524_201442_init', 1470304252);
+('m000000_000000_base', 1470896585),
+('m130524_201442_init', 1470896588);
 
 -- --------------------------------------------------------
 
@@ -103,18 +138,30 @@ CREATE TABLE `user` (
 --
 
 --
+<<<<<<< HEAD
 -- Indexes for table `backend`
 --
 ALTER TABLE `backend`
+=======
+-- Indexes for table `back_end`
+--
+ALTER TABLE `back_end`
+>>>>>>> origin/master
   ADD PRIMARY KEY (`id`),
   ADD UNIQUE KEY `username` (`username`),
   ADD UNIQUE KEY `email` (`email`),
   ADD UNIQUE KEY `password_reset_token` (`password_reset_token`);
 
 --
+<<<<<<< HEAD
 -- Indexes for table `frontend`
 --
 ALTER TABLE `frontend`
+=======
+-- Indexes for table `front_end`
+--
+ALTER TABLE `front_end`
+>>>>>>> origin/master
   ADD PRIMARY KEY (`id`);
 
 --
@@ -137,6 +184,7 @@ ALTER TABLE `user`
 --
 
 --
+<<<<<<< HEAD
 -- AUTO_INCREMENT for table `backend`
 --
 ALTER TABLE `backend`
@@ -146,6 +194,17 @@ ALTER TABLE `backend`
 --
 ALTER TABLE `frontend`
   MODIFY `id` int(15) NOT NULL AUTO_INCREMENT;
+=======
+-- AUTO_INCREMENT for table `back_end`
+--
+ALTER TABLE `back_end`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+--
+-- AUTO_INCREMENT for table `front_end`
+--
+ALTER TABLE `front_end`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+>>>>>>> origin/master
 --
 -- AUTO_INCREMENT for table `user`
 --
