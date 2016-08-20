@@ -4,7 +4,7 @@ use yii\helpers\Html;
 
 
 /* @var $this yii\web\View */
-/* @var $model common\models\billingstatement */
+/* @var $model common\models\Billingstatement */
 
 $this->title = 'Create Billingstatement';
 $this->params['breadcrumbs'][] = ['label' => 'Billingstatements', 'url' => ['index']];

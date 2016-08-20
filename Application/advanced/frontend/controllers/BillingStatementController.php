@@ -4,15 +4,15 @@ namespace frontend\controllers;
 
 use Yii;
 use common\models\Billingstatement;
-use frontend\models\BillingstatementSearch;
+use common\models\BillingstatementSearch;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
 
 /**
- * BillingstatementController implements the CRUD actions for Billingstatement model.
+ * BillingStatementController implements the CRUD actions for Billingstatement model.
  */
-class BillingstatementController extends Controller
+class BillingStatementController extends Controller
 {
     /**
      * @inheritdoc
