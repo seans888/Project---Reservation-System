@@ -3,7 +3,7 @@ return [
     'components' => [
         'db' => [
             'class' => 'yii\db\Connection',
-            'dsn' => 'mysql:host=localhost;dbname=reservation',
+            'dsn' => 'mysql:host=localhost;dbname=resort_reservation_system',
             'username' => 'root',
             'password' => '',
             'charset' => 'utf8',
