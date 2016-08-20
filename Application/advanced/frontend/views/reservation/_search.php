@@ -4,7 +4,7 @@ use yii\helpers\Html;
 use yii\widgets\ActiveForm;
 
 /* @var $this yii\web\View */
-/* @var $model frontend\models\ReservationSearch */
+/* @var $model common\models\ReservationSearch */
 /* @var $form yii\widgets\ActiveForm */
 ?>
 
