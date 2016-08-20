@@ -1,18 +1,18 @@
 <?php
 
-namespace frontend\controllers;
+namespace backend\controllers;
 
 use Yii;
-use common\models\Billingstatement;
-use frontend\models\BillingstatementSearch;
+use common\models\customer;
+use backend\models\customerSearch;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
 
 /**
- * BillingstatementController implements the CRUD actions for Billingstatement model.
+ * CustomerController implements the CRUD actions for customer model.
  */
-class BillingstatementController extends Controller
+class CustomerController extends Controller
 {
     /**
      * @inheritdoc
@@ -30,12 +30,12 @@ class BillingstatementController extends Controller
     }
 
     /**
-     * Lists all Billingstatement models.
+     * Lists all customer models.
      * @return mixed
      */
     public function actionIndex()
     {
-        $searchModel = new BillingstatementSearch();
+        $searchModel = new customerSearch();
         $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
 
         return $this->render('index', [
@@ -45,7 +45,7 @@ class BillingstatementController extends Controller
     }
 
     /**
-     * Displays a single Billingstatement model.
+     * Displays a single customer model.
      * @param integer $id
      * @return mixed
      */
@@ -57,13 +57,13 @@ class BillingstatementController extends Controller
     }
 
     /**
-     * Creates a new Billingstatement model.
+     * Creates a new customer model.
      * If creation is successful, the browser will be redirected to the 'view' page.
      * @return mixed
      */
     public function actionCreate()
     {
-        $model = new Billingstatement();
+        $model = new customer();
 
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
             return $this->redirect(['view', 'id' => $model->id]);
@@ -75,7 +75,7 @@ class BillingstatementController extends Controller
     }
 
     /**
-     * Updates an existing Billingstatement model.
+     * Updates an existing customer model.
      * If update is successful, the browser will be redirected to the 'view' page.
      * @param integer $id
      * @return mixed
@@ -94,7 +94,7 @@ class BillingstatementController extends Controller
     }
 
     /**
-     * Deletes an existing Billingstatement model.
+     * Deletes an existing customer model.
      * If deletion is successful, the browser will be redirected to the 'index' page.
      * @param integer $id
      * @return mixed
@@ -107,15 +107,15 @@ class BillingstatementController extends Controller
     }
 
     /**
-     * Finds the Billingstatement model based on its primary key value.
+     * Finds the customer model based on its primary key value.
      * If the model is not found, a 404 HTTP exception will be thrown.
      * @param integer $id
-     * @return Billingstatement the loaded model
+     * @return customer the loaded model
      * @throws NotFoundHttpException if the model cannot be found
      */
     protected function findModel($id)
     {
-        if (($model = Billingstatement::findOne($id)) !== null) {
+        if (($model = customer::findOne($id)) !== null) {
             return $model;
         } else {
             throw new NotFoundHttpException('The requested page does not exist.');

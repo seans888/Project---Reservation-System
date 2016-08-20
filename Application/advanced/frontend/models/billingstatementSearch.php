@@ -5,12 +5,12 @@ namespace frontend\models;
 use Yii;
 use yii\base\Model;
 use yii\data\ActiveDataProvider;
-use common\models\billingstatement;
+use common\models\Billingstatement;
 
 /**
- * billingstatementSearch represents the model behind the search form about `common\models\billingstatement`.
+ * BillingstatementSearch represents the model behind the search form about `common\models\Billingstatement`.
  */
-class billingstatementSearch extends billingstatement
+class BillingstatementSearch extends Billingstatement
 {
     /**
      * @inheritdoc
@@ -42,7 +42,7 @@ class billingstatementSearch extends billingstatement
      */
     public function search($params)
     {
-        $query = billingstatement::find();
+        $query = Billingstatement::find();
 
         // add conditions that should always apply here
 

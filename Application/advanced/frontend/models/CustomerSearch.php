@@ -1,16 +1,16 @@
 <?php
 
-namespace backend\models;
+namespace frontend\models;
 
 use Yii;
 use yii\base\Model;
 use yii\data\ActiveDataProvider;
-use common\models\Billingstatement;
+use common\models\Customer;
 
 /**
- * BillingstatementSearch represents the model behind the search form about `common\models\Billingstatement`.
+ * CustomerSearch represents the model behind the search form about `common\models\Customer`.
  */
-class BillingstatementSearch extends Billingstatement
+class CustomerSearch extends Customer
 {
     /**
      * @inheritdoc
@@ -18,9 +18,8 @@ class BillingstatementSearch extends Billingstatement
     public function rules()
     {
         return [
-            [['id', 'number', 'employee_id', 'customer_id'], 'integer'],
-            [['mode_of_payment', 'date', 'status'], 'safe'],
-            [['amount'], 'number'],
+            [['id'], 'integer'],
+            [['name', 'contact_number', 'address', 'birthday', 'email'], 'safe'],
         ];
     }
 
@@ -42,7 +41,7 @@ class BillingstatementSearch extends Billingstatement
      */
     public function search($params)
     {
-        $query = Billingstatement::find();
+        $query = Customer::find();
 
         // add conditions that should always apply here
 
@@ -61,15 +60,13 @@ class BillingstatementSearch extends Billingstatement
         // grid filtering conditions
         $query->andFilterWhere([
             'id' => $this->id,
-            'amount' => $this->amount,
-            'number' => $this->number,
-            'date' => $this->date,
-            'employee_id' => $this->employee_id,
-            'customer_id' => $this->customer_id,
+            'birthday' => $this->birthday,
         ]);
 
-        $query->andFilterWhere(['like', 'mode_of_payment', $this->mode_of_payment])
-            ->andFilterWhere(['like', 'status', $this->status]);
+        $query->andFilterWhere(['like', 'name', $this->name])
+            ->andFilterWhere(['like', 'contact_number', $this->contact_number])
+            ->andFilterWhere(['like', 'address', $this->address])
+            ->andFilterWhere(['like', 'email', $this->email]);
 
         return $dataProvider;
     }
