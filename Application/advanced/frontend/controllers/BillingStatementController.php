@@ -10,9 +10,9 @@ use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
 
 /**
- * BillingStatementController implements the CRUD actions for Billingstatement model.
+ * BillingstatementController implements the CRUD actions for Billingstatement model.
  */
-class BillingStatementController extends Controller
+class BillingstatementController extends Controller
 {
     /**
      * @inheritdoc

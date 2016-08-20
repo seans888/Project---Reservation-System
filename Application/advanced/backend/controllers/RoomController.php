@@ -4,7 +4,7 @@ namespace backend\controllers;
 
 use Yii;
 use common\models\Room;
-use backend\models\RoomSearch;
+use common\models\RoomSearch;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;

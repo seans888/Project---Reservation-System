@@ -18,7 +18,7 @@ class ReservationSearch extends Reservation
     public function rules()
     {
         return [
-            [['id', 'number_of_days', 'online_id', 'walk-in_id'], 'integer'],
+            [['id', 'number_of_days', 'online_id', 'walkin_id'], 'integer'],
             [['date_reserved', 'down_payment', 'receipt_number'], 'safe'],
         ];
     }
@@ -63,7 +63,7 @@ class ReservationSearch extends Reservation
             'date_reserved' => $this->date_reserved,
             'number_of_days' => $this->number_of_days,
             'online_id' => $this->online_id,
-            'walk-in_id' => $this->walk-in_id,
+            'walkin_id' => $this->walkin_id,
         ]);
 
         $query->andFilterWhere(['like', 'down_payment', $this->down_payment])

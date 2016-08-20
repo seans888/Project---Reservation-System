@@ -4,7 +4,7 @@ namespace backend\controllers;
 
 use Yii;
 use common\models\Reservation;
-use backend\models\ReservationSearch;
+use common\models\ReservationSearch;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;

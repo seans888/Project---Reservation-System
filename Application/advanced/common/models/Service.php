@@ -16,7 +16,6 @@ use Yii;
  * @property integer $customer_id
  * @property integer $billing statement_id
  *
- * @property BillingStatement $billingStatement
  * @property Customer $customer
  * @property Employee $employee
  */
@@ -40,7 +39,6 @@ class Service extends \yii\db\ActiveRecord
             [['id', 'employee_id', 'customer_id', 'billing statement_id'], 'integer'],
             [['name'], 'string', 'max' => 30],
             [['cost', 'service_offered', 'type_of_service'], 'string', 'max' => 45],
-            [['billing statement_id'], 'exist', 'skipOnError' => true, 'targetClass' => BillingStatement::className(), 'targetAttribute' => ['billing statement_id' => 'id']],
             [['customer_id'], 'exist', 'skipOnError' => true, 'targetClass' => Customer::className(), 'targetAttribute' => ['customer_id' => 'id']],
             [['employee_id'], 'exist', 'skipOnError' => true, 'targetClass' => Employee::className(), 'targetAttribute' => ['employee_id' => 'id']],
         ];
@@ -61,14 +59,6 @@ class Service extends \yii\db\ActiveRecord
             'customer_id' => 'Customer ID',
             'billing statement_id' => 'Billing Statement ID',
         ];
-    }
-
-    /**
-     * @return \yii\db\ActiveQuery
-     */
-    public function getBillingStatement()
-    {
-        return $this->hasOne(BillingStatement::className(), ['id' => 'billing statement_id']);
     }
 
     /**

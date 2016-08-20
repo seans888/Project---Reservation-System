@@ -16,7 +16,6 @@ use Yii;
  * @property integer $billing statement_id
  *
  * @property ReservationHasRoom[] $reservationHasRooms
- * @property BillingStatement $billingStatement
  */
 class Room extends \yii\db\ActiveRecord
 {
@@ -39,7 +38,6 @@ class Room extends \yii\db\ActiveRecord
             [['description'], 'string', 'max' => 50],
             [['type', 'availability'], 'string', 'max' => 45],
             [['rate'], 'string', 'max' => 20],
-            [['billing statement_id'], 'exist', 'skipOnError' => true, 'targetClass' => BillingStatement::className(), 'targetAttribute' => ['billing statement_id' => 'id']],
         ];
     }
 
@@ -65,13 +63,5 @@ class Room extends \yii\db\ActiveRecord
     public function getReservationHasRooms()
     {
         return $this->hasMany(ReservationHasRoom::className(), ['room_id' => 'id']);
-    }
-
-    /**
-     * @return \yii\db\ActiveQuery
-     */
-    public function getBillingStatement()
-    {
-        return $this->hasOne(BillingStatement::className(), ['id' => 'billing statement_id']);
     }
 }

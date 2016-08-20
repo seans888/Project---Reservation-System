@@ -13,11 +13,11 @@ use Yii;
  * @property string $down_payment
  * @property string $receipt_number
  * @property integer $online_id
- * @property integer $Walkin_id
+ * @property integer $walk-in_id
  *
  * @property CustomerHasReservation[] $customerHasReservations
  * @property Online $online
- * @property Walkin $Walkin
+ * @property Walk-in $walk-in
  * @property ReservationHasRoom[] $reservationHasRooms
  */
 class Reservation extends \yii\db\ActiveRecord
@@ -36,12 +36,12 @@ class Reservation extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['id', 'online_id', 'Walkin_id'], 'required'],
-            [['id', 'number_of_days', 'online_id', 'Walkin_id'], 'integer'],
+            [['id', 'online_id', 'walkin_id'], 'required'],
+            [['id', 'number_of_days', 'online_id', 'walkin_id'], 'integer'],
             [['date_reserved'], 'safe'],
             [['down_payment', 'receipt_number'], 'string', 'max' => 30],
             [['online_id'], 'exist', 'skipOnError' => true, 'targetClass' => Online::className(), 'targetAttribute' => ['online_id' => 'id']],
-            [['Walkin_id'], 'exist', 'skipOnError' => true, 'targetClass' => Walkin::className(), 'targetAttribute' => ['Walkin_id' => 'id']],
+            [['walkin_id'], 'exist', 'skipOnError' => true, 'targetClass' => Walkin::className(), 'targetAttribute' => ['walkin_id' => 'id']],
         ];
     }
 
@@ -57,7 +57,7 @@ class Reservation extends \yii\db\ActiveRecord
             'down_payment' => 'Down Payment',
             'receipt_number' => 'Receipt Number',
             'online_id' => 'Online ID',
-            'Walkin_id' => 'Walk In ID',
+            'walkin_id' => 'Walk In ID',
         ];
     }
 
@@ -82,7 +82,7 @@ class Reservation extends \yii\db\ActiveRecord
      */
     public function getWalkin()
     {
-        return $this->hasOne(Walkin::className(), ['id' => 'Walkin_id']);
+        return $this->hasOne(Walkin::className(), ['id' => 'walkin_id']);
     }
 
     /**

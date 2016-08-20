@@ -5,12 +5,12 @@ namespace common\models;
 use Yii;
 use yii\base\Model;
 use yii\data\ActiveDataProvider;
-use common\models\Manager;
+use common\models\manager;
 
 /**
- * ManagerSearch represents the model behind the search form about `common\models\Manager`.
+ * ManagerSearch represents the model behind the search form about `common\models\manager`.
  */
-class ManagerSearch extends Manager
+class ManagerSearch extends manager
 {
     /**
      * @inheritdoc
@@ -41,7 +41,7 @@ class ManagerSearch extends Manager
      */
     public function search($params)
     {
-        $query = Manager::find();
+        $query = manager::find();
 
         // add conditions that should always apply here
 

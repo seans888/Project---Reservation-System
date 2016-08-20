@@ -4,7 +4,7 @@ namespace backend\controllers;
 
 use Yii;
 use common\models\Walkin;
-use backend\models\WalkinSearch;
+use common\models\WalkinSearch;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;

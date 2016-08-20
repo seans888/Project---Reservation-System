@@ -3,7 +3,7 @@
 use yii\helpers\Html;
 
 /* @var $this yii\web\View */
-/* @var $model common\models\Manager */
+/* @var $model common\models\manager */
 
 $this->title = 'Update Manager: ' . $model->id;
 $this->params['breadcrumbs'][] = ['label' => 'Managers', 'url' => ['index']];

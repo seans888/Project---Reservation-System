@@ -4,7 +4,7 @@ namespace backend\controllers;
 
 use Yii;
 use common\models\Billingstatement;
-use backend\models\BillingstatementSearch;
+use common\models\BillingstatementSearch;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;

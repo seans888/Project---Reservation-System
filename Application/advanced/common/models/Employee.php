@@ -21,7 +21,6 @@ use Yii;
  * @property integer $manager_id
  * @property integer $regular_id
  *
- * @property BillingStatement[] $billingStatements
  * @property Manager $manager
  * @property Regular $regular
  * @property EmployeeAssistCustomer[] $employeeAssistCustomers
@@ -75,14 +74,6 @@ class Employee extends \yii\db\ActiveRecord
             'manager_id' => 'Manager ID',
             'regular_id' => 'Regular ID',
         ];
-    }
-
-    /**
-     * @return \yii\db\ActiveQuery
-     */
-    public function getBillingStatements()
-    {
-        return $this->hasMany(BillingStatement::className(), ['employee_id' => 'id']);
     }
 
     /**

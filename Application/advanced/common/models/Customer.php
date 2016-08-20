@@ -14,7 +14,6 @@ use Yii;
  * @property string $birthday
  * @property string $email
  *
- * @property BillingStatement[] $billingStatements
  * @property CustomerHasReservation[] $customerHasReservations
  * @property EmployeeAssistCustomer[] $employeeAssistCustomers
  * @property Service[] $services
@@ -56,14 +55,6 @@ class Customer extends \yii\db\ActiveRecord
             'birthday' => 'Birthday',
             'email' => 'Email',
         ];
-    }
-
-    /**
-     * @return \yii\db\ActiveQuery
-     */
-    public function getBillingStatements()
-    {
-        return $this->hasMany(BillingStatement::className(), ['customer_id' => 'id']);
     }
 
     /**
