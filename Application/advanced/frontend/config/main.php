@@ -15,7 +15,18 @@ return [
         'user' => [
             'identityClass' => 'common\models\User',
             'enableAutoLogin' => true,
+			'identityCookie' => [
+			    'name' => '_frontendUser',
+			]
         ],
+		'session' => [
+		    'name' => 'PHPFRONTSESSID',
+			'savePath' => sys_get_temp_dir(),
+		],
+		'request' => [
+		    'cookieValidationKey' => '[ynJNXrnrQbJXBvRUnqPm]',
+			'csrfParam' => '_frontendCSRF',
+		],
         'log' => [
             'traceLevel' => YII_DEBUG ? 3 : 0,
             'targets' => [
