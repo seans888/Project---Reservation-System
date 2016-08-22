@@ -21,7 +21,7 @@ use Yii;
  * @property integer $manager_id
  * @property integer $regular_id
  *
- * @property BillingStatement[] $billingStatements
+ * @property Billingstatement[] $billingstatements
  * @property Manager $manager
  * @property Regular $regular
  * @property EmployeeAssistCustomer[] $employeeAssistCustomers
@@ -80,9 +80,9 @@ class Employee extends \yii\db\ActiveRecord
     /**
      * @return \yii\db\ActiveQuery
      */
-    public function getBillingStatements()
+    public function getBillingstatements()
     {
-        return $this->hasMany(BillingStatement::className(), ['employee_id' => 'id']);
+        return $this->hasMany(Billingstatement::className(), ['employee_id' => 'id']);
     }
 
     /**
