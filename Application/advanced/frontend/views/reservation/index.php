@@ -30,7 +30,7 @@ $this->params['breadcrumbs'][] = $this->title;
             'down_payment',
             'receipt_number',
             // 'online_id',
-            // 'walk-in_id',
+            // 'walkin_id',
 
             ['class' => 'yii\grid\ActionColumn'],
         ],
