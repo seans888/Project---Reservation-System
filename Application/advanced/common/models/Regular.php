@@ -31,8 +31,6 @@ class Regular extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['id'], 'required'],
-            [['id'], 'integer'],
             [['salary'], 'number'],
             [['status'], 'string', 'max' => 50],
             [['classification'], 'string', 'max' => 45],
