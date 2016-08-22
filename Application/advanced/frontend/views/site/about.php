@@ -5,7 +5,7 @@
 /*use yii\helpers\Html;*/
 
 $this->title = 'About';
-$this->params['breadcrumbs'][] = $this->title;
+
 ?>
 <div class="site-about">
     
@@ -13,7 +13,7 @@ $this->params['breadcrumbs'][] = $this->title;
 	
         <h1>About The Company</h1>
 
-        <img src = "http://freetriptip.com/wp-content/uploads/2014/06/Aruba-Collage2.jpg" style="width:100%">
+        <img src = "http://www.villahotels.com/var/villa/storage/images/resorts/royal-island-resort-spa/3509-26-eng-GB/Royal-Island-Resort-Spa.jpg" style="width:100%">
 		
 		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
@@ -26,7 +26,7 @@ $this->params['breadcrumbs'][] = $this->title;
         <div class="row">
             <div class="col-lg-4">
 			
-			<img src = "http://www.superbonesconference.com/eastsite/images/2015/SBSWEast/marriott-collage.jpg" style="width:100%">
+			<img src = "http://www-static.weddingbee.com/wp-content/uploads/2014/08/Hilton-Bora-Bora-Presidential-Suite-1024x748.jpg" style="width:100%">
                 <h2>History</h2>
 
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
@@ -38,7 +38,7 @@ $this->params['breadcrumbs'][] = $this->title;
             </div>
             <div class="col-lg-4">
 			
-			<img src = "http://www.traveltimes.com.mx/images/2015/Junio/Hoteles/collage_Mision.jpg" style="width:100%">
+			<img src = "http://www.terranea.com/assets/images/inset/careers.jpg" style="width:100%">
                 <h2>Team</h2>
 
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
@@ -50,7 +50,7 @@ $this->params['breadcrumbs'][] = $this->title;
             </div>
             <div class="col-lg-4">
 			
-			<img src = "http://image.shutterstock.com/z/stock-photo-hotel-collage-housekeeping-staff-at-work-158835149.jpg" style="width:100%">
+			<img src = "http://kk.org/mt-files/ct2-mt/faq.jpg" style="width:100%">
                 <h2>FAQ</h2>
 
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
