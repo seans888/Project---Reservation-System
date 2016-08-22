@@ -21,6 +21,7 @@ use Yii;
  * @property integer $manager_id
  * @property integer $regular_id
  *
+ * @property BillingStatement[] $billingStatements
  * @property Manager $manager
  * @property Regular $regular
  * @property EmployeeAssistCustomer[] $employeeAssistCustomers
@@ -42,9 +43,9 @@ class Employee extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['id', 'manager_id', 'regular_id'], 'required'],
-            [['id', 'manager_id', 'regular_id'], 'integer'],
             [['hired_date', 'birthday'], 'safe'],
+            [['manager_id', 'regular_id'], 'required'],
+            [['manager_id', 'regular_id'], 'integer'],
             [['name', 'department', 'position', 'email', 'address'], 'string', 'max' => 50],
             [['contact_number'], 'string', 'max' => 15],
             [['rate'], 'string', 'max' => 20],
@@ -74,6 +75,14 @@ class Employee extends \yii\db\ActiveRecord
             'manager_id' => 'Manager ID',
             'regular_id' => 'Regular ID',
         ];
+    }
+
+    /**
+     * @return \yii\db\ActiveQuery
+     */
+    public function getBillingStatements()
+    {
+        return $this->hasMany(BillingStatement::className(), ['employee_id' => 'id']);
     }
 
     /**
