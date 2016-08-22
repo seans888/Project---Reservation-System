@@ -16,7 +16,7 @@ use Yii;
  * @property integer $customer_id
  * @property integer $billingstatement_id
  *
- * @property Billingstatement $billingStatement
+ * @property Billingstatement $billingstatement
  * @property Customer $customer
  * @property Employee $employee
  */
@@ -59,14 +59,14 @@ class Service extends \yii\db\ActiveRecord
             'type_of_service' => 'Type Of Service',
             'employee_id' => 'Employee ID',
             'customer_id' => 'Customer ID',
-            'billingstatement_id' => 'Billing Statement ID',
+            'billingstatement_id' => 'Billingstatement ID',
         ];
     }
 
     /**
      * @return \yii\db\ActiveQuery
      */
-    public function getBillingStatement()
+    public function getBillingstatement()
     {
         return $this->hasOne(Billingstatement::className(), ['id' => 'billingstatement_id']);
     }

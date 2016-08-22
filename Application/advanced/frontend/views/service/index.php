@@ -31,7 +31,7 @@ $this->params['breadcrumbs'][] = $this->title;
             'type_of_service',
             // 'employee_id',
             // 'customer_id',
-            // 'billing statement_id',
+            // 'billingstatement_id',
 
             ['class' => 'yii\grid\ActionColumn'],
         ],
