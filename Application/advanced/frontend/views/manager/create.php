@@ -4,7 +4,7 @@ use yii\helpers\Html;
 
 
 /* @var $this yii\web\View */
-/* @var $model common\models\manager */
+/* @var $model common\models\Manager */
 
 $this->title = 'Create Manager';
 $this->params['breadcrumbs'][] = ['label' => 'Managers', 'url' => ['index']];

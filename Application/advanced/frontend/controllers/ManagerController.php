@@ -3,14 +3,14 @@
 namespace frontend\controllers;
 
 use Yii;
-use common\models\manager;
+use common\models\Manager;
 use common\models\ManagerSearch;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
 
 /**
- * ManagerController implements the CRUD actions for manager model.
+ * ManagerController implements the CRUD actions for Manager model.
  */
 class ManagerController extends Controller
 {
@@ -30,7 +30,7 @@ class ManagerController extends Controller
     }
 
     /**
-     * Lists all manager models.
+     * Lists all Manager models.
      * @return mixed
      */
     public function actionIndex()
@@ -45,7 +45,7 @@ class ManagerController extends Controller
     }
 
     /**
-     * Displays a single manager model.
+     * Displays a single Manager model.
      * @param integer $id
      * @return mixed
      */
@@ -57,13 +57,13 @@ class ManagerController extends Controller
     }
 
     /**
-     * Creates a new manager model.
+     * Creates a new Manager model.
      * If creation is successful, the browser will be redirected to the 'view' page.
      * @return mixed
      */
     public function actionCreate()
     {
-        $model = new manager();
+        $model = new Manager();
 
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
             return $this->redirect(['view', 'id' => $model->id]);
@@ -75,7 +75,7 @@ class ManagerController extends Controller
     }
 
     /**
-     * Updates an existing manager model.
+     * Updates an existing Manager model.
      * If update is successful, the browser will be redirected to the 'view' page.
      * @param integer $id
      * @return mixed
@@ -94,7 +94,7 @@ class ManagerController extends Controller
     }
 
     /**
-     * Deletes an existing manager model.
+     * Deletes an existing Manager model.
      * If deletion is successful, the browser will be redirected to the 'index' page.
      * @param integer $id
      * @return mixed
@@ -107,15 +107,15 @@ class ManagerController extends Controller
     }
 
     /**
-     * Finds the manager model based on its primary key value.
+     * Finds the Manager model based on its primary key value.
      * If the model is not found, a 404 HTTP exception will be thrown.
      * @param integer $id
-     * @return manager the loaded model
+     * @return Manager the loaded model
      * @throws NotFoundHttpException if the model cannot be found
      */
     protected function findModel($id)
     {
-        if (($model = manager::findOne($id)) !== null) {
+        if (($model = Manager::findOne($id)) !== null) {
             return $model;
         } else {
             throw new NotFoundHttpException('The requested page does not exist.');
