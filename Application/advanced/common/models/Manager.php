@@ -30,8 +30,7 @@ class Manager extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['id'], 'required'],
-            [['id', 'admin_id'], 'integer'],
+            [['admin_id'], 'integer'],
             [['access_date'], 'safe'],
             [['username'], 'string', 'max' => 50],
         ];
