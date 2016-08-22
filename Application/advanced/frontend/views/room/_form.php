@@ -12,8 +12,6 @@ use yii\widgets\ActiveForm;
 
     <?php $form = ActiveForm::begin(); ?>
 
-    <?= $form->field($model, 'id')->textInput() ?>
-
     <?= $form->field($model, 'description')->textInput(['maxlength' => true]) ?>
 
     <?= $form->field($model, 'type')->textInput(['maxlength' => true]) ?>
@@ -24,7 +22,7 @@ use yii\widgets\ActiveForm;
 
     <?= $form->field($model, 'availability')->textInput(['maxlength' => true]) ?>
 
-    <?= $form->field($model, 'billing statement_id')->textInput() ?>
+    <?= $form->field($model, 'billingstatement_id')->textInput() ?>
 
     <div class="form-group">
         <?= Html::submitButton($model->isNewRecord ? 'Create' : 'Update', ['class' => $model->isNewRecord ? 'btn btn-success' : 'btn btn-primary']) ?>
