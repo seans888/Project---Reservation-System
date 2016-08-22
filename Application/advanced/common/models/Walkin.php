@@ -50,6 +50,6 @@ class Walkin extends \yii\db\ActiveRecord
      */
     public function getReservations()
     {
-        return $this->hasMany(Reservation::className(), ['walk-in_id' => 'id']);
+        return $this->hasMany(Reservation::className(), ['walkin_id' => 'id']);
     }
 }
