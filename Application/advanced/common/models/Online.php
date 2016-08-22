@@ -29,8 +29,6 @@ class Online extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['id'], 'required'],
-            [['id'], 'integer'],
             [['actual_access_date', 'actual_reserve_date'], 'safe'],
         ];
     }
