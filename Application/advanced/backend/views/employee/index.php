@@ -4,19 +4,19 @@ use yii\helpers\Html;
 use yii\grid\GridView;
 
 /* @var $this yii\web\View */
-/* @var $searchModel common\models\EmployeeSearch */
+/* @var $searchModel common\models\CustomerSearch */
 /* @var $dataProvider yii\data\ActiveDataProvider */
 
-$this->title = 'Employees';
+$this->title = 'Customers';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
-<div class="employee-index">
+<div class="customer-index">
 
     <h1><?= Html::encode($this->title) ?></h1>
     <?php // echo $this->render('_search', ['model' => $searchModel]); ?>
 
     <p>
-        <?= Html::a('Create Employee', ['create'], ['class' => 'btn btn-success']) ?>
+        <?= Html::a('Create Customer', ['create'], ['class' => 'btn btn-success']) ?>
     </p>
     <?= GridView::widget([
         'dataProvider' => $dataProvider,
@@ -27,16 +27,9 @@ $this->params['breadcrumbs'][] = $this->title;
             'id',
             'name',
             'contact_number',
-            'rate',
-            'hired_date',
-            // 'department',
-            // 'type',
-            // 'position',
+            'address',
+            'birthday',
             // 'email:email',
-            // 'address',
-            // 'birthday',
-            // 'manager_id',
-            // 'regular_id',
 
             ['class' => 'yii\grid\ActionColumn'],
         ],
