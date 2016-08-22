@@ -57,7 +57,7 @@ class Reservation extends \yii\db\ActiveRecord
             'down_payment' => 'Down Payment',
             'receipt_number' => 'Receipt Number',
             'online_id' => 'Online ID',
-            'walkin_id' => 'WalkIn ID',
+            'walkin_id' => 'Walkin ID',
         ];
     }
 
