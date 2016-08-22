@@ -12,8 +12,6 @@ use yii\widgets\ActiveForm;
 
     <?php $form = ActiveForm::begin(); ?>
 
-    <?= $form->field($model, 'id')->textInput() ?>
-
     <?= $form->field($model, 'actual_time_in')->textInput() ?>
 
     <?= $form->field($model, 'actual_time_reserve')->textInput() ?>
