@@ -13,9 +13,10 @@ use Yii;
  * @property string $rate
  * @property integer $capacity
  * @property string $availability
- * @property integer $billing statement_id
+ * @property integer $billingstatement_id
  *
  * @property ReservationHasRoom[] $reservationHasRooms
+ * @property Billingstatement $billingStatement
  */
 class Room extends \yii\db\ActiveRecord
 {
@@ -33,11 +34,12 @@ class Room extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['id', 'billing statement_id'], 'required'],
-            [['id', 'capacity', 'billing statement_id'], 'integer'],
+            [['capacity', 'billingstatement_id'], 'integer'],
+            [['billingstatement_id'], 'required'],
             [['description'], 'string', 'max' => 50],
             [['type', 'availability'], 'string', 'max' => 45],
             [['rate'], 'string', 'max' => 20],
+            [['billing statement_id'], 'exist', 'skipOnError' => true, 'targetClass' => Billingstatement::className(), 'targetAttribute' => ['billingstatement_id' => 'id']],
         ];
     }
 
@@ -53,7 +55,7 @@ class Room extends \yii\db\ActiveRecord
             'rate' => 'Rate',
             'capacity' => 'Capacity',
             'availability' => 'Availability',
-            'billing statement_id' => 'Billing Statement ID',
+            'billingstatement_id' => 'Billing Statement ID',
         ];
     }
 
@@ -63,5 +65,13 @@ class Room extends \yii\db\ActiveRecord
     public function getReservationHasRooms()
     {
         return $this->hasMany(ReservationHasRoom::className(), ['room_id' => 'id']);
+    }
+
+    /**
+     * @return \yii\db\ActiveQuery
+     */
+    public function getBillingStatement()
+    {
+        return $this->hasOne(Billingstatement::className(), ['id' => 'billingstatement_id']);
     }
 }

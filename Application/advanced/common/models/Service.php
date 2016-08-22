@@ -14,8 +14,9 @@ use Yii;
  * @property string $type_of_service
  * @property integer $employee_id
  * @property integer $customer_id
- * @property integer $billing statement_id
+ * @property integer $billingstatement_id
  *
+ * @property Billingstatement $billingStatement
  * @property Customer $customer
  * @property Employee $employee
  */
@@ -35,10 +36,11 @@ class Service extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['id', 'employee_id', 'customer_id', 'billing statement_id'], 'required'],
-            [['id', 'employee_id', 'customer_id', 'billing statement_id'], 'integer'],
+            [['employee_id', 'customer_id', 'billingstatement_id'], 'required'],
+            [['employee_id', 'customer_id', 'billingstatement_id'], 'integer'],
             [['name'], 'string', 'max' => 30],
             [['cost', 'service_offered', 'type_of_service'], 'string', 'max' => 45],
+            [['billingstatement_id'], 'exist', 'skipOnError' => true, 'targetClass' => Billingstatement::className(), 'targetAttribute' => ['billingstatement_id' => 'id']],
             [['customer_id'], 'exist', 'skipOnError' => true, 'targetClass' => Customer::className(), 'targetAttribute' => ['customer_id' => 'id']],
             [['employee_id'], 'exist', 'skipOnError' => true, 'targetClass' => Employee::className(), 'targetAttribute' => ['employee_id' => 'id']],
         ];
@@ -57,8 +59,16 @@ class Service extends \yii\db\ActiveRecord
             'type_of_service' => 'Type Of Service',
             'employee_id' => 'Employee ID',
             'customer_id' => 'Customer ID',
-            'billing statement_id' => 'Billing Statement ID',
+            'billingstatement_id' => 'Billing Statement ID',
         ];
+    }
+
+    /**
+     * @return \yii\db\ActiveQuery
+     */
+    public function getBillingStatement()
+    {
+        return $this->hasOne(Billingstatement::className(), ['id' => 'billingstatement_id']);
     }
 
     /**

@@ -27,7 +27,7 @@ use yii\widgets\ActiveForm;
 
     <?php // echo $form->field($model, 'online_id') ?>
 
-    <?php // echo $form->field($model, 'walkin_id') ?>
+    <?php // echo $form->field($model, 'walk-in_id') ?>
 
     <div class="form-group">
         <?= Html::submitButton('Search', ['class' => 'btn btn-primary']) ?>

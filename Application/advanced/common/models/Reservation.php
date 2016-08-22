@@ -13,11 +13,11 @@ use Yii;
  * @property string $down_payment
  * @property string $receipt_number
  * @property integer $online_id
- * @property integer $walk-in_id
+ * @property integer $walkin_id
  *
  * @property CustomerHasReservation[] $customerHasReservations
  * @property Online $online
- * @property Walk-in $walk-in
+ * @property Walkin $walkin
  * @property ReservationHasRoom[] $reservationHasRooms
  */
 class Reservation extends \yii\db\ActiveRecord
@@ -36,9 +36,9 @@ class Reservation extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['id', 'online_id', 'walkin_id'], 'required'],
-            [['id', 'number_of_days', 'online_id', 'walkin_id'], 'integer'],
             [['date_reserved'], 'safe'],
+            [['number_of_days', 'online_id', 'walkin_id'], 'integer'],
+            [['online_id', 'walkin_id'], 'required'],
             [['down_payment', 'receipt_number'], 'string', 'max' => 30],
             [['online_id'], 'exist', 'skipOnError' => true, 'targetClass' => Online::className(), 'targetAttribute' => ['online_id' => 'id']],
             [['walkin_id'], 'exist', 'skipOnError' => true, 'targetClass' => Walkin::className(), 'targetAttribute' => ['walkin_id' => 'id']],
@@ -57,7 +57,7 @@ class Reservation extends \yii\db\ActiveRecord
             'down_payment' => 'Down Payment',
             'receipt_number' => 'Receipt Number',
             'online_id' => 'Online ID',
-            'walkin_id' => 'Walk In ID',
+            'walkin_id' => 'WalkIn ID',
         ];
     }
 
