@@ -3,8 +3,8 @@
 use yii\helpers\Html;
 use yii\widgets\ActiveForm;
 use yii\helpers\ArrayHelper;
-use common\models\Walkin;
 use common\models\Online;
+use common\models\Walkin;
 
 /* @var $this yii\web\View */
 /* @var $model common\models\Reservation */
@@ -23,24 +23,25 @@ use common\models\Online;
 
     <?= $form->field($model, 'receipt_number')->textInput(['maxlength' => true]) ?>
 
-    <?= $form->field($model, 'online_id')->dropDownList(
-		ArrayHelper::map( Online::find()->all(), 'id', 'actual_reserve_date' ),
+	<?= $form->field($model, 'online_id')->dropDownList(
+		ArrayHelper::map( Online::find()->all(), 'id', 'actual_access_date' ),
 		[
 			'prompt'=>'Select Online',
 			//'onchange'=>
 			//	'$.post("index.php?r=work-orders/lists&id='.'" +$(this).val(), function
-			//	( data ){
+			//( data ){
 			//		$( "select#model-contact" ).html( data );
 			//	});'
 		]); ?>
 
-    <?= $form->field($model, 'walkin_id')->dropDownList(
-		ArrayHelper::map( Walkin::find()->all(), 'id', 'actual_time_reserve' ),
+   
+	<?= $form->field($model, 'walkin_id')->dropDownList(
+		ArrayHelper::map( Walkin::find()->all(), 'id', 'actual_time_in' ),
 		[
 			'prompt'=>'Select Walkin',
 			//'onchange'=>
 			//	'$.post("index.php?r=work-orders/lists&id='.'" +$(this).val(), function
-			//	( data ){
+			//( data ){
 			//		$( "select#model-contact" ).html( data );
 			//	});'
 		]); ?>
