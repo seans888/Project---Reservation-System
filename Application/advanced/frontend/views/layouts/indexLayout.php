@@ -250,7 +250,7 @@ IndexAsset::register($this);
                         <h4><i class="fa fa-fw fa-check"></i>Services</h4>
                     </div>
                     <div class="panel-body">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, optio corporis quae nulla aspernatur in alias at numquam rerum ea excepturi expedita tenetur assumenda voluptatibus eveniet incidunt dicta nostrum quod?</p>
+                        <p>Enjoy yourself with our wide variety of offered high-quality services. Click on the button to find out more...</p>
                         <a href="services.html" class="btn btn-default">Learn More</a>
                     </div>
                 </div>
@@ -261,7 +261,7 @@ IndexAsset::register($this);
                         <h4><i class="fa fa-fw fa-gift"></i>Accomodations</h4>
                     </div>
                     <div class="panel-body">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, optio corporis quae nulla aspernatur in alias at numquam rerum ea excepturi expedita tenetur assumenda voluptatibus eveniet incidunt dicta nostrum quod?</p>
+                        <p>Looking for a good room to reserve that fits your standards and likeness? Look no further. Check out our different available rooms for reservation. Click on the button to find out more...</p>
                         <a href="#" class="btn btn-default">Learn More</a>
                     </div>
                 </div>
@@ -272,7 +272,7 @@ IndexAsset::register($this);
                         <h4><i class="glyphicon glyphicon-picture"></i> Gallery</h4>
                     </div>
                     <div class="panel-body">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, optio corporis quae nulla aspernatur in alias at numquam rerum ea excepturi expedita tenetur assumenda voluptatibus eveniet incidunt dicta nostrum quod?</p>
+                        <p>Curious to see what you will be experiencing if you reserve a room in our resort? Check out our gallery containing different photos of the pools, facilities, etc. Click on the button to find out more...</p>
                         <a href="#" class="btn btn-default">Learn More</a>
                     </div>
                 </div>
