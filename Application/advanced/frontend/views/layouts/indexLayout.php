@@ -77,7 +77,7 @@ IndexAsset::register($this);
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Modern Business - Start Bootstrap Template</title>
+    <title>Calimboracay</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -175,15 +175,6 @@ IndexAsset::register($this);
                             </li>
                             <li>
                                 <a href="index.php?r=customer">Customer</a>
-                            </li>
-                            <li>
-                                <a href="faq.html">FAQ</a>
-                            </li>
-                            <li>
-                                <a href="404.html">404</a>
-                            </li>
-                            <li>
-                                <a href="pricing.html">Pricing Table</a>
                             </li>
                         </ul>
                     </li>
@@ -283,36 +274,36 @@ IndexAsset::register($this);
         <!-- Portfolio Section -->
         <div class="row">
             <div class="col-lg-12">
-                <h2 class="page-header">Portfolio Heading</h2>
+                <h2 class="page-header">Gallery</h2>
             </div>
             <div class="col-md-4 col-sm-6">
                 <a href="portfolio-item.html">
-                    <img class="img-responsive img-portfolio img-hover" src="http://placehold.it/700x450" alt="">
+                    <img class="img-responsive img-portfolio img-hover" src="http://www.atravelmate.com/wp-content/uploads/2015/01/InterContinental-Danang-Sun-Peninsula-Resort.jpg" alt="">
                 </a>
             </div>
             <div class="col-md-4 col-sm-6">
                 <a href="portfolio-item.html">
-                    <img class="img-responsive img-portfolio img-hover" src="http://placehold.it/700x450" alt="">
+                    <img class="img-responsive img-portfolio img-hover" src="http://cdn.atlantishotel.com/wp-content/uploads/2014/01/atlantis-resort-dumaguete-700x450.jpg" alt="">
                 </a>
             </div>
             <div class="col-md-4 col-sm-6">
                 <a href="portfolio-item.html">
-                    <img class="img-responsive img-portfolio img-hover" src="http://placehold.it/700x450" alt="">
+                    <img class="img-responsive img-portfolio img-hover" src="https://edge.media.datahc.com/HI144463163.jpg" alt="">
                 </a>
             </div>
             <div class="col-md-4 col-sm-6">
                 <a href="portfolio-item.html">
-                    <img class="img-responsive img-portfolio img-hover" src="http://placehold.it/700x450" alt="">
+                    <img class="img-responsive img-portfolio img-hover" src="https://edge.media.datahc.com/HI139340963.jpg" alt="">
                 </a>
             </div>
             <div class="col-md-4 col-sm-6">
                 <a href="portfolio-item.html">
-                    <img class="img-responsive img-portfolio img-hover" src="http://placehold.it/700x450" alt="">
+                    <img class="img-responsive img-portfolio img-hover" src="https://edge.media.datahc.com/HI144463119.jpg" alt="">
                 </a>
             </div>
             <div class="col-md-4 col-sm-6">
                 <a href="portfolio-item.html">
-                    <img class="img-responsive img-portfolio img-hover" src="http://placehold.it/700x450" alt="">
+                    <img class="img-responsive img-portfolio img-hover" src="http://www.jebiga.com/wp-content/uploads/2013/10/Velaa_Private_Island_Resort_Maldives_14-700x450.jpg" alt="">
                 </a>
             </div>
         </div>
@@ -321,23 +312,21 @@ IndexAsset::register($this);
         <!-- Features Section -->
         <div class="row">
             <div class="col-lg-12">
-                <h2 class="page-header">Modern Business Features</h2>
+                <h2 class="page-header"> Love to Travel? Book Now. </h2>
             </div>
             <div class="col-md-6">
-                <p>The Modern Business template by Start Bootstrap includes:</p>
+                <p>The resort fee includes:</p>
                 <ul>
-                    <li><strong>Bootstrap v3.3.7</strong>
-                    </li>
-                    <li>jQuery v1.11.1</li>
-                    <li>Font Awesome v4.2.0</li>
-                    <li>Working PHP contact form with validation</li>
-                    <li>Unstyled page elements for easy customization</li>
-                    <li>17 HTML pages</li>
+                    <li>High Speed Internet Access</li>
+                    <li>Courtesy Shuttle to and from Tarangban Falls</li>
+                    <li>In-room coffee</li>
+                    <li>Sports Activities</li>
+                    <li>Beach Activities</li>
+                    <li>Access to Spa with a Purchased Treatment</li>
                 </ul>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis, omnis doloremque non cum id reprehenderit, quisquam totam aspernatur tempora minima unde aliquid ea culpa sunt. Reiciendis quia dolorum ducimus unde.</p>
             </div>
             <div class="col-md-6">
-                <img class="img-responsive" src="http://placehold.it/700x450" alt="">
+                <img class="img-responsive" src="http://www.thaipalacephuket.com/images/swimmingpool740x450_1.jpg" alt="">
             </div>
         </div>
         <!-- /.row -->
@@ -348,10 +337,10 @@ IndexAsset::register($this);
         <div class="well">
             <div class="row">
                 <div class="col-md-8">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, expedita, saepe, vero rerum deleniti beatae veniam harum neque nemo praesentium cum alias asperiores commodi.</p>
+                    <p align = "center">Click Here to Book Now. Best Price Guarantee.</p>
                 </div>
                 <div class="col-md-4">
-                    <a class="btn btn-lg btn-default btn-block" href="#">Call to Action</a>
+                    <a class="btn btn-lg btn-default btn-block" href="http://localhost/advanced/frontend/web/index.php?r=customer%2Findex">Book Now</a>
                 </div>
             </div>
         </div>
