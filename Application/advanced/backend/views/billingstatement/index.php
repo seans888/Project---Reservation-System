@@ -27,9 +27,8 @@ $this->params['breadcrumbs'][] = $this->title;
             'id',
             'mode_of_payment',
             'amount',
-            'number',
-            'date',
-            // 'status',
+            'date_of_payment',
+            'status',
             // 'employee_id',
             // 'customer_id',
 
