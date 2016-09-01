@@ -18,8 +18,8 @@ class RoomSearch extends Room
     public function rules()
     {
         return [
-            [['id', 'capacity', 'billing statement_id'], 'integer'],
-            [['type', 'rate', 'availability'], 'safe'],
+            [['id', 'capacity', 'billingstatement_id'], 'integer'],
+            [['description', 'type', 'rate', 'availability'], 'safe'],
         ];
     }
 
@@ -61,10 +61,11 @@ class RoomSearch extends Room
         $query->andFilterWhere([
             'id' => $this->id,
             'capacity' => $this->capacity,
-            'billing statement_id' => $this->billing statement_id,
+            'billingstatement_id' => $this->billingstatement_id,
         ]);
 
-        $query->andFilterWhere(['like', 'type', $this->type])
+        $query->andFilterWhere(['like', 'description', $this->description])
+            ->andFilterWhere(['like', 'type', $this->type])
             ->andFilterWhere(['like', 'rate', $this->rate])
             ->andFilterWhere(['like', 'availability', $this->availability]);
 

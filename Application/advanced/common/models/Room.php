@@ -8,15 +8,15 @@ use Yii;
  * This is the model class for table "room".
  *
  * @property integer $id
+ * @property string $description
  * @property string $type
  * @property string $rate
  * @property integer $capacity
  * @property string $availability
- * @property integer $billing statement_id
+ * @property integer $billingstatement_id
  *
  * @property ReservationHasRoom[] $reservationHasRooms
- * @property Billingstatement $billingStatement
- * @property Service[] $services
+ * @property Billingstatement $billingstatement
  */
 class Room extends \yii\db\ActiveRecord
 {
@@ -34,11 +34,12 @@ class Room extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['capacity', 'billing statement_id'], 'integer'],
-            [['billing statement_id'], 'required'],
+            [['capacity', 'billingstatement_id'], 'integer'],
+            [['billingstatement_id'], 'required'],
+            [['description'], 'string', 'max' => 50],
             [['type', 'availability'], 'string', 'max' => 45],
             [['rate'], 'string', 'max' => 20],
-            [['billing statement_id'], 'exist', 'skipOnError' => true, 'targetClass' => Billingstatement::className(), 'targetAttribute' => ['billing statement_id' => 'id']],
+            [['billingstatement_id'], 'exist', 'skipOnError' => true, 'targetClass' => Billingstatement::className(), 'targetAttribute' => ['billingstatement_id' => 'id']],
         ];
     }
 
@@ -49,11 +50,12 @@ class Room extends \yii\db\ActiveRecord
     {
         return [
             'id' => 'ID',
+            'description' => 'Description',
             'type' => 'Type',
             'rate' => 'Rate',
             'capacity' => 'Capacity',
             'availability' => 'Availability',
-            'billing statement_id' => 'Billing Statement ID',
+            'billingstatement_id' => 'Billingstatement ID',
         ];
     }
 
@@ -68,16 +70,8 @@ class Room extends \yii\db\ActiveRecord
     /**
      * @return \yii\db\ActiveQuery
      */
-    public function getBillingStatement()
+    public function getBillingstatement()
     {
-        return $this->hasOne(Billingstatement::className(), ['id' => 'billing statement_id']);
-    }
-
-    /**
-     * @return \yii\db\ActiveQuery
-     */
-    public function getServices()
-    {
-        return $this->hasMany(Service::className(), ['room_id' => 'id']);
+        return $this->hasOne(Billingstatement::className(), ['id' => 'billingstatement_id']);
     }
 }
