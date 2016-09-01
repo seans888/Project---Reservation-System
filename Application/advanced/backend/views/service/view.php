@@ -31,11 +31,10 @@ $this->params['breadcrumbs'][] = $this->title;
             'id',
             'name',
             'cost',
-            'service_offered',
-            'type_of_service',
             'employee_id',
             'customer_id',
             'billing statement_id',
+            'room_id',
         ],
     ]) ?>
 
