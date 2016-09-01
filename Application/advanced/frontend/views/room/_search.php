@@ -17,15 +17,13 @@ use yii\widgets\ActiveForm;
 
     <?= $form->field($model, 'id') ?>
 
-    <?= $form->field($model, 'description') ?>
-
     <?= $form->field($model, 'type') ?>
 
     <?= $form->field($model, 'rate') ?>
 
     <?= $form->field($model, 'capacity') ?>
 
-    <?php // echo $form->field($model, 'availability') ?>
+    <?= $form->field($model, 'availability') ?>
 
     <?php // echo $form->field($model, 'billingstatement_id') ?>
 
