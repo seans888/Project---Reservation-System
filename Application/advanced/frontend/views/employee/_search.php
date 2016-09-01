@@ -17,29 +17,27 @@ use yii\widgets\ActiveForm;
 
     <?= $form->field($model, 'id') ?>
 
-    <?= $form->field($model, 'name') ?>
+    <?= $form->field($model, 'last_name') ?>
+
+    <?= $form->field($model, 'first_name') ?>
+
+    <?= $form->field($model, 'middle_name') ?>
 
     <?= $form->field($model, 'contact_number') ?>
 
-    <?= $form->field($model, 'rate') ?>
-
-    <?= $form->field($model, 'hired_date') ?>
-
-    <?php // echo $form->field($model, 'department') ?>
-
-    <?php // echo $form->field($model, 'type') ?>
-
-    <?php // echo $form->field($model, 'position') ?>
+    <?php // echo $form->field($model, 'address') ?>
 
     <?php // echo $form->field($model, 'email') ?>
 
-    <?php // echo $form->field($model, 'address') ?>
+    <?php // echo $form->field($model, 'hired_date') ?>
 
-    <?php // echo $form->field($model, 'birthday') ?>
+    <?php // echo $form->field($model, 'rate') ?>
 
-    <?php // echo $form->field($model, 'manager_id') ?>
+    <?php // echo $form->field($model, 'type') ?>
 
-    <?php // echo $form->field($model, 'regular_id') ?>
+    <?php // echo $form->field($model, 'department') ?>
+
+    <?php // echo $form->field($model, 'position') ?>
 
     <div class="form-group">
         <?= Html::submitButton('Search', ['class' => 'btn btn-primary']) ?>

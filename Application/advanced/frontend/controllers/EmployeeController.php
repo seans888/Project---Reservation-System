@@ -47,14 +47,12 @@ class EmployeeController extends Controller
     /**
      * Displays a single Employee model.
      * @param integer $id
-     * @param integer $manager_id
-     * @param integer $regular_id
      * @return mixed
      */
-    public function actionView($id, $manager_id, $regular_id)
+    public function actionView($id)
     {
         return $this->render('view', [
-            'model' => $this->findModel($id, $manager_id, $regular_id),
+            'model' => $this->findModel($id),
         ]);
     }
 
@@ -68,7 +66,7 @@ class EmployeeController extends Controller
         $model = new Employee();
 
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
-            return $this->redirect(['view', 'id' => $model->id, 'manager_id' => $model->manager_id, 'regular_id' => $model->regular_id]);
+            return $this->redirect(['view', 'id' => $model->id]);
         } else {
             return $this->render('create', [
                 'model' => $model,
@@ -80,16 +78,14 @@ class EmployeeController extends Controller
      * Updates an existing Employee model.
      * If update is successful, the browser will be redirected to the 'view' page.
      * @param integer $id
-     * @param integer $manager_id
-     * @param integer $regular_id
      * @return mixed
      */
-    public function actionUpdate($id, $manager_id, $regular_id)
+    public function actionUpdate($id)
     {
-        $model = $this->findModel($id, $manager_id, $regular_id);
+        $model = $this->findModel($id);
 
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
-            return $this->redirect(['view', 'id' => $model->id, 'manager_id' => $model->manager_id, 'regular_id' => $model->regular_id]);
+            return $this->redirect(['view', 'id' => $model->id]);
         } else {
             return $this->render('update', [
                 'model' => $model,
@@ -101,13 +97,11 @@ class EmployeeController extends Controller
      * Deletes an existing Employee model.
      * If deletion is successful, the browser will be redirected to the 'index' page.
      * @param integer $id
-     * @param integer $manager_id
-     * @param integer $regular_id
      * @return mixed
      */
-    public function actionDelete($id, $manager_id, $regular_id)
+    public function actionDelete($id)
     {
-        $this->findModel($id, $manager_id, $regular_id)->delete();
+        $this->findModel($id)->delete();
 
         return $this->redirect(['index']);
     }
@@ -116,14 +110,12 @@ class EmployeeController extends Controller
      * Finds the Employee model based on its primary key value.
      * If the model is not found, a 404 HTTP exception will be thrown.
      * @param integer $id
-     * @param integer $manager_id
-     * @param integer $regular_id
      * @return Employee the loaded model
      * @throws NotFoundHttpException if the model cannot be found
      */
-    protected function findModel($id, $manager_id, $regular_id)
+    protected function findModel($id)
     {
-        if (($model = Employee::findOne(['id' => $id, 'manager_id' => $manager_id, 'regular_id' => $regular_id])) !== null) {
+        if (($model = Employee::findOne($id)) !== null) {
             return $model;
         } else {
             throw new NotFoundHttpException('The requested page does not exist.');
