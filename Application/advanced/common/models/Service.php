@@ -10,15 +10,15 @@ use Yii;
  * @property integer $id
  * @property string $name
  * @property string $cost
- * @property string $service_offered
- * @property string $type_of_service
  * @property integer $employee_id
  * @property integer $customer_id
- * @property integer $billingstatement_id
+ * @property integer $billing statement_id
+ * @property integer $room_id
  *
- * @property Billingstatement $billingstatement
+ * @property Billingstatement $billingStatement
  * @property Customer $customer
  * @property Employee $employee
+ * @property Room $room
  */
 class Service extends \yii\db\ActiveRecord
 {
@@ -36,13 +36,14 @@ class Service extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['employee_id', 'customer_id', 'billingstatement_id'], 'required'],
-            [['employee_id', 'customer_id', 'billingstatement_id'], 'integer'],
+            [['employee_id', 'customer_id', 'billing statement_id', 'room_id'], 'required'],
+            [['employee_id', 'customer_id', 'billing statement_id', 'room_id'], 'integer'],
             [['name'], 'string', 'max' => 30],
-            [['cost', 'service_offered', 'type_of_service'], 'string', 'max' => 45],
-            [['billingstatement_id'], 'exist', 'skipOnError' => true, 'targetClass' => Billingstatement::className(), 'targetAttribute' => ['billingstatement_id' => 'id']],
+            [['cost'], 'string', 'max' => 45],
+            [['billing statement_id'], 'exist', 'skipOnError' => true, 'targetClass' => Billingstatement::className(), 'targetAttribute' => ['billing statement_id' => 'id']],
             [['customer_id'], 'exist', 'skipOnError' => true, 'targetClass' => Customer::className(), 'targetAttribute' => ['customer_id' => 'id']],
             [['employee_id'], 'exist', 'skipOnError' => true, 'targetClass' => Employee::className(), 'targetAttribute' => ['employee_id' => 'id']],
+            [['room_id'], 'exist', 'skipOnError' => true, 'targetClass' => Room::className(), 'targetAttribute' => ['room_id' => 'id']],
         ];
     }
 
@@ -55,20 +56,19 @@ class Service extends \yii\db\ActiveRecord
             'id' => 'ID',
             'name' => 'Name',
             'cost' => 'Cost',
-            'service_offered' => 'Service Offered',
-            'type_of_service' => 'Type Of Service',
             'employee_id' => 'Employee ID',
             'customer_id' => 'Customer ID',
-            'billingstatement_id' => 'Billingstatement ID',
+            'billing statement_id' => 'Billing Statement ID',
+            'room_id' => 'Room ID',
         ];
     }
 
     /**
      * @return \yii\db\ActiveQuery
      */
-    public function getBillingstatement()
+    public function getBillingStatement()
     {
-        return $this->hasOne(Billingstatement::className(), ['id' => 'billingstatement_id']);
+        return $this->hasOne(Billingstatement::className(), ['id' => 'billing statement_id']);
     }
 
     /**
@@ -85,5 +85,13 @@ class Service extends \yii\db\ActiveRecord
     public function getEmployee()
     {
         return $this->hasOne(Employee::className(), ['id' => 'employee_id']);
+    }
+
+    /**
+     * @return \yii\db\ActiveQuery
+     */
+    public function getRoom()
+    {
+        return $this->hasOne(Room::className(), ['id' => 'room_id']);
     }
 }

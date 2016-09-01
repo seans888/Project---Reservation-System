@@ -18,8 +18,8 @@ class ServiceSearch extends Service
     public function rules()
     {
         return [
-            [['id', 'employee_id', 'customer_id', 'billingstatement_id'], 'integer'],
-            [['name', 'cost', 'service_offered', 'type_of_service'], 'safe'],
+            [['id', 'employee_id', 'customer_id', 'billingStatement_id', 'room_id'], 'integer'],
+            [['name', 'cost'], 'safe'],
         ];
     }
 
@@ -62,13 +62,12 @@ class ServiceSearch extends Service
             'id' => $this->id,
             'employee_id' => $this->employee_id,
             'customer_id' => $this->customer_id,
-            'billingstatement_id' => $this->billingstatement_id,
+            'billingStatement_id' => $this->billingStatement_id,
+            'room_id' => $this->room_id,
         ]);
 
         $query->andFilterWhere(['like', 'name', $this->name])
-            ->andFilterWhere(['like', 'cost', $this->cost])
-            ->andFilterWhere(['like', 'service_offered', $this->service_offered])
-            ->andFilterWhere(['like', 'type_of_service', $this->type_of_service]);
+            ->andFilterWhere(['like', 'cost', $this->cost]);
 
         return $dataProvider;
     }
