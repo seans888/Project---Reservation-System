@@ -8,16 +8,16 @@ use Yii;
  * This is the model class for table "reservation".
  *
  * @property integer $id
- * @property string $date_reserved
- * @property integer $number_of_days
- * @property string $down_payment
- * @property string $receipt_number
- * @property integer $online_id
- * @property integer $walkin_id
+ * @property string $reservation_date
+ * @property string $check_in
+ * @property string $check_out
+ * @property string $rooms
+ * @property string $adults
+ * @property string $kids
+ * @property integer $billingstatement_id
  *
  * @property CustomerHasReservation[] $customerHasReservations
- * @property Online $online
- * @property Walkin $walkin
+ * @property Billingstatement $billingstatement
  * @property ReservationHasRoom[] $reservationHasRooms
  */
 class Reservation extends \yii\db\ActiveRecord
@@ -36,12 +36,12 @@ class Reservation extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['date_reserved'], 'safe'],
-            [['number_of_days', 'online_id', 'walkin_id'], 'integer'],
-            [['online_id', 'walkin_id'], 'required'],
-            [['down_payment', 'receipt_number'], 'string', 'max' => 30],
-            [['online_id'], 'exist', 'skipOnError' => true, 'targetClass' => Online::className(), 'targetAttribute' => ['online_id' => 'id']],
-            [['walkin_id'], 'exist', 'skipOnError' => true, 'targetClass' => Walkin::className(), 'targetAttribute' => ['walkin_id' => 'id']],
+            [['reservation_date', 'check_in', 'check_out'], 'safe'],
+            [['billingstatement_id'], 'required'],
+            [['billingstatement_id'], 'integer'],
+            [['rooms'], 'string', 'max' => 10],
+            [['adults', 'kids'], 'string', 'max' => 50],
+            [['billingstatement_id'], 'exist', 'skipOnError' => true, 'targetClass' => Billingstatement::className(), 'targetAttribute' => ['billingstatement_id' => 'id']],
         ];
     }
 
@@ -52,12 +52,13 @@ class Reservation extends \yii\db\ActiveRecord
     {
         return [
             'id' => 'ID',
-            'date_reserved' => 'Date Reserved',
-            'number_of_days' => 'Number Of Days',
-            'down_payment' => 'Down Payment',
-            'receipt_number' => 'Receipt Number',
-            'online_id' => 'Online ID',
-            'walkin_id' => 'Walkin ID',
+            'reservation_date' => 'Reservation Date',
+            'check_in' => 'Check In',
+            'check_out' => 'Check Out',
+            'rooms' => 'Rooms',
+            'adults' => 'Adults',
+            'kids' => 'Kids',
+            'billingstatement_id' => 'Billingstatement ID',
         ];
     }
 
@@ -72,17 +73,9 @@ class Reservation extends \yii\db\ActiveRecord
     /**
      * @return \yii\db\ActiveQuery
      */
-    public function getOnline()
+    public function getBillingstatement()
     {
-        return $this->hasOne(Online::className(), ['id' => 'online_id']);
-    }
-
-    /**
-     * @return \yii\db\ActiveQuery
-     */
-    public function getWalkin()
-    {
-        return $this->hasOne(Walkin::className(), ['id' => 'walkin_id']);
+        return $this->hasOne(Billingstatement::className(), ['id' => 'billingstatement_id']);
     }
 
     /**
