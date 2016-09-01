@@ -10,14 +10,14 @@ use Yii;
  * @property integer $id
  * @property string $mode_of_payment
  * @property string $amount
- * @property integer $number
- * @property string $date
+ * @property string $date_of_payment
  * @property string $status
  * @property integer $employee_id
  * @property integer $customer_id
  *
  * @property Customer $customer
  * @property Employee $employee
+ * @property Reservation[] $reservations
  * @property Room[] $rooms
  * @property Service[] $services
  */
@@ -38,9 +38,9 @@ class Billingstatement extends \yii\db\ActiveRecord
     {
         return [
             [['amount'], 'number'],
-            [['number', 'employee_id', 'customer_id'], 'integer'],
-            [['date'], 'safe'],
+            [['date_of_payment'], 'safe'],
             [['employee_id', 'customer_id'], 'required'],
+            [['employee_id', 'customer_id'], 'integer'],
             [['mode_of_payment'], 'string', 'max' => 20],
             [['status'], 'string', 'max' => 45],
             [['customer_id'], 'exist', 'skipOnError' => true, 'targetClass' => Customer::className(), 'targetAttribute' => ['customer_id' => 'id']],
@@ -57,8 +57,7 @@ class Billingstatement extends \yii\db\ActiveRecord
             'id' => 'ID',
             'mode_of_payment' => 'Mode Of Payment',
             'amount' => 'Amount',
-            'number' => 'Number',
-            'date' => 'Date',
+            'date_of_payment' => 'Date Of Payment',
             'status' => 'Status',
             'employee_id' => 'Employee ID',
             'customer_id' => 'Customer ID',
@@ -79,6 +78,14 @@ class Billingstatement extends \yii\db\ActiveRecord
     public function getEmployee()
     {
         return $this->hasOne(Employee::className(), ['id' => 'employee_id']);
+    }
+
+    /**
+     * @return \yii\db\ActiveQuery
+     */
+    public function getReservations()
+    {
+        return $this->hasMany(Reservation::className(), ['billingstatement_id' => 'id']);
     }
 
     /**

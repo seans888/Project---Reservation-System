@@ -21,11 +21,9 @@ use yii\widgets\ActiveForm;
 
     <?= $form->field($model, 'amount') ?>
 
-    <?= $form->field($model, 'number') ?>
+    <?= $form->field($model, 'date_of_payment') ?>
 
-    <?= $form->field($model, 'date') ?>
-
-    <?php // echo $form->field($model, 'status') ?>
+    <?= $form->field($model, 'status') ?>
 
     <?php // echo $form->field($model, 'employee_id') ?>
 

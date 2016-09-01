@@ -18,8 +18,8 @@ class BillingstatementSearch extends Billingstatement
     public function rules()
     {
         return [
-            [['id', 'number', 'employee_id', 'customer_id'], 'integer'],
-            [['mode_of_payment', 'date', 'status'], 'safe'],
+            [['id', 'employee_id', 'customer_id'], 'integer'],
+            [['mode_of_payment', 'date_of_payment', 'status'], 'safe'],
             [['amount'], 'number'],
         ];
     }
@@ -62,8 +62,7 @@ class BillingstatementSearch extends Billingstatement
         $query->andFilterWhere([
             'id' => $this->id,
             'amount' => $this->amount,
-            'number' => $this->number,
-            'date' => $this->date,
+            'date_of_payment' => $this->date_of_payment,
             'employee_id' => $this->employee_id,
             'customer_id' => $this->customer_id,
         ]);
