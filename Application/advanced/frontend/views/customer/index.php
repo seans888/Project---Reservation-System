@@ -12,12 +12,10 @@ $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="customer-index">
 
-<br>
     <h1><?= Html::encode($this->title) ?></h1>
     <?php // echo $this->render('_search', ['model' => $searchModel]); ?>
 
     <p>
-    <br>
         <?= Html::a('Create Customer', ['create'], ['class' => 'btn btn-success']) ?>
     </p>
     <?= GridView::widget([
@@ -27,14 +25,14 @@ $this->params['breadcrumbs'][] = $this->title;
             ['class' => 'yii\grid\SerialColumn'],
 
             'id',
-            'name',
+            'last_name',
+            'first_name',
+            'middle_name',
             'contact_number',
-            'address',
-            'birthday',
+            // 'address',
             // 'email:email',
 
             ['class' => 'yii\grid\ActionColumn'],
         ],
     ]); ?>
-    <br><br><br>
 </div>

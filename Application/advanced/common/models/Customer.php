@@ -8,10 +8,11 @@ use Yii;
  * This is the model class for table "customer".
  *
  * @property integer $id
- * @property string $name
+ * @property string $last_name
+ * @property string $first_name
+ * @property string $middle_name
  * @property string $contact_number
  * @property string $address
- * @property string $birthday
  * @property string $email
  *
  * @property Billingstatement[] $billingstatements
@@ -35,9 +36,9 @@ class Customer extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['birthday'], 'safe'],
-            [['name', 'address', 'email'], 'string', 'max' => 50],
+            [['last_name', 'first_name', 'middle_name'], 'string', 'max' => 20],
             [['contact_number'], 'string', 'max' => 15],
+            [['address', 'email'], 'string', 'max' => 50],
         ];
     }
 
@@ -48,10 +49,11 @@ class Customer extends \yii\db\ActiveRecord
     {
         return [
             'id' => 'ID',
-            'name' => 'Name',
+            'last_name' => 'Last Name',
+            'first_name' => 'First Name',
+            'middle_name' => 'Middle Name',
             'contact_number' => 'Contact Number',
             'address' => 'Address',
-            'birthday' => 'Birthday',
             'email' => 'Email',
         ];
     }
