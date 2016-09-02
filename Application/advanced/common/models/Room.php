@@ -8,15 +8,15 @@ use Yii;
  * This is the model class for table "room".
  *
  * @property integer $id
- * @property string $description
  * @property string $type
  * @property string $rate
  * @property integer $capacity
  * @property string $availability
- * @property integer $billingstatement_id
+ * @property integer $billingStatement_id
  *
  * @property ReservationHasRoom[] $reservationHasRooms
  * @property Billingstatement $billingstatement
+ * @property Service[] $services
  */
 class Room extends \yii\db\ActiveRecord
 {
@@ -34,9 +34,8 @@ class Room extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['capacity', 'billingstatement_id'], 'integer'],
-            [['billingstatement_id'], 'required'],
-            [['description'], 'string', 'max' => 50],
+            [['capacity', 'billingStatement_id'], 'integer'],
+            [['billingStatement_id'], 'required'],
             [['type', 'availability'], 'string', 'max' => 45],
             [['rate'], 'string', 'max' => 20],
             [['billingstatement_id'], 'exist', 'skipOnError' => true, 'targetClass' => Billingstatement::className(), 'targetAttribute' => ['billingstatement_id' => 'id']],
@@ -50,12 +49,11 @@ class Room extends \yii\db\ActiveRecord
     {
         return [
             'id' => 'ID',
-            'description' => 'Description',
             'type' => 'Type',
             'rate' => 'Rate',
             'capacity' => 'Capacity',
             'availability' => 'Availability',
-            'billingStatement_id' => 'Billingstatement ID',
+            'billingStatement_id' => 'Billing Statement ID',
         ];
     }
 
@@ -73,5 +71,13 @@ class Room extends \yii\db\ActiveRecord
     public function getBillingstatement()
     {
         return $this->hasOne(Billingstatement::className(), ['id' => 'billingstatement_id']);
+    }
+
+    /**
+     * @return \yii\db\ActiveQuery
+     */
+    public function getServices()
+    {
+        return $this->hasMany(Service::className(), ['room_id' => 'id']);
     }
 }
