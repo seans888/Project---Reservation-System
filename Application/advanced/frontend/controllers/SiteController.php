@@ -212,4 +212,8 @@ class SiteController extends Controller
         ]);
     }
 	
+	public function actionService()
+	{
+		return $this->render('service');
+	}
 }

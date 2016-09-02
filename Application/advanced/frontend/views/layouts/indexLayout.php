@@ -113,19 +113,19 @@ IndexAsset::register($this);
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="http://localhost/advanced/frontend/web/">CALIMBORACAY</a>
+                <a class="navbar-brand" href="http://localhost/advanced/frontend/web/index.php?site%2Findex">CALIMBORACAY</a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
                     <li>
-                        <a href="http://localhost/advanced/frontend/web/">Home</a>
+                        <a href="http://localhost/advanced/frontend/web/index.php?site%2Findex">Home</a>
                     </li>
 					<li>
-                        <a href="about.html">About</a>
+                        <a href="about.php">About</a>
                     </li>
                     <li>
-                        <a href="contact.html">Contact</a>
+                        <a href="contact.php">Contact</a>
                     </li>
                     
                     <!--<li class="dropdown">
