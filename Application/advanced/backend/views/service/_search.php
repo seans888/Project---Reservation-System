@@ -25,7 +25,7 @@ use yii\widgets\ActiveForm;
 
     <?= $form->field($model, 'customer_id') ?>
 
-    <?php // echo $form->field($model, 'billing statement_id') ?>
+    <?php // echo $form->field($model, 'billingStatement_id') ?>
 
     <?php // echo $form->field($model, 'room_id') ?>
 
