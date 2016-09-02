@@ -25,7 +25,7 @@ use yii\widgets\ActiveForm;
 
     <?= $form->field($model, 'availability') ?>
 
-    <?php // echo $form->field($model, 'billingstatement_id') ?>
+    <?php // echo $form->field($model, 'billingStatement_id') ?>
 
     <div class="form-group">
         <?= Html::submitButton('Search', ['class' => 'btn btn-primary']) ?>

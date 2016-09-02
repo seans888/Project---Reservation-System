@@ -55,7 +55,7 @@ class Room extends \yii\db\ActiveRecord
             'rate' => 'Rate',
             'capacity' => 'Capacity',
             'availability' => 'Availability',
-            'billingstatement_id' => 'Billingstatement ID',
+            'billingStatement_id' => 'Billingstatement ID',
         ];
     }
 
