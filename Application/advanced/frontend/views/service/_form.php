@@ -20,7 +20,7 @@ use yii\widgets\ActiveForm;
 
     <?= $form->field($model, 'customer_id')->textInput() ?>
 
-    <?= $form->field($model, 'billing statement_id')->textInput() ?>
+    <?= $form->field($model, 'billingStatement_id')->textInput() ?>
 
     <?= $form->field($model, 'room_id')->textInput() ?>
 
