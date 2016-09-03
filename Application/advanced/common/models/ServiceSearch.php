@@ -19,7 +19,7 @@ class ServiceSearch extends Service
     {
         return [
             [['id', 'employee_id', 'customer_id', 'billingStatement_id', 'room_id'], 'integer'],
-            [['name', 'cost'], 'safe'],
+            [['service_availed', 'cost'], 'safe'],
         ];
     }
 
@@ -66,7 +66,7 @@ class ServiceSearch extends Service
             'room_id' => $this->room_id,
         ]);
 
-        $query->andFilterWhere(['like', 'name', $this->name])
+        $query->andFilterWhere(['like', 'service_availed', $this->service_availed])
             ->andFilterWhere(['like', 'cost', $this->cost]);
 
         return $dataProvider;
