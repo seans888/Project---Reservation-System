@@ -14,13 +14,13 @@ use common\models\BillingStatement;
 
     <?php $form = ActiveForm::begin(); ?>
 
-    <?= $form->field($model, 'type')->dropDownList([ 'Standard' => 'Standard', 'Deluxe' => 'Deluxe', 'Special' => 'Special', ], ['prompt' => '']) ?>
+    <?= $form->field($model, 'type')->dropDownList([ 'Standard' => 'Standard', 'Deluxe' => 'Deluxe', 'Special' => 'Special', ], ['prompt' => 'Select Type of Room']) ?>
 
     <?= $form->field($model, 'rate')->textInput(['maxlength' => true]) ?>
 
     <?= $form->field($model, 'capacity')->dropDownList([ 2 => '2', 4 => '4', 8 => '8', 10 => '10', ], ['prompt' => '']) ?>
 
-    <?= $form->field($model, 'availability')->dropDownList([ 'Available' => 'Available', 'Not Available' => 'Not Available', ], ['prompt' => '']) ?>
+    <?= $form->field($model, 'availability')->dropDownList([ 'Available' => 'Available', 'Not Available' => 'Not Available', ], ['prompt' => 'Select Availability']) ?>
 
     <?= $form->field($model, 'billingStatement_id')->dropDownList(
         ArrayHelper::map( BillingStatement::find()->all(), 'id', 'mode_of_payment' ),
