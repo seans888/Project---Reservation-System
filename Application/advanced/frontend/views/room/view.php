@@ -33,7 +33,7 @@ $this->params['breadcrumbs'][] = $this->title;
             'rate',
             'capacity',
             'availability',
-            'billing statement_id',
+            'billingstatement_id',
         ],
     ]) ?>
 
