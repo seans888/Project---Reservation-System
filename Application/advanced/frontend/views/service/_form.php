@@ -16,7 +16,27 @@ use yii\widgets\ActiveForm;
 
     <?= $form->field($model, 'cost')->textInput(['maxlength' => true]) ?>
 
-    <?= $form->field($model, 'employee_id')->textInput() ?>
+    <?= $form->field($model, 'employee_id')->dropDownList(
+        ArrayHelper::map( Employee::find()->all(), 'id', 'name' ),
+        [
+            'prompt'=>'Select Employee',
+            //'onchange'=>
+            //  '$.post("index.php?r=work-orders/lists&id='.'" +$(this).val(), function
+            //  ( data ){
+            //      $( "select#model-contact" ).html( data );
+            //  });'
+        ]); ?>
+
+    <?= $form->field($model, 'walkin_id')->dropDownList(
+        ArrayHelper::map( Walkin::find()->all(), 'id', 'actual_time_reserve' ),
+        [
+            'prompt'=>'Select Walkin',
+            //'onchange'=>
+            //  '$.post("index.php?r=work-orders/lists&id='.'" +$(this).val(), function
+            //  ( data ){
+            //      $( "select#model-contact" ).html( data );
+            //  });'
+        ]); ?>
 
     <?= $form->field($model, 'customer_id')->textInput() ?>
 
