@@ -5,6 +5,7 @@ use yii\widgets\ActiveForm;
 use yii\helpers\ArrayHelper;
 use common\modesl\Billingstatement;
 use common\models\Customer;
+use common\models\Employee;
 
 /* @var $this yii\web\View */
 /* @var $model common\models\Billingstatement */
@@ -23,7 +24,16 @@ use common\models\Customer;
 
     <?= $form->field($model, 'status')->dropDownList([ 'Fully Paid' => 'Fully Paid', 'Partially Paid' => 'Partially Paid', 'Unpaid' => 'Unpaid', ], ['prompt' => 'Select Status']) ?>
 
-    <?= $form->field($model, 'employee_id')->textInput() ?>
+    <?= $form->field($model, 'employee_id')->dropDownList(
+        ArrayHelper::map( Employee::find()->all(), 'id', 'last_name' ),
+        [
+            'prompt'=>'Select Employee',
+            //'onchange'=>
+            //  '$.post("index.php?r=work-orders/lists&id='.'" +$(this).val(), function
+            //  ( data ){
+            //      $( "select#model-contact" ).html( data );
+            //  });'
+        ]); ?>
 
     <?= $form->field($model, 'customer_id')->dropDownList(
         ArrayHelper::map( Customer::find()->all(), 'id', 'last_name' ),
