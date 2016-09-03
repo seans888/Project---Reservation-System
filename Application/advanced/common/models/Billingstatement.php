@@ -37,12 +37,11 @@ class Billingstatement extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
+            [['mode_of_payment', 'amount', 'date_of_payment', 'status', 'employee_id', 'customer_id'], 'required'],
+            [['mode_of_payment', 'status'], 'string'],
             [['amount'], 'number'],
             [['date_of_payment'], 'safe'],
-            [['employee_id', 'customer_id'], 'required'],
             [['employee_id', 'customer_id'], 'integer'],
-            [['mode_of_payment'], 'string', 'max' => 20],
-            [['status'], 'string', 'max' => 45],
             [['customer_id'], 'exist', 'skipOnError' => true, 'targetClass' => Customer::className(), 'targetAttribute' => ['customer_id' => 'id']],
             [['employee_id'], 'exist', 'skipOnError' => true, 'targetClass' => Employee::className(), 'targetAttribute' => ['employee_id' => 'id']],
         ];
@@ -101,6 +100,6 @@ class Billingstatement extends \yii\db\ActiveRecord
      */
     public function getServices()
     {
-        return $this->hasMany(Service::className(), ['billing statement_id' => 'id']);
+        return $this->hasMany(Service::className(), ['billingStatement_id' => 'id']);
     }
 }

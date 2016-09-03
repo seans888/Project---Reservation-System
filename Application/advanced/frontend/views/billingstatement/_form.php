@@ -2,9 +2,6 @@
 
 use yii\helpers\Html;
 use yii\widgets\ActiveForm;
-use yii\helpers\ArrayHelper;
-use common\models\Customer;
-
 
 /* @var $this yii\web\View */
 /* @var $model common\models\Billingstatement */
@@ -15,16 +12,17 @@ use common\models\Customer;
 
     <?php $form = ActiveForm::begin(); ?>
 
-    <?= $form->field($model, 'mode_of_payment')->textInput(['maxlength' => true]) ?>
+    <?= $form->field($model, 'mode_of_payment')->dropDownList([ 'Cash' => 'Cash', 'Cheque' => 'Cheque', 'Credit Card' => 'Credit Card', ], ['prompt' => 'Select Mode of Payment']) ?>
 
     <?= $form->field($model, 'amount')->textInput(['maxlength' => true]) ?>
 
     <?= $form->field($model, 'date_of_payment')->textInput() ?>
 
-    <?= $form->field($model, 'status')->textInput(['maxlength' => true]) ?>
+    <?= $form->field($model, 'status')->dropDownList([ 'Fully Paid' => 'Fully Paid', 'Partially Paid' => 'Partially Paid', 'Unpaid' => 'Unpaid', ], ['prompt' => 'Select Status']) ?>
 
     <?= $form->field($model, 'employee_id')->textInput() ?>
 
+<<<<<<< HEAD
     <?= $form->field($model, 'customer_id')->dropDownList(
         ArrayHelper::map( Customer::find()->all(), 'id', 'last_name' ),
         [

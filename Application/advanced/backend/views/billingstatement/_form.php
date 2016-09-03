@@ -12,13 +12,13 @@ use yii\widgets\ActiveForm;
 
     <?php $form = ActiveForm::begin(); ?>
 
-    <?= $form->field($model, 'mode_of_payment')->textInput(['maxlength' => true]) ?>
+    <?= $form->field($model, 'mode_of_payment')->dropDownList([ 'Cash' => 'Cash', 'Cheque' => 'Cheque', 'Credit Card' => 'Credit Card', ], ['prompt' => 'Select Mode of Payment']) ?>
 
     <?= $form->field($model, 'amount')->textInput(['maxlength' => true]) ?>
 
     <?= $form->field($model, 'date_of_payment')->textInput() ?>
 
-    <?= $form->field($model, 'status')->textInput(['maxlength' => true]) ?>
+    <?= $form->field($model, 'status')->dropDownList([ 'Fully Paid' => 'Fully Paid', 'Partially Paid' => 'Partially Paid', 'Unpaid' => 'Unpaid', ], ['prompt' => 'Select Status']) ?>
 
     <?= $form->field($model, 'employee_id')->textInput() ?>
 

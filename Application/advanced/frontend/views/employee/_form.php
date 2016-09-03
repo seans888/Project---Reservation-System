@@ -28,11 +28,11 @@ use yii\widgets\ActiveForm;
 
     <?= $form->field($model, 'rate')->textInput(['maxlength' => true]) ?>
 
-    <?= $form->field($model, 'type')->textInput(['maxlength' => true]) ?>
+    <?= $form->field($model, 'type')->dropDownList([ 'Full-Time' => 'Full-Time', 'Part-Time' => 'Part-Time', ], ['prompt' => 'Select Type']) ?>
 
     <?= $form->field($model, 'department')->textInput(['maxlength' => true]) ?>
 
-    <?= $form->field($model, 'position')->textInput(['maxlength' => true]) ?>
+    <?= $form->field($model, 'position')->dropDownList([ 'Regular' => 'Regular', 'Manager' => 'Manager', ], ['prompt' => '']) ?>
 
     <div class="form-group">
         <?= Html::submitButton($model->isNewRecord ? 'Create' : 'Update', ['class' => $model->isNewRecord ? 'btn btn-success' : 'btn btn-primary']) ?>
