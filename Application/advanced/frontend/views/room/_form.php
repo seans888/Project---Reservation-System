@@ -12,15 +12,15 @@ use yii\widgets\ActiveForm;
 
     <?php $form = ActiveForm::begin(); ?>
 
-    <?= $form->field($model, 'type')->textInput(['maxlength' => true]) ?>
+    <?= $form->field($model, 'type')->dropDownList([ 'Standard' => 'Standard', 'Deluxe' => 'Deluxe', 'Special' => 'Special', ], ['prompt' => '']) ?>
 
     <?= $form->field($model, 'rate')->textInput(['maxlength' => true]) ?>
 
-    <?= $form->field($model, 'capacity')->textInput() ?>
+    <?= $form->field($model, 'capacity')->dropDownList([ 2 => '2', 4 => '4', 8 => '8', 10 => '10', ], ['prompt' => '']) ?>
 
-    <?= $form->field($model, 'availability')->textInput(['maxlength' => true]) ?>
+    <?= $form->field($model, 'availability')->dropDownList([ 'Available' => 'Available', 'Not Available' => 'Not Available', ], ['prompt' => '']) ?>
 
-    <?= $form->field($model, 'billingStatement_id')->textInput() ?>
+    <?= $form->field($model, 'billing statement_id')->textInput() ?>
 
     <div class="form-group">
         <?= Html::submitButton($model->isNewRecord ? 'Create' : 'Update', ['class' => $model->isNewRecord ? 'btn btn-success' : 'btn btn-primary']) ?>
