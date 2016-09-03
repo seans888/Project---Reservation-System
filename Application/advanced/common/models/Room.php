@@ -34,7 +34,7 @@ class Room extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['type', 'capacity', 'availability', 'billingstatement_id'], 'required'],
+            [['type', 'rate', 'capacity', 'availability', 'billingstatement_id'], 'required'],
             [['type', 'capacity', 'availability'], 'string'],
             [['billingstatement_id'], 'integer'],
             [['rate'], 'string', 'max' => 20],
