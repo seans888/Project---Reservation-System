@@ -26,7 +26,7 @@ use common\models\BillingStatement;
 
     <?= $form->field($model, 'number_of_kids')->dropDownList([ '0', '1', '2', '3', '4', '5', '6', '7', '8', '9', '10', ], ['prompt' => 'Select Number of Kids']) ?>
 
-     <?= $form->field($model, 'billingStatement_id')->dropDownList(
+     <?= $form->field($model, 'billingstatement_id')->dropDownList(
         ArrayHelper::map( BillingStatement::find()->all(), 'id', 'mode_of_payment' ),
         [
             'prompt'=>'Select Mode of Payment',
