@@ -28,9 +28,9 @@ $this->params['breadcrumbs'][] = $this->title;
             'reservation_date',
             'check_in',
             'check_out',
-            'rooms',
-            // 'adults',
-            // 'kids',
+            'type_of_room',
+            // 'number_of_adults',
+            // 'number_of_kids',
             // 'billingstatement_id',
 
             ['class' => 'yii\grid\ActionColumn'],

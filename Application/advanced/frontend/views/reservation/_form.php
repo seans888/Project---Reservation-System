@@ -18,11 +18,11 @@ use yii\widgets\ActiveForm;
 
     <?= $form->field($model, 'check_out')->textInput() ?>
 
-    <?= $form->field($model, 'rooms')->textInput(['maxlength' => true]) ?>
+    <?= $form->field($model, 'type_of_room')->dropDownList([ 'Standard' => 'Standard', 'Deluxe' => 'Deluxe', 'Special' => 'Special', ], ['prompt' => '']) ?>
 
-    <?= $form->field($model, 'adults')->textInput(['maxlength' => true]) ?>
+    <?= $form->field($model, 'number_of_adults')->dropDownList([ '0', '1', '2', '3', '4', '5', '6', '7', '8', '9', '10', ], ['prompt' => '']) ?>
 
-    <?= $form->field($model, 'kids')->textInput(['maxlength' => true]) ?>
+    <?= $form->field($model, 'number_of_kids')->dropDownList([ '0', '1', '2', '3', '4', '5', '6', '7', '8', '9', '10', ], ['prompt' => '']) ?>
 
     <?= $form->field($model, 'billingstatement_id')->textInput() ?>
 

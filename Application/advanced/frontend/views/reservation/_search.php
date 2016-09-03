@@ -23,11 +23,11 @@ use yii\widgets\ActiveForm;
 
     <?= $form->field($model, 'check_out') ?>
 
-    <?= $form->field($model, 'rooms') ?>
+    <?= $form->field($model, 'type_of_room') ?>
 
-    <?php // echo $form->field($model, 'adults') ?>
+    <?php // echo $form->field($model, 'number_of_adults') ?>
 
-    <?php // echo $form->field($model, 'kids') ?>
+    <?php // echo $form->field($model, 'number_of_kids') ?>
 
     <?php // echo $form->field($model, 'billingstatement_id') ?>
 
