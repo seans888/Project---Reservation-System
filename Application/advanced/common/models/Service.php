@@ -8,7 +8,7 @@ use Yii;
  * This is the model class for table "service".
  *
  * @property integer $id
- * @property string $name
+ * @property string $service_availed
  * @property string $cost
  * @property integer $employee_id
  * @property integer $customer_id
@@ -38,7 +38,7 @@ class Service extends \yii\db\ActiveRecord
         return [
             [['employee_id', 'customer_id', 'billingStatement_id', 'room_id'], 'required'],
             [['employee_id', 'customer_id', 'billingStatement_id', 'room_id'], 'integer'],
-            [['name'], 'string', 'max' => 30],
+            [['service_availed'], 'string', 'max' => 80],
             [['cost'], 'string', 'max' => 45],
             [['billingStatement_id'], 'exist', 'skipOnError' => true, 'targetClass' => Billingstatement::className(), 'targetAttribute' => ['billingStatement_id' => 'id']],
             [['customer_id'], 'exist', 'skipOnError' => true, 'targetClass' => Customer::className(), 'targetAttribute' => ['customer_id' => 'id']],
@@ -54,7 +54,7 @@ class Service extends \yii\db\ActiveRecord
     {
         return [
             'id' => 'ID',
-            'name' => 'Name',
+            'service_availed' => 'Service Availed',
             'cost' => 'Cost',
             'employee_id' => 'Employee ID',
             'customer_id' => 'Customer ID',

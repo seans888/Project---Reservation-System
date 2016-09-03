@@ -34,8 +34,8 @@ class CustomerHasReservation extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
+            [['date_of_arrival', 'date_of_departure', 'desired_room_type', 'reservation_id', 'customer_id'], 'required'],
             [['date_of_arrival', 'date_of_departure'], 'safe'],
-            [['reservation_id', 'customer_id'], 'required'],
             [['reservation_id', 'customer_id'], 'integer'],
             [['desired_room_type'], 'string', 'max' => 20],
             [['requests'], 'string', 'max' => 50],

@@ -11,9 +11,9 @@ use Yii;
  * @property string $reservation_date
  * @property string $check_in
  * @property string $check_out
- * @property string $rooms
- * @property string $adults
- * @property string $kids
+ * @property string $type_of_room
+ * @property string $number_of_adults
+ * @property string $number_of_kids
  * @property integer $billingstatement_id
  *
  * @property CustomerHasReservation[] $customerHasReservations
@@ -36,11 +36,10 @@ class Reservation extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
+            [['reservation_date', 'check_in', 'check_out', 'type_of_room', 'number_of_adults', 'number_of_kids', 'billingstatement_id'], 'required'],
             [['reservation_date', 'check_in', 'check_out'], 'safe'],
-            [['billingstatement_id'], 'required'],
+            [['type_of_room', 'number_of_adults', 'number_of_kids'], 'string'],
             [['billingstatement_id'], 'integer'],
-            [['rooms'], 'string', 'max' => 10],
-            [['adults', 'kids'], 'string', 'max' => 50],
             [['billingstatement_id'], 'exist', 'skipOnError' => true, 'targetClass' => Billingstatement::className(), 'targetAttribute' => ['billingstatement_id' => 'id']],
         ];
     }
@@ -55,9 +54,9 @@ class Reservation extends \yii\db\ActiveRecord
             'reservation_date' => 'Reservation Date',
             'check_in' => 'Check In',
             'check_out' => 'Check Out',
-            'rooms' => 'Rooms',
-            'adults' => 'Adults',
-            'kids' => 'Kids',
+            'type_of_room' => 'Type Of Room',
+            'number_of_adults' => 'Number Of Adults',
+            'number_of_kids' => 'Number Of Kids',
             'billingstatement_id' => 'Billingstatement ID',
         ];
     }

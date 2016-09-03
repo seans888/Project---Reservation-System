@@ -19,7 +19,7 @@ class ReservationSearch extends Reservation
     {
         return [
             [['id', 'billingstatement_id'], 'integer'],
-            [['reservation_date', 'check_in', 'check_out', 'rooms', 'adults', 'kids'], 'safe'],
+            [['reservation_date', 'check_in', 'check_out', 'type_of_room', 'number_of_adults', 'number_of_kids'], 'safe'],
         ];
     }
 
@@ -66,9 +66,9 @@ class ReservationSearch extends Reservation
             'billingstatement_id' => $this->billingstatement_id,
         ]);
 
-        $query->andFilterWhere(['like', 'rooms', $this->rooms])
-            ->andFilterWhere(['like', 'adults', $this->adults])
-            ->andFilterWhere(['like', 'kids', $this->kids]);
+        $query->andFilterWhere(['like', 'type_of_room', $this->type_of_room])
+            ->andFilterWhere(['like', 'number_of_adults', $this->number_of_adults])
+            ->andFilterWhere(['like', 'number_of_kids', $this->number_of_kids]);
 
         return $dataProvider;
     }
