@@ -32,7 +32,7 @@ use yii\widgets\ActiveForm;
 
     <?= $form->field($model, 'department')->textInput(['maxlength' => true]) ?>
 
-    <?= $form->field($model, 'position')->dropDownList([ 'Regular' => 'Regular', 'Manager' => 'Manager', ], ['prompt' => '']) ?>
+    <?= $form->field($model, 'position')->dropDownList([ 'Regular' => 'Regular', 'Manager' => 'Manager', ], ['prompt' => 'Select Position']) ?>
 
     <div class="form-group">
         <?= Html::submitButton($model->isNewRecord ? 'Create' : 'Update', ['class' => $model->isNewRecord ? 'btn btn-success' : 'btn btn-primary']) ?>
