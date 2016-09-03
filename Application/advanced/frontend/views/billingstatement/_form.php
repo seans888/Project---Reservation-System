@@ -26,7 +26,7 @@ use common\models\Customer;
     <?= $form->field($model, 'employee_id')->textInput() ?>
 
     <?= $form->field($model, 'customer_id')->dropDownList(
-        ArrayHelper::map( Customer::find()->all(), 'id', 'name' ),
+        ArrayHelper::map( Customer::find()->all(), 'id', 'last_name' ),
         [
             'prompt'=>'Select Customer',
             //'onchange'=>
