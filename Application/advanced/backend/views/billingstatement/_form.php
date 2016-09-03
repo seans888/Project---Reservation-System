@@ -18,7 +18,7 @@ use yii\widgets\ActiveForm;
 
     <?= $form->field($model, 'date_of_payment')->textInput() ?>
 
-    <?= $form->field($model, 'status')->textInput(['maxlength' => true]) ?>
+    <?= $form->field($model, 'status')->dropDownList([ 'Fully Paid' => 'Fully Paid', 'Partially Paid' => 'Partially Paid', 'Unpaid' => 'Unpaid', ], ['prompt' => 'Select Status']) ?>
 
     <?= $form->field($model, 'employee_id')->textInput() ?>
 
