@@ -32,8 +32,8 @@ class ReservationHasRoom extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
+            [['reservation_start_date', 'reservation_end_date', 'reservation_id', 'room_id'], 'required'],
             [['reservation_start_date', 'reservation_end_date'], 'safe'],
-            [['reservation_id', 'room_id'], 'required'],
             [['reservation_id', 'room_id'], 'integer'],
             [['reservation_id'], 'exist', 'skipOnError' => true, 'targetClass' => Reservation::className(), 'targetAttribute' => ['reservation_id' => 'id']],
             [['room_id'], 'exist', 'skipOnError' => true, 'targetClass' => Room::className(), 'targetAttribute' => ['room_id' => 'id']],
