@@ -60,6 +60,7 @@ class RoomSearch extends Room
         // grid filtering conditions
         $query->andFilterWhere([
             'id' => $this->id,
+
             'billingStatement_id' => $this->billingStatement_id,
         ]);
 

@@ -12,10 +12,10 @@ use Yii;
  * @property string $rate
  * @property string $capacity
  * @property string $availability
- * @property integer $billing statement_id
+ * @property integer $billingstatement_id
  *
  * @property ReservationHasRoom[] $reservationHasRooms
- * @property Billingstatement $billingStatement
+ * @property Billingstatement $billingstatement
  * @property Service[] $services
  */
 class Room extends \yii\db\ActiveRecord
@@ -34,11 +34,11 @@ class Room extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['type', 'capacity', 'availability', 'billing statement_id'], 'required'],
+            [['type', 'rate', 'capacity', 'availability', 'billingstatement_id'], 'required'],
             [['type', 'capacity', 'availability'], 'string'],
-            [['billing statement_id'], 'integer'],
+            [['billingstatement_id'], 'integer'],
             [['rate'], 'string', 'max' => 20],
-            [['billing statement_id'], 'exist', 'skipOnError' => true, 'targetClass' => Billingstatement::className(), 'targetAttribute' => ['billing statement_id' => 'id']],
+            [['billingstatement_id'], 'exist', 'skipOnError' => true, 'targetClass' => Billingstatement::className(), 'targetAttribute' => ['billingstatement_id' => 'id']],
         ];
     }
 
@@ -53,7 +53,7 @@ class Room extends \yii\db\ActiveRecord
             'rate' => 'Rate',
             'capacity' => 'Capacity',
             'availability' => 'Availability',
-            'billing statement_id' => 'Billing Statement ID',
+            'billingstatement_id' => 'Billingstatement ID',
         ];
     }
 
@@ -68,9 +68,9 @@ class Room extends \yii\db\ActiveRecord
     /**
      * @return \yii\db\ActiveQuery
      */
-    public function getBillingStatement()
+    public function getBillingstatement()
     {
-        return $this->hasOne(Billingstatement::className(), ['id' => 'billing statement_id']);
+        return $this->hasOne(Billingstatement::className(), ['id' => 'billingstatement_id']);
     }
 
     /**
