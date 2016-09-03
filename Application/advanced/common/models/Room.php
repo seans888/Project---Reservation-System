@@ -10,12 +10,12 @@ use Yii;
  * @property integer $id
  * @property string $type
  * @property string $rate
- * @property integer $capacity
+ * @property string $capacity
  * @property string $availability
- * @property integer $billingStatement_id
+ * @property integer $billing statement_id
  *
  * @property ReservationHasRoom[] $reservationHasRooms
- * @property Billingstatement $billingstatement
+ * @property Billingstatement $billingStatement
  * @property Service[] $services
  */
 class Room extends \yii\db\ActiveRecord
@@ -34,11 +34,11 @@ class Room extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['capacity', 'billingStatement_id'], 'integer'],
-            [['billingStatement_id'], 'required'],
-            [['type', 'availability'], 'string', 'max' => 45],
+            [['type', 'capacity', 'availability', 'billing statement_id'], 'required'],
+            [['type', 'capacity', 'availability'], 'string'],
+            [['billing statement_id'], 'integer'],
             [['rate'], 'string', 'max' => 20],
-            [['billingstatement_id'], 'exist', 'skipOnError' => true, 'targetClass' => Billingstatement::className(), 'targetAttribute' => ['billingstatement_id' => 'id']],
+            [['billing statement_id'], 'exist', 'skipOnError' => true, 'targetClass' => Billingstatement::className(), 'targetAttribute' => ['billing statement_id' => 'id']],
         ];
     }
 
@@ -53,7 +53,7 @@ class Room extends \yii\db\ActiveRecord
             'rate' => 'Rate',
             'capacity' => 'Capacity',
             'availability' => 'Availability',
-            'billingStatement_id' => 'Billing Statement ID',
+            'billing statement_id' => 'Billing Statement ID',
         ];
     }
 
@@ -68,9 +68,9 @@ class Room extends \yii\db\ActiveRecord
     /**
      * @return \yii\db\ActiveQuery
      */
-    public function getBillingstatement()
+    public function getBillingStatement()
     {
-        return $this->hasOne(Billingstatement::className(), ['id' => 'billingstatement_id']);
+        return $this->hasOne(Billingstatement::className(), ['id' => 'billing statement_id']);
     }
 
     /**
