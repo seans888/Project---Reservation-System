@@ -12,7 +12,7 @@ use yii\widgets\ActiveForm;
 
     <?php $form = ActiveForm::begin(); ?>
 
-    <?= $form->field($model, 'mode_of_payment')->textInput(['maxlength' => true]) ?>
+    <?= $form->field($model, 'mode_of_payment')->dropDownList([ 'Cash' => 'Cash', 'Cheque' => 'Cheque', 'Credit Card' => 'Credit Card', ], ['prompt' => 'Select Mode of Payment']) ?>
 
     <?= $form->field($model, 'amount')->textInput(['maxlength' => true]) ?>
 
