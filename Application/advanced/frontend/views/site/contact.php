@@ -74,8 +74,8 @@ AppAsset::register($this);
 						['label' => 'About', 'url' => ['/site/about']],
 						['label' => 'Contact', 'url' => ['/site/contact']],
 						['label' => 'Services', 'items' => [
-							['label' => 'Reservation', 'url' => ['reservation/index']],
-							['label' => 'Customer', 'url' => ['customer/index']],
+							['label' => 'Reservation', 'url' => ['reservation/create']],
+							['label' => 'Customer', 'url' => ['customer/create']],
 							]],
 						];
 					if (Yii::$app->user->isGuest) {

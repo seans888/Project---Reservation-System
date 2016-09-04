@@ -130,8 +130,8 @@ IndexAsset::register($this);
 							['label' => 'About', 'url' => ['/site/about']],
 							['label' => 'Contact', 'url' => ['/site/contact']],
 							['label' => 'Services', 'items' => [
-								['label' => 'Reservation', 'url' => ['reservation/index']],
-								['label' => 'Customer', 'url' => ['customer/index']],
+								['label' => 'Reservation', 'url' => ['reservation/create']],
+								['label' => 'Customer', 'url' => ['customer/create']],
 								]],
 							];
 						if (Yii::$app->user->isGuest) {
@@ -314,7 +314,7 @@ IndexAsset::register($this);
                     <p align = "center">Click Here to Book Now. Best Price Guarantee.</p>
                 </div>
                 <div class="col-md-4">
-                    <a class="btn btn-lg btn-default btn-block" href="http://localhost/advanced/frontend/web/index.php?r=customer%2Findex">Book Now</a>
+                    <a class="btn btn-lg btn-default btn-block" href="http://localhost/advanced/frontend/web/index.php?r=customer%2Fcreate">Book Now</a>
                 </div>
             </div>
         </div>
