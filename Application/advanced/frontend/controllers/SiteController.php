@@ -74,6 +74,8 @@ class SiteController extends Controller
     {
 		$this->layout='indexLayout';
         return $this->render('index');
+		
+		
     }
 
     /**

@@ -1,10 +1,18 @@
 <?php
 
-/* @var $this yii\web\View */
+/* @var $this \yii\web\View */
+/* @var $content string */
 
-/*use yii\helpers\Html;*/
+use yii\helpers\Html;
+use yii\bootstrap\Nav;
+use yii\bootstrap\NavBar;
+use yii\widgets\Breadcrumbs;
+use frontend\assets\AppAsset;
+use common\widgets\Alert;
 
-$this->title = 'About';
+AppAsset::register($this);
+?>
+
 
 
 <!DOCTYPE html>
@@ -55,30 +63,42 @@ $this->title = 'About';
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
-                    <li class="active">
-                        <a href="http://localhost/advanced/frontend/web">Home</a>
-                    </li>
-                    <li class="active">
-                        <a href="about.html">About</a>
-                    </li>
-                    <li>
-                        <a href="contact.html">Contact</a>
-                    </li>
-                    
-                    
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Services <b class="caret"></b></a>
-                        <ul class="dropdown-menu">
-                            <li>
-                                <a href="index.php?r=reservation">Reservation</a>
-                            </li>
-                            <li>
-                                <a href="index.php?r=customer">Customer</a>
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
+                 <?php
+						NavBar::begin([
+							'brandLabel' => 'CALIMBORACAY',
+							'brandUrl' => Yii::$app->homeUrl,
+							'options' => [
+								'class' => 'navbar-inverse navbar-fixed-top',
+							],
+						]);
+						$menuItems = [
+							['label' => 'Home', 'url' => ['/site/index']],
+							['label' => 'About', 'url' => ['/site/about']],
+							['label' => 'Contact', 'url' => ['/site/contact']],
+							['label' => 'Services', 'items' => [
+								['label' => 'Reservation', 'url' => ['reservation/index']],
+								['label' => 'Customer', 'url' => ['customer/index']],
+								]],
+							];
+						if (Yii::$app->user->isGuest) {
+							//$menuItems[] = ['label' => 'Signup', 'url' => ['/site/signup']];
+							//$menuItems[] = ['label' => 'Login', 'url' => ['/site/login']];
+						} else {
+							$menuItems[] = '<li>'
+								. Html::beginForm(['/site/logout'], 'post')
+								. Html::submitButton(
+									'Logout (' . Yii::$app->user->identity->username . ')',
+									['class' => 'btn btn-link']
+								)
+								. Html::endForm()
+								. '</li>';
+						}
+						echo Nav::widget([
+							'options' => ['class' => 'navbar-nav navbar-right'],
+							'items' => $menuItems,
+						]);
+						NavBar::end();
+    ?>
             </div>
             <!-- /.navbar-collapse -->
         </div>

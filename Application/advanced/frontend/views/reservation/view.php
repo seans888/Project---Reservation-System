@@ -35,7 +35,7 @@ $this->params['breadcrumbs'][] = $this->title;
             'type_of_room',
             'number_of_adults',
             'number_of_kids',
-            'billingstatement_id',
+            'billingstatement_id.mode_of_payment',
         ],
     ]) ?>
 

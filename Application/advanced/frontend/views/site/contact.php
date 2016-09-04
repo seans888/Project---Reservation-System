@@ -1,3 +1,18 @@
+<?php
+
+/* @var $this \yii\web\View */
+/* @var $content string */
+
+use yii\helpers\Html;
+use yii\bootstrap\Nav;
+use yii\bootstrap\NavBar;
+use yii\widgets\Breadcrumbs;
+use frontend\assets\AppAsset;
+use common\widgets\Alert;
+
+AppAsset::register($this);
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -46,39 +61,43 @@
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
-                    <li>
-                        <a href="about.html">About</a>
-                    </li>
-                    <li>
-                        <a href="services.html">Services</a>
-                    </li>
-                    <li class="active">
-                        <a href="contact.html">Contact</a>
-                    </li>
-                    
-                    
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Other Pages <b class="caret"></b></a>
-                        <ul class="dropdown-menu">
-                            <li>
-                                <a href="full-width.html">Full Width Page</a>
-                            </li>
-                            <li>
-                                <a href="sidebar.html">Sidebar Page</a>
-                            </li>
-                            <li>
-                                <a href="faq.html">FAQ</a>
-                            </li>
-                            <li>
-                                <a href="404.html">404</a>
-                            </li>
-                            <li>
-                                <a href="pricing.html">Pricing Table</a>
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
+               <?php
+					NavBar::begin([
+						'brandLabel' => 'CALIMBORACAY',
+						'brandUrl' => Yii::$app->homeUrl,
+						'options' => [
+							'class' => 'navbar-inverse navbar-fixed-top',
+						],
+					]);
+					$menuItems = [
+						['label' => 'Home', 'url' => ['/site/index']],
+						['label' => 'About', 'url' => ['/site/about']],
+						['label' => 'Contact', 'url' => ['/site/contact']],
+						['label' => 'Services', 'items' => [
+							['label' => 'Reservation', 'url' => ['reservation/index']],
+							['label' => 'Customer', 'url' => ['customer/index']],
+							]],
+						];
+					if (Yii::$app->user->isGuest) {
+						//$menuItems[] = ['label' => 'Signup', 'url' => ['/site/signup']];
+						//$menuItems[] = ['label' => 'Login', 'url' => ['/site/login']];
+					} else {
+						$menuItems[] = '<li>'
+							. Html::beginForm(['/site/logout'], 'post')
+							. Html::submitButton(
+								'Logout (' . Yii::$app->user->identity->username . ')',
+								['class' => 'btn btn-link']
+							)
+							. Html::endForm()
+							. '</li>';
+					}
+					echo Nav::widget([
+						'options' => ['class' => 'navbar-nav navbar-right'],
+						'items' => $menuItems,
+					]);
+					NavBar::end();
+					?>
+    
             </div>
             <!-- /.navbar-collapse -->
         </div>

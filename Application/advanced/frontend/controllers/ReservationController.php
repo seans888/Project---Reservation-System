@@ -53,7 +53,10 @@ class ReservationController extends Controller
     {
         return $this->render('view', [
             'model' => $this->findModel($id),
+			
+			 
         ]);
+		
     }
 
     /**
