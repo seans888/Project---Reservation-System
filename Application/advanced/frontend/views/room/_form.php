@@ -22,7 +22,7 @@ use common\models\BillingStatement;
 
     <?= $form->field($model, 'availability')->dropDownList([ 'Available' => 'Available', 'Not Available' => 'Not Available', ], ['prompt' => 'Select Availability']) ?>
 
-    <?= $form->field($model, 'billingstatement_id')->dropDownList(
+    <?= $form->field($model, 'billingStatement_id')->dropDownList(
         ArrayHelper::map( BillingStatement::find()->all(), 'id', 'mode_of_payment' ),
         [
             'prompt'=>'Select Mode of Payment',
