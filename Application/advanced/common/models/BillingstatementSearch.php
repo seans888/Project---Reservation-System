@@ -60,7 +60,7 @@ class BillingstatementSearch extends Billingstatement
 
         // grid filtering conditions
         $query->andFilterWhere([
-            'id' => $this->id,
+        //    'id' => $this->id,
             'amount' => $this->amount,
             'date_of_payment' => $this->date_of_payment,
             'employee_id' => $this->employee_id,

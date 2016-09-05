@@ -24,12 +24,12 @@ $this->params['breadcrumbs'][] = $this->title;
         'columns' => [
             ['class' => 'yii\grid\SerialColumn'],
 
-            //'id',
+        //    'id',
             'mode_of_payment',
             'amount',
             'date_of_payment',
             'status',
-            // 'employee_id',
+            'employee.last_name',
             // 'customer_id',
 
             ['class' => 'yii\grid\ActionColumn'],
