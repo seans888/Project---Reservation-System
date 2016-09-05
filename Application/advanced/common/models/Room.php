@@ -12,10 +12,10 @@ use Yii;
  * @property string $rate
  * @property string $capacity
  * @property string $availability
- * @property integer $billingstatement_id
+ * @property integer $Billingstatement_id
  *
  * @property ReservationHasRoom[] $reservationHasRooms
- * @property Billingstatement $billingstatement
+ * @property Billingstatement $Billingstatement
  * @property Service[] $services
  */
 class Room extends \yii\db\ActiveRecord
@@ -34,11 +34,11 @@ class Room extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['type', 'rate', 'capacity', 'availability', 'billingstatement_id'], 'required'],
+            [['type', 'rate', 'capacity', 'availability', 'Billingstatement_id'], 'required'],
             [['type', 'capacity', 'availability'], 'string'],
-            [['billingstatement_id'], 'integer'],
+            [['Billingstatement_id'], 'integer'],
             [['rate'], 'string', 'max' => 20],
-            [['billingstatement_id'], 'exist', 'skipOnError' => true, 'targetClass' => Billingstatement::className(), 'targetAttribute' => ['billingstatement_id' => 'id']],
+            [['Billingstatement_id'], 'exist', 'skipOnError' => true, 'targetClass' => Billingstatement::className(), 'targetAttribute' => ['Billingstatement_id' => 'id']],
         ];
     }
 
@@ -53,7 +53,7 @@ class Room extends \yii\db\ActiveRecord
             'rate' => 'Rate',
             'capacity' => 'Capacity',
             'availability' => 'Availability',
-            'billingstatement_id' => 'Billingstatement ID',
+            'Billingstatement_id' => 'Billingstatement ID',
         ];
     }
 
@@ -70,7 +70,7 @@ class Room extends \yii\db\ActiveRecord
      */
     public function getBillingstatement()
     {
-        return $this->hasOne(Billingstatement::className(), ['id' => 'billingstatement_id']);
+        return $this->hasOne(Billingstatement::className(), ['id' => 'Billingstatement_id']);
     }
 
     /**
