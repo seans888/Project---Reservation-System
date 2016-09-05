@@ -30,7 +30,8 @@ use common\models\BillingStatement;
             //  '$.post("index.php?r=work-orders/lists&id='.'" +$(this).val(), function( data ) {
             //      $( "select#model-contact" ).html( data );
             //  });'
-        ]); ?>  
+        ]); ?> 
+
 
 
     <div class="form-group">
