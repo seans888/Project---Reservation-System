@@ -71,6 +71,14 @@ IndexAsset::register($this);
 
 </style>
 
+<style>
+  .carousel-inner > .item > img,
+  .carousel-inner > .item > a > img {
+      width: 2000px;
+	  height: 500px;
+  }
+  </style>
+
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -101,106 +109,37 @@ IndexAsset::register($this);
 </head>
 
 <body>
+<div class="container">
+  <br>
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+      <li data-target="#myCarousel" data-slide-to="3"></li>
+    </ol>
 
-<!-- Header Carousel -->
-    <header id="myCarousel" class="carousel slide">
-        <!-- Indicators -->
-        <ol class="carousel-indicators">
-            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-            <li data-target="#myCarousel" data-slide-to="1"></li>
-            <li data-target="#myCarousel" data-slide-to="2"></li>
-        </ol>
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+      <div class="item active">
+        <img src="https://static.pexels.com/photos/1029/landscape-mountains-nature-clouds.jpg" width="460" height="345">
+      </div>
 
-        <!-- Wrapper for slides -->
-        <div class="carousel-inner">
-            <div class="item active">
-                <div class="fill" style="background-image:url('http://i1156.photobucket.com/albums/p567/kvlee14/slide-img30_zpskhwkerhk.png');"></div>
-                <div class="carousel-caption">
-                    <h2>Relax</h2>
-                </div>
-            </div>
-            <div class="item">
-                <div class="fill" style="background-image:url('https://www.wakatobi.com/fileadmin/wakatobi/Images/The_Resort/resort-intro-dl_03.jpg');"></div>
-                <div class="carousel-caption">
-                    <h2>Explore</h2>
-                </div>
-            </div>
-            <div class="item">
-                <div class="fill" style="background-image:url('http://eaglepointresort.com.ph/wp-content/uploads/eprbanner1.png');"></div>
-                <div class="carousel-caption">
-                    <h2>Reminisce</h2>
-                </div>
-            </div>
-        </div>
+      <div class="item">
+        <img src="http://i1156.photobucket.com/albums/p567/kvlee14/CSPROJ/Image3_zpsr4fkyavo.png" width="460" height="345">
+      </div>
+    
+      <div class="item">
+        <img src="http://i1156.photobucket.com/albums/p567/kvlee14/CSPROJ/Image3_zpsr4fkyavo.png" width="460" height="345">
+      </div>
 
-        <!-- Controls -->
-        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-            <span class="icon-prev"></span>
-        </a>
-        <a class="right carousel-control" href="#myCarousel" data-slide="next">
-            <span class="icon-next"></span>
-        </a>
-    </header>
-
-    <!-- Navigation -->
-    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-        <div class="container">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="http://localhost/advanced/frontend/web/index.php?site%2Findex">CALIMBORACAY</a>
-            </div>
-
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <?php
-						NavBar::begin([
-							'brandLabel' => 'Tarangban Falls & Calimbo Farm Resort',
-							'brandUrl' => Yii::$app->homeUrl,
-							'options' => [
-								'class' => 'navbar-inverse navbar-fixed-top',
-							],
-						]);
-						$menuItems = [
-							['label' => 'Home', 'url' => ['/site/index']],
-							['label' => 'About', 'url' => ['/site/about']],
-							['label' => 'Contact', 'url' => ['/site/contact']],
-							['label' => 'Services', 'items' => [
-								['label' => 'Reservation', 'url' => ['reservation/create']],
-								['label' => 'Customer', 'url' => ['customer/create']],
-								]],
-							];
-						if (Yii::$app->user->isGuest) {
-							//$menuItems[] = ['label' => 'Signup', 'url' => ['/site/signup']];
-							//$menuItems[] = ['label' => 'Login', 'url' => ['/site/login']];
-						} else {
-							$menuItems[] = '<li>'
-								. Html::beginForm(['/site/logout'], 'post')
-								. Html::submitButton(
-									'Logout (' . Yii::$app->user->identity->username . ')',
-									['class' => 'btn btn-link']
-								)
-								. Html::endForm()
-								. '</li>';
-						}
-						echo Nav::widget([
-							'options' => ['class' => 'navbar-nav navbar-right'],
-							'items' => $menuItems,
-						]);
-						NavBar::end();
-					?>
-            </div>
-            <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container -->
-    </nav>
-
-
+      <div class="item">
+        <img src="http://i1156.photobucket.com/albums/p567/kvlee14/CSPROJ/Image3_zpsr4fkyavo.png" width="460" height="345">
+      </div>
+    </div>
+  </div>
+</div>
 
     <!-- Page Content -->
     <div class="container">
