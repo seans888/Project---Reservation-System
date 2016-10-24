@@ -79,6 +79,15 @@ IndexAsset::register($this);
   }
   </style>
 
+  <style>
+  .navbar-inverse{
+    margin-top: 50px;
+    margin-left: 350px;
+    margin-right: 350px;
+    padding-left:100px;
+  }
+  </style>
+
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
