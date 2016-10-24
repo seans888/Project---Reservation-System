@@ -26,7 +26,7 @@ AppAsset::register($this);
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Calimboracay</title>
+    <title>Tarangban Falls</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -65,7 +65,7 @@ AppAsset::register($this);
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                  <?php
 						NavBar::begin([
-							'brandLabel' => 'CALIMBORACAY',
+							'brandLabel' => 'Tarangban Falls & Calimbo Farm Resort',
 							'brandUrl' => Yii::$app->homeUrl,
 							'options' => [
 								'class' => 'navbar-inverse navbar-fixed-top',
@@ -129,7 +129,7 @@ AppAsset::register($this);
                 <img class="img-responsive" src="http://conradhotels3.hilton.com/resources/media/ch/en_US/img/offers/information/image/100035919/CN_exteriorhotel1_750x450_FitToBoxSmallDimension_Center.jpg" alt="">
             </div>
             <div class="col-md-6">
-                <h2>About CALIMBORACAY</h2>
+                <h2>About the Calimbo Farm Resort</h2>
                 <p align ="justify">The Resort Reservation System, in cooperation with Mr. Alfredo Calimbo, focuses on the reservation process of the resort hotel. Its purpose is, first, to make the reservation process more convenient and faster for the sake of the customers, management and client. Second, it uses to help customers to reserve or to book without being hassled by a pushy sales representative. And lastly, it also uses to conduct transactions where only the client and management are the ones who monitor the cash flow.</p>
             </div>
         </div>

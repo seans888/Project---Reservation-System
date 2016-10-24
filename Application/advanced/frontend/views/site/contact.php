@@ -63,7 +63,7 @@ AppAsset::register($this);
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                <?php
 					NavBar::begin([
-						'brandLabel' => 'CALIMBORACAY',
+						'brandLabel' => 'Tarangban Falls & Calimbo Farm Resort',
 						'brandUrl' => Yii::$app->homeUrl,
 						'options' => [
 							'class' => 'navbar-inverse navbar-fixed-top',
@@ -111,7 +111,7 @@ AppAsset::register($this);
         <div class="row">
             <div class="col-lg-12">
                 <h1 class="page-header">Contact
-                    <small>Subheading</small>
+                    <small></small>
                 </h1>
                 <ol class="breadcrumb">
                     <li><a href="http://localhost/advanced/frontend/web/">Home</a>
@@ -141,7 +141,7 @@ AppAsset::register($this);
                     <abbr title="Email">E</abbr>: <a href="mailto:name@example.com">name@example.com</a>
                 </p>
                 <p><i class="fa fa-clock-o"></i> 
-                    <abbr title="Hours">H</abbr>: Monday - Friday: 9:00 AM to 5:00 PM</p>
+                    <abbr title="Operating Hours">H</abbr>: Monday - Friday: 9:00 AM to 5:00 PM</p>
                 <ul class="list-unstyled list-inline list-social-icons">
                     <li>
                         <a href="#"><i class="fa fa-facebook-square fa-2x"></i></a>
@@ -206,7 +206,7 @@ AppAsset::register($this);
         <footer>
             <div class="row">
                 <div class="col-lg-12">
-                    <p>Copyright &copy; Calimboracay 2016</p>
+                    <p>Copyright &copy; Calimbo Farm Resort 2016</p>
                 </div>
             </div>
         </footer>

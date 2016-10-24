@@ -102,6 +102,46 @@ IndexAsset::register($this);
 
 <body>
 
+<!-- Header Carousel -->
+    <header id="myCarousel" class="carousel slide">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+            <div class="item active">
+                <div class="fill" style="background-image:url('http://atmosphereresorts.com/wp-content/themes/atmosphere-resorts/images/home/01.jpg');"></div>
+                <div class="carousel-caption">
+                    <h2>Relax</h2>
+                </div>
+            </div>
+            <div class="item">
+                <div class="fill" style="background-image:url('https://www.wakatobi.com/fileadmin/wakatobi/Images/The_Resort/resort-intro-dl_03.jpg');"></div>
+                <div class="carousel-caption">
+                    <h2>Explore</h2>
+                </div>
+            </div>
+            <div class="item">
+                <div class="fill" style="background-image:url('http://eaglepointresort.com.ph/wp-content/uploads/eprbanner1.png');"></div>
+                <div class="carousel-caption">
+                    <h2>Reminisce</h2>
+                </div>
+            </div>
+        </div>
+
+        <!-- Controls -->
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+            <span class="icon-prev"></span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+            <span class="icon-next"></span>
+        </a>
+    </header>
+
     <!-- Navigation -->
     <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
         <div class="container">
@@ -115,11 +155,12 @@ IndexAsset::register($this);
                 </button>
                 <a class="navbar-brand" href="http://localhost/advanced/frontend/web/index.php?site%2Findex">CALIMBORACAY</a>
             </div>
+
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <?php
 						NavBar::begin([
-							'brandLabel' => 'CALIMBORACAY',
+							'brandLabel' => 'Tarangban Falls & Calimbo Farm Resort',
 							'brandUrl' => Yii::$app->homeUrl,
 							'options' => [
 								'class' => 'navbar-inverse navbar-fixed-top',
@@ -159,45 +200,7 @@ IndexAsset::register($this);
         <!-- /.container -->
     </nav>
 
-    <!-- Header Carousel -->
-    <header id="myCarousel" class="carousel slide">
-        <!-- Indicators -->
-        <ol class="carousel-indicators">
-            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-            <li data-target="#myCarousel" data-slide-to="1"></li>
-            <li data-target="#myCarousel" data-slide-to="2"></li>
-        </ol>
 
-        <!-- Wrapper for slides -->
-        <div class="carousel-inner">
-            <div class="item active">
-                <div class="fill" style="background-image:url('http://atmosphereresorts.com/wp-content/themes/atmosphere-resorts/images/home/01.jpg');"></div>
-                <div class="carousel-caption">
-                    <h2>Relax</h2>
-                </div>
-            </div>
-            <div class="item">
-                <div class="fill" style="background-image:url('https://www.wakatobi.com/fileadmin/wakatobi/Images/The_Resort/resort-intro-dl_03.jpg');"></div>
-                <div class="carousel-caption">
-                    <h2>Explore</h2>
-                </div>
-            </div>
-            <div class="item">
-                <div class="fill" style="background-image:url('http://eaglepointresort.com.ph/wp-content/uploads/eprbanner1.png');"></div>
-                <div class="carousel-caption">
-                    <h2>Reminisce</h2>
-                </div>
-            </div>
-        </div>
-
-        <!-- Controls -->
-        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-            <span class="icon-prev"></span>
-        </a>
-        <a class="right carousel-control" href="#myCarousel" data-slide="next">
-            <span class="icon-next"></span>
-        </a>
-    </header>
 
     <!-- Page Content -->
     <div class="container">
