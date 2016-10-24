@@ -114,7 +114,7 @@ IndexAsset::register($this);
         <!-- Wrapper for slides -->
         <div class="carousel-inner">
             <div class="item active">
-                <div class="fill" style="background-image:url('http://atmosphereresorts.com/wp-content/themes/atmosphere-resorts/images/home/01.jpg');"></div>
+                <div class="fill" style="background-image:url('http://i1156.photobucket.com/albums/p567/kvlee14/slide-img30_zpskhwkerhk.png');"></div>
                 <div class="carousel-caption">
                     <h2>Relax</h2>
                 </div>
