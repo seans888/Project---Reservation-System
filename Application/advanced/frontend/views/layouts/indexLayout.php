@@ -82,9 +82,12 @@ IndexAsset::register($this);
   <style>
   .navbar-inverse{
     margin-top: 50px;
-    margin-left: 350px;
-    margin-right: 350px;
-    padding-left:100px;
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+
+  .container-nav{
+    margin-top: 50px;
   }
   </style>
 
@@ -150,6 +153,7 @@ IndexAsset::register($this);
   </div>
 </div>
 
+<container class = "container-nav">
 <nav class="navbar navbar-inverse">
   <div class="container-fluid">
     <div class="navbar-header">
@@ -158,7 +162,7 @@ IndexAsset::register($this);
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="#">WebSiteName</a>
+      <a class="navbar-brand" href="#">Calimbo Farm Resort</a>
     </div>
     
       <ul class="nav navbar-nav">
@@ -181,6 +185,7 @@ IndexAsset::register($this);
     </div>
   </div>
 </nav>
+</container>
 
     <!-- Page Content -->
     <div class="container">
@@ -189,7 +194,7 @@ IndexAsset::register($this);
         <div class="row">
             <div class="col-lg-12">
                 <h1 class="page-header">
-                    Welcome to Calimboracay
+                    Welcome to Calimbo Farm Resort!
                 </h1>
             </div>
             <div class="col-md-4">
