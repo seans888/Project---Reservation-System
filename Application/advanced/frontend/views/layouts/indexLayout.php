@@ -97,7 +97,7 @@ IndexAsset::register($this);
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Calimboracay</title>
+    <title>Calimbo Farm Resort</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -319,7 +319,7 @@ IndexAsset::register($this);
         <footer>
             <div class="row">
                 <div class="col-lg-12">
-                    <p>Copyright &copy; Calimboracay 2016</p>
+                    <p>Copyright &copy; Calimbo Farm Resort 2016</p>
                 </div>
             </div>
         </footer>
