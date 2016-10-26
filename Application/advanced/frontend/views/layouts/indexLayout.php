@@ -97,7 +97,7 @@ IndexAsset::register($this);
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Calimbo Farm Resort</title>
+    <title>TARANGBAN FALLS & CALIMBO FARM RESORT</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -162,7 +162,7 @@ IndexAsset::register($this);
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="#">Calimbo Farm Resort</a>
+     
     </div>
     
       <ul class="nav navbar-nav">
@@ -319,7 +319,7 @@ IndexAsset::register($this);
         <footer>
             <div class="row">
                 <div class="col-lg-12">
-                    <p>Copyright &copy; Calimbo Farm Resort 2016</p>
+                    <p>Copyright &copy; TARANGBAN FALLS & CALIMBO FARM RESORT 2016</p>
                 </div>
             </div>
         </footer>
