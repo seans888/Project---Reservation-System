@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Calimboracay</title>
+    <title>CTARANGBAN FALLS & CALIMBO FARM RESORT</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -42,7 +42,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="http://localhost/advanced/frontend/web/">CALIMBORACAY</a>
+                <a class="navbar-brand" href="http://localhost/advanced/frontend/web/">TARANGBAN FALLS & CALIMBO FARM RESORT</a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -178,7 +178,7 @@
         <footer>
             <div class="row">
                 <div class="col-lg-12">
-                    <p>Copyright &copy; Calimboracay 2016</p>
+                    <p>Copyright &copy; TARANGBAN FALLS & CALIMBO FARM RESORT 2016</p>
                 </div>
             </div>
         </footer>
