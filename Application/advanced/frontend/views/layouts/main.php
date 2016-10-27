@@ -28,7 +28,7 @@ AppAsset::register($this);
 <div class="wrap">
     <?php
     NavBar::begin([
-        'brandLabel' => 'CALIMBORACAY',
+        'brandLabel' => 'CALIMBO FARM RESORT',
         'brandUrl' => Yii::$app->homeUrl,
         'options' => [
             'class' => 'navbar-inverse navbar-fixed-top',
@@ -74,7 +74,7 @@ AppAsset::register($this);
 
 <footer class="footer">
     <div class="container">
-        <p class="pull-left">&copy; CALIMBORACAY <?= date('Y') ?></p>
+        <p class="pull-left">&copy; TARANGBAN FALLS & CALIMBO FARM RESORT <?= date('Y') ?></p>
 
         <p class="pull-right"><?= Yii::powered() ?></p>
     </div>
