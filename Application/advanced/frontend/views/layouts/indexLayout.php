@@ -82,13 +82,14 @@ IndexAsset::register($this);
   <style>
   .navbar-inverse{
     margin-top: 50px;
-    margin-left: 100px;
-    margin-right: 100px;
+    margin-left: 60px;
+    margin-right: 60px;
   }
 
   .container-nav{
     margin-top: 50px;
   }
+
   </style>
 
     <meta charset="utf-8">
@@ -97,7 +98,7 @@ IndexAsset::register($this);
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>TARANGBAN FALLS & CALIMBO FARM RESORT</title>
+    <title>Calimbo Farm Resort</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -121,6 +122,12 @@ IndexAsset::register($this);
 </head>
 
 <body>
+<div>
+    <center>
+    <h1>TARANGBAN FALLS & CALIMBO FARM RESORT</h1>
+    </center>
+</div>
+
 <div class="container">
   <br>
   <div id="myCarousel" class="carousel slide" data-ride="carousel">
@@ -162,28 +169,21 @@ IndexAsset::register($this);
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-     
+      <a class="navbar-brand" href="#">Calimbo Farm Resort</a>
     </div>
     
       <ul class="nav navbar-nav">
         <li class="active"><a href="#">Home</a></li>
+        <li><a href="about.php">About</a></li>
+        <li><a href="contact.php">Contacts</a></li>
         <li class="dropdown">
-          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Page 1 <span class="caret"></span></a>
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Services <span class="caret"></span></a>
           <ul class="dropdown-menu">
-            <li><a href="#">Page 1-1</a></li>
-            <li><a href="#">Page 1-2</a></li>
-            <li><a href="#">Page 1-3</a></li>
+            <li><a href="#">Reservation</a></li>
+            <li><a href="#"></a></li>
           </ul>
         </li>
-        <li><a href="#">Page 2</a></li>
-        <li><a href="#">Page 3</a></li>
-      </ul>
-	 <ul class="nav navbar-nav">
-		<li class="active"><a href="about.php">About</a><li>
-	 <ul class="nav navbar-nav">
-		<li class="active"><a href="contact.php">Contact</a><li>
-	 <ul class="nav navbar-nav">
-		<li class="active"><a href="#">Services</a><li>
+      </ul> 
       <ul class="nav navbar-nav navbar-right">
         <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
         <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
@@ -319,7 +319,7 @@ IndexAsset::register($this);
         <footer>
             <div class="row">
                 <div class="col-lg-12">
-                    <p>Copyright &copy; TARANGBAN FALLS & CALIMBO FARM RESORT 2016</p>
+                    <p>Copyright &copy; Calimbo Farm Resort 2016</p>
                 </div>
             </div>
         </footer>
