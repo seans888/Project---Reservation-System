@@ -179,9 +179,9 @@ IndexAsset::register($this);
         <li><a href="#">Page 3</a></li>
       </ul>
 	 <ul class="nav navbar-nav">
-		<li class="active"><a href="#">About</a><li>
+		<li class="active"><a href="about.php">About</a><li>
 	 <ul class="nav navbar-nav">
-		<li class="active"><a href="#">Contact</a><li>
+		<li class="active"><a href="contact.php">Contact</a><li>
 	 <ul class="nav navbar-nav">
 		<li class="active"><a href="#">Services</a><li>
       <ul class="nav navbar-nav navbar-right">
