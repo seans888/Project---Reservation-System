@@ -90,6 +90,13 @@ IndexAsset::register($this);
     margin-top: 50px;
   }
 
+  .container-fluid{
+    background: #DAF7A6;
+  }
+
+  .header-title-front{
+    font-family: "new century schoolbook";
+  }
   </style>
 
     <meta charset="utf-8">
@@ -124,7 +131,7 @@ IndexAsset::register($this);
 <body>
 <div>
     <center>
-    <h1>TARANGBAN FALLS & CALIMBO FARM RESORT</h1>
+    <h1 class = "header-title-front">TARANGBAN FALLS & CALIMBO FARM RESORT</h1>
     </center>
 </div>
 
@@ -200,7 +207,7 @@ IndexAsset::register($this);
         <div class="row">
             <div class="col-lg-12">
                 <h1 class="page-header">
-                    Welcome to Calimbo Farm Resort!
+                    Learn more about the resort!
                 </h1>
             </div>
             <div class="col-md-4">
