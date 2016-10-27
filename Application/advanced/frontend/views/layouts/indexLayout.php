@@ -131,7 +131,7 @@ IndexAsset::register($this);
 <body>
 <div>
     <center>
-    <h1 class = "header-title-front">TARANGBAN FALLS & CALIMBO FARM RESORT</h1>
+    <img src="https://farm6.staticflickr.com/5623/30602196895_35dcf71196_b.jpg">
     </center>
 </div>
 
