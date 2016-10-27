@@ -17,7 +17,7 @@ use common\widgets\Alert;
 
 ?>
 <head>
-<title>RealEstate | Selling</title>
+<title>Tarangban Falls</title>
 <meta charset="utf-8">
 <link rel="stylesheet" type="text/css" media="screen" href="css/reset.css">
 <link rel="stylesheet" type="text/css" media="screen" href="css/style.css">
@@ -78,13 +78,13 @@ $(document)
           </ul>
         </div>
         <a href="#" class="prev"></a><a href="#" class="next"></a> </div>
-      <nav>
+       <nav>
         <ul class="menu">
-          <li><a href="index.php">Main</a></li>
-          <li><a href="buying.php">Buying</a></li>
-          <li class="current"><a href="selling.php">Selling</a></li>
-          <li><a href="renting.php">Renting</a></li>
-          <li><a href="finance.php">Finance</a></li>
+          <li><a href="index.php">Home</a></li>
+          <li><a href="buying.php">About</a></li>
+          <li class="current"><a href="selling.php">Services</a></li>
+          <li><a href="#">Rates</a></li>
+          <li><a href="#">Account</a></li>
           <li><a href="contacts.php">Contacts</a></li>
         </ul>
       </nav>
@@ -112,7 +112,9 @@ $(document)
         </div>
         <p>At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod.</p>
       </div>
-      <div class="grid_4">
+     
+
+     <!--<div class="grid_4">
         <div class="left-1">
           <h2 class="top-1 p3">Find your home</h2>
           <form id="form-1" class="form-1 bot-2" action="#">
@@ -146,15 +148,16 @@ $(document)
           <p class="p2">Sodales et pharetra et, porttitor vel leo. Phasellus at mi nec sem sodales egestas suscipit rhoncus, lacus ligula tristique risus eros habitasse platea enim.</p>
           <p>Vitae suscipit quam leo non leo. Donec in metus libero, quis faucibus purus. Duis sit amet risus eros. In hac habitasse platea dictums donec tellus.</p>
         </div>
-      </div>
+      </div>-->
+
+
       <div class="clear"></div>
     </div>
   </section>
 </div>
 <!--==============================footer=================================-->
 <footer>
-  <p>© 2012 Real Estate</p>
-  <p>Website Template by <a target="_blank" href="http://www.templatemonster.com/">TemplateMonster.com</a></p>
+  <p>© 2012 Calimbo Farm Resort</p>
 </footer>
 <script>Cufon.now();</script>
 </body>

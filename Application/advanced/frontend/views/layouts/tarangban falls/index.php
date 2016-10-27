@@ -84,8 +84,8 @@ $(document)
           <li class="current"><a href="index.php">Home</a></li>
           <li><a href="buying.php">About</a></li>
           <li><a href="selling.php">Services</a></li>
-          <li><a href="renting.php">Rates</a></li>
-          <li><a href="finance.php">Account</a></li>
+          <li><a href="#">Rates</a></li>
+          <li><a href="#">Account</a></li>
           <li><a href="contacts.php">Contacts</a></li>
         </ul>
       </nav>

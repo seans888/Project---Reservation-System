@@ -18,7 +18,7 @@ use common\widgets\Alert;
 ?>
 <head>
 <head>
-<title>RealEstate | Buying</title>
+<title>Tarangban Falls</title>
 <meta charset="utf-8">
 <link rel="stylesheet" type="text/css" media="screen" href="css/reset.css">
 <link rel="stylesheet" type="text/css" media="screen" href="css/style.css">
@@ -84,8 +84,8 @@ $(document)
           <li><a href="index.php">Home</a></li>
           <li class="current"><a href="buying.php">About</a></li>
           <li><a href="selling.php">Services</a></li>
-          <li><a href="renting.php">Rates</a></li>
-          <li><a href="finance.php">Account</a></li>
+          <li><a href="#">Rates</a></li>
+          <li><a href="#">Account</a></li>
           <li><a href="contacts.php">Contacts</a></li>
         </ul>
       </nav>
@@ -95,7 +95,7 @@ $(document)
   <section id="content">
     <div class="container_12">
       <div class="grid_8">
-        <h2 class="top-1 p3">About buying</h2>
+        <h2 class="top-1 p3">About Calimbo Farm Resort</h2>
         <p>Aenean quis metus lacus, a commodo libero nam lacinia blandit dui vitae malesuada donec pellentesque scelerisque orci, ac tempor purus vulputate lobortis. Vestibulum porttitor sem mattis eros posuere vitae tristique justo congue curabitur consectetur:</p>
         <div class="lists-2">
           <ul class="list-1">
@@ -125,7 +125,10 @@ $(document)
         <p class="p5">Maecenas quis lacus eu tortor blandit venenatis aliquam sit amet arcu justo in commodo consectetur lacus ac ultrices cras porta dignissim turpis fermentum porttitor aenean scelerisque nunc vel turpis faucibus vestibulum aenean.</p>
         <div class="wrap block-2"> <a href="#"><img src="images/page2-img1.jpg" alt="" class="img-border"></a> <a href="#"><img src="images/page2-img2.jpg" alt="" class="img-border"></a> <a href="#"><img src="images/page2-img3.jpg" alt="" class="img-border"></a> <a href="#" class="last"><img src="images/page2-img4.jpg" alt="" class="img-border"></a> </div>
       </div>
-      <div class="grid_4">
+      
+
+
+      <!--<div class="grid_4">
         <div class="left-1">
           <h2 class="top-1 p3">Find your home</h2>
           <form id="form-1" class="form-1 bot-2" action="#">
@@ -158,7 +161,9 @@ $(document)
           <p class="color-1">Maecenas quis lacus eu tortor blandit venenatis aliquam </p>
           <p>Sit amet arcu justo in commodo consect etur lacus ac ultrices cras porta dignissim turpis fermentum porttitor aenean scelerisque nunc vel turpis faucibus vestibulum aenean volutpat iaculis nunc, sed accumsan lacus imperdiet eu. </p>
         </div>
-      </div>
+      </div>-->
+
+
       <div class="clear"></div>
     </div>
   </section>

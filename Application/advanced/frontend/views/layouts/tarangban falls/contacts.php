@@ -79,13 +79,13 @@ $(document)
           </ul>
         </div>
         <a href="#" class="prev"></a><a href="#" class="next"></a> </div>
-      <nav>
+       <nav>
         <ul class="menu">
-          <li><a href="index.php">Main</a></li>
-          <li><a href="buying.php">Buying</a></li>
-          <li><a href="selling.php">Selling</a></li>
-          <li><a href="renting.php">Renting</a></li>
-          <li><a href="finance.php">Finance</a></li>
+          <li><a href="index.php">Home</a></li>
+          <li><a href="buying.php">About</a></li>
+          <li><a href="selling.php">Services</a></li>
+          <li><a href="#">Rates</a></li>
+          <li><a href="#">Account</a></li>
           <li class="current"><a href="contacts.php">Contacts</a></li>
         </ul>
       </nav>
@@ -95,7 +95,7 @@ $(document)
   <section id="content">
     <div class="container_12">
       <div class="grid_8">
-        <h2 class="top-1 p3">Contact form</h2>
+        <h2 class="top-1 p3">Contact us!</h2>
         <form id="form" method="post" action="#">
           <fieldset>
             <label><strong>Your Name:</strong>
@@ -111,7 +111,8 @@ $(document)
           </fieldset>
         </form>
       </div>
-      <div class="grid_4">
+      
+     <!-- <div class="grid_4">
         <div class="left-1">
           <h2 class="top-1 p3">Find your home</h2>
           <form id="form-1" class="form-1 bot-2" action="#">
@@ -149,7 +150,9 @@ $(document)
             <dd><span>E-mail:</span><a href="#" class="link">mail@demolink.org</a></dd>
           </dl>
         </div>
-      </div>
+      </div>-->
+
+
       <div class="clear"></div>
     </div>
   </section>
