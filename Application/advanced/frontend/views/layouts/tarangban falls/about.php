@@ -82,9 +82,9 @@ $(document)
        <nav>
         <ul class="menu">
           <li><a href="index.php">Home</a></li>
-          <li class="current"><a href="buying.php">About</a></li>
-          <li><a href="selling.php">Services</a></li>
-          <li><a href="#">Rates</a></li>
+          <li class="current"><a href="about.php">About</a></li>
+          <li><a href="services.php">Services</a></li>
+          <li><a href="rates.php">Rates</a></li>
           <li><a href="#">Account</a></li>
           <li><a href="contacts.php">Contacts</a></li>
         </ul>
@@ -96,8 +96,8 @@ $(document)
     <div class="container_12">
       <div class="grid_8">
         <h2 class="top-1 p3">About Calimbo Farm Resort</h2>
-        <p>Aenean quis metus lacus, a commodo libero nam lacinia blandit dui vitae malesuada donec pellentesque scelerisque orci, ac tempor purus vulputate lobortis. Vestibulum porttitor sem mattis eros posuere vitae tristique justo congue curabitur consectetur:</p>
-        <div class="lists-2">
+        <p>Calimbo Farm Resort is a resort in Calbayog City, Samar, Philippines. The resort uses the wonderful gift of nature in the form of a falls. The place is great for people who wants to have a good time and relax. Besides that, the resort also offers tours and activities revolving around the natural terrain around the resort. If you want to have a relaxing time, Calimbo Farm Resort is definitely a place for you.</p>
+        <!--<div class="lists-2">
           <ul class="list-1">
             <li><a href="#">Maecenas mattis venena</a></li>
             <li><a href="#">Nam accumsan miac</a></li>
@@ -120,11 +120,12 @@ $(document)
             <li><a href="#">Tempus eget faucibus</a></li>
           </ul>
         </div>
-        <a href="#" class="button">Read more</a>
-        <h2 class="top-2 p3">Buying guide</h2>
+        <a href="#" class="button">Read more</a>-->
+        
+        <!--<h2 class="top-2 p3">Buying guide</h2>
         <p class="p5">Maecenas quis lacus eu tortor blandit venenatis aliquam sit amet arcu justo in commodo consectetur lacus ac ultrices cras porta dignissim turpis fermentum porttitor aenean scelerisque nunc vel turpis faucibus vestibulum aenean.</p>
         <div class="wrap block-2"> <a href="#"><img src="images/page2-img1.jpg" alt="" class="img-border"></a> <a href="#"><img src="images/page2-img2.jpg" alt="" class="img-border"></a> <a href="#"><img src="images/page2-img3.jpg" alt="" class="img-border"></a> <a href="#" class="last"><img src="images/page2-img4.jpg" alt="" class="img-border"></a> </div>
-      </div>
+      </div>-->
       
 
 
@@ -170,8 +171,8 @@ $(document)
 </div>
 <!--==============================footer=================================-->
 <footer>
-  <p>© 2012 Real Estate</p>
-  <p>Website Template by <a target="_blank" href="http://www.templatemonster.com/">TemplateMonster.com</a></p>
+  <p>© 2016 Calimbo Farm Resort</p>
+
 </footer>
 <script>Cufon.now();</script>
 </body>

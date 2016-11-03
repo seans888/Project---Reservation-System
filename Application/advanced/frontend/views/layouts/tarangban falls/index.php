@@ -82,9 +82,9 @@ $(document)
       <nav>
         <ul class="menu">
           <li class="current"><a href="index.php">Home</a></li>
-          <li><a href="buying.php">About</a></li>
-          <li><a href="selling.php">Services</a></li>
-          <li><a href="#">Rates</a></li>
+          <li><a href="about.php">About</a></li>
+          <li><a href="services.php">Services</a></li>
+          <li><a href="rates.php">Rates</a></li>
           <li><a href="#">Account</a></li>
           <li><a href="contacts.php">Contacts</a></li>
         </ul>
@@ -117,38 +117,29 @@ $(document)
         </div>
       </div>
      
-     <!--<div class="grid_4">
+     <div class="grid_4">
         <div class="left-1">
-          <h2 class="top-1 p3">Find your home</h2>
+          <h2 class="top-1 p3">Reserve now!</h2>
           <form id="form-1" class="form-1 bot-1" action="#">
             <div class="select-1">
-              <label>Home type</label>
+              <label>Type of Room</label>
               <select name="select" >
-                <option>Homes for sale</option>
+                <option>Regular</option>
+                <option>Deluxe</option>
               </select>
             </div>
             <div>
-              <label>Location</label>
-              <input type="text" value="Address, City, Zip" onBlur="if(this.value=='') this.value='Address, City, Zip'" onFocus="if(this.value =='Address, City, Zip' ) this.value=''">
+              <label></label>
+              
             </div>
-            <div class="select-2">
-              <label>Beds</label>
-              <select name="select" >
-                <option>&nbsp;</option>
-              </select>
-            </div>
-            <div class="select-2 last">
-              <label>Baths</label>
-              <select name="select" >
-                <option>&nbsp;</option>
-              </select>
-            </div>
+            
             <a class="button">Search</a>
             <div class="clear"></div>
           </form>
-          <h2 class="p3">Find our office</h2>
+          <h2 class="p3">Find our place</h2>
           <img src="images/page1-img4.png" alt="">
-          <div class="lists">
+          <p>Calbayog City, Samar, Philippines</p>
+          <!--<div class="lists">
             <ul class="list-1">
               <li><a href="#">Asia</a></li>
               <li><a href="#">Australia</a></li>
@@ -159,9 +150,9 @@ $(document)
               <li><a href="#">Europe</a></li>
               <li><a href="#">Latin America</a></li>
             </ul>
-          </div>
+          </div>-->
         </div>
-      </div>-->
+      </div>
 
 
       <div class="clear"></div>

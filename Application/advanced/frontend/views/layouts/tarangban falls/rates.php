@@ -19,7 +19,7 @@ use common\widgets\Alert;
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>RealEstate | Renting</title>
+<title>Tarangban Falls & Calimbo Farm Resort</title>
 <meta charset="utf-8">
 <link rel="stylesheet" type="text/css" media="screen" href="css/reset.css">
 <link rel="stylesheet" type="text/css" media="screen" href="css/style.css">
@@ -69,31 +69,31 @@ $(document)
   <!--==============================header=================================-->
   <header>
     <div>
-      <h1><a href="index.php"><img src="images/logo.jpg" alt=""></a></h1>
+      <h1><a href="index.php"><img src="images/Logo test.png" alt=""></a></h1>
       <div class="social-icons"> <span>Follow Us:</span> <a href="#" class="icon-3"></a> <a href="#" class="icon-2"></a> <a href="#" class="icon-1"></a> </div>
       <div id="slide">
         <div class="slider">
           <ul class="items">
-            <li><img src="images/slider-1-small.jpg" alt=""></li>
-            <li><img src="images/slider-2-small.jpg" alt=""></li>
-            <li><img src="images/slider-3-small.jpg" alt=""></li>
+            <li><img src="images/tarangbanfalls-small.png" alt=""></li>
+            <li><img src="images/farmresort-small.png" alt=""></li>
+            <li><img src="images/houses-small.png" alt=""></li>
           </ul>
         </div>
         <a href="#" class="prev"></a><a href="#" class="next"></a> </div>
       <nav>
         <ul class="menu">
-          <li><a href="index.php">Main</a></li>
-          <li><a href="buying.php">Buying</a></li>
-          <li><a href="selling.php">Selling</a></li>
-          <li class="current"><a href="renting.php">Renting</a></li>
-          <li><a href="finance.php">Finance</a></li>
+          <li><a href="index.php">Home</a></li>
+          <li><a href="about.php">About</a></li>
+          <li><a href="services.php">Services</a></li>
+          <li class="current"><a href="rates.php">Rates</a></li>
+          <li><a href="#">Account</a></li>
           <li><a href="contacts.php">Contacts</a></li>
         </ul>
       </nav>
     </div>
   </header>
   <!--==============================content================================-->
-  <section id="content">
+  <!--<section id="content">
     <div class="container_12">
       <div class="grid_8">
         <h2 class="top-1 p3">Rent a living</h2>
@@ -170,11 +170,10 @@ $(document)
       <div class="clear"></div>
     </div>
   </section>
-</div>
+</div>-->
 <!--==============================footer=================================-->
 <footer>
-  <p>© 2012 Real Estate</p>
-  <p>Website Template by <a target="_blank" href="http://www.templatemonster.com/">TemplateMonster.com</a></p>
+  <p>© 2016 Calimbo Farm Resort</p>
 </footer>
 <script>Cufon.now();</script>
 </body>

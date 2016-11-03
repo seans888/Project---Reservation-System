@@ -72,18 +72,18 @@ $(document)
       <div id="slide">
         <div class="slider">
           <ul class="items">
-            <li><img src="images/slider-1-small.jpg" alt=""></li>
-            <li><img src="images/slider-2-small.jpg" alt=""></li>
-            <li><img src="images/slider-3-small.jpg" alt=""></li>
+            <li><img src="images/tarangbanfalls-small.png" alt=""></li>
+            <li><img src="images/farmresort-small.png" alt=""></li>
+            <li><img src="images/houses-small.png" alt=""></li>
           </ul>
         </div>
         <a href="#" class="prev"></a><a href="#" class="next"></a> </div>
        <nav>
         <ul class="menu">
           <li><a href="index.php">Home</a></li>
-          <li><a href="buying.php">About</a></li>
-          <li class="current"><a href="selling.php">Services</a></li>
-          <li><a href="#">Rates</a></li>
+          <li><a href="about.php">About</a></li>
+          <li class="current"><a href="services.php">Services</a></li>
+          <li><a href="rates.php">Rates</a></li>
           <li><a href="#">Account</a></li>
           <li><a href="contacts.php">Contacts</a></li>
         </ul>
@@ -91,7 +91,7 @@ $(document)
     </div>
   </header>
   <!--==============================content================================-->
-  <section id="content">
+  <!--<section id="content">
     <div class="container_12">
       <div class="grid_8">
         <h2 class="top-1 p3">Home value estimator</h2>
@@ -111,7 +111,7 @@ $(document)
           </div>
         </div>
         <p>At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod.</p>
-      </div>
+      </div>-->
      
 
      <!--<div class="grid_4">
@@ -157,7 +157,7 @@ $(document)
 </div>
 <!--==============================footer=================================-->
 <footer>
-  <p>© 2012 Calimbo Farm Resort</p>
+  <p>© 2016 Calimbo Farm Resort</p>
 </footer>
 <script>Cufon.now();</script>
 </body>
