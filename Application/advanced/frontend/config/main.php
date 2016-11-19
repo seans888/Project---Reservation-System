@@ -24,7 +24,7 @@ return [
 			'savePath' => sys_get_temp_dir(),
 		],
 		'request' => [
-		    'cookieValidationKey' => '[ynJNXrnrQbJXBvRUnqPm]',
+		    'cookieValidationKey' => '[RbvlbLcxxDiFJFwRHCje]',
 			'csrfParam' => '_frontendCSRF',
 		],
         'log' => [
