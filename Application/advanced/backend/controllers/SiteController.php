@@ -5,7 +5,13 @@ use Yii;
 use yii\web\Controller;
 use yii\filters\VerbFilter;
 use yii\filters\AccessControl;
-use common\models\LoginForm;
+use common\models\AdminLoginForm;
+use yii\base\InvalidParamException;
+use yii\web\BadRequestHttpException;
+use backend\models\PasswordResetRequestForm;
+use backend\models\ResetPasswordForm;
+use backend\models\SignupForm;
+
 
 /**
  * Site controller
@@ -20,10 +26,12 @@ class SiteController extends Controller
         return [
             'access' => [
                 'class' => AccessControl::className(),
+				'only' => ['logout', 'signup'],
                 'rules' => [
                     [
-                        'actions' => ['login', 'error'],
+                        'actions' => ['signup'],
                         'allow' => true,
+						'roles' => ['?'],
                     ],
                     [
                         'actions' => ['logout', 'index'],
@@ -53,28 +61,18 @@ class SiteController extends Controller
         ];
     }
 
-    /**
-     * Displays homepage.
-     *
-     * @return string
-     */
     public function actionIndex()
     {
         return $this->render('index');
     }
 
-    /**
-     * Login action.
-     *
-     * @return string
-     */
     public function actionLogin()
     {
         if (!Yii::$app->user->isGuest) {
             return $this->goHome();
         }
 
-        $model = new LoginForm();
+        $model = new AdminLoginForm();
         if ($model->load(Yii::$app->request->post()) && $model->login()) {
             return $this->goBack();
         } else {
@@ -83,12 +81,22 @@ class SiteController extends Controller
             ]);
         }
     }
-
-    /**
-     * Logout action.
-     *
-     * @return string
-     */
+	
+	public function actionSignup()
+	{
+		$model = new SignupForm();
+		if ($model->load(Yii::$app->request->post())) {
+			if ($user = $model->signup()) {
+				if (Yii:: $app->getUser()->login($user)) {
+					return $this->goHome();
+				}
+			}
+		}
+		return $this->render('signup', [
+			'model' => $model,
+		]);
+	}
+	
     public function actionLogout()
     {
         Yii::$app->user->logout();
