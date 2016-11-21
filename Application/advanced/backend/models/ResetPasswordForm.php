@@ -1,5 +1,5 @@
 <?php
-namespace frontend\models;
+namespace backend\models;
 
 use yii\base\Model;
 use yii\base\InvalidParamException;
@@ -51,7 +51,7 @@ class ResetPasswordForm extends Model
     /**
      * Resets password.
      *
-     * @return bool if password was reset.
+     * @return boolean if password was reset.
      */
     public function resetPassword()
     {
