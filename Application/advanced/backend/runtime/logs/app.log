@@ -66,3 +66,212 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1479733390.972
     'REQUEST_TIME' => 1479733390
 ]
+2016-11-21 14:17:38 [::1][-][-][error][yii\base\ViewNotFoundException] exception 'yii\base\ViewNotFoundException' with message 'The view file does not exist: C:\Users\mlbel\Desktop\Project---Reservation-System\Application\advanced\backend\views\admin\index.php' in C:\Users\mlbel\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2\base\View.php:227
+Stack trace:
+#0 C:\Users\mlbel\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2\base\View.php(150): yii\base\View->renderFile('C:\\Users\\mlbel\\...', Array, Object(backend\controllers\AdminController))
+#1 C:\Users\mlbel\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2\base\Controller.php(378): yii\base\View->render('index', Array, Object(backend\controllers\AdminController))
+#2 C:\Users\mlbel\Desktop\Project---Reservation-System\Application\advanced\backend\controllers\AdminController.php(44): yii\base\Controller->render('index', Array)
+#3 [internal function]: backend\controllers\AdminController->actionIndex()
+#4 C:\Users\mlbel\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#5 C:\Users\mlbel\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#6 C:\Users\mlbel\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('', Array)
+#7 C:\Users\mlbel\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2\web\Application.php(100): yii\base\Module->runAction('admin', Array)
+#8 C:\Users\mlbel\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 C:\Users\mlbel\Desktop\Project---Reservation-System\Application\advanced\backend\web\index.php(17): yii\base\Application->run()
+#10 {main}
+2016-11-21 14:17:38 [::1][-][-][info][application] $_GET = [
+    'r' => 'admin'
+]
+
+$_COOKIE = [
+    '_csrf-frontend' => '2824fe3d63878aeb0fc7d6dd16df9367c09a20e02528efa1d52a2b7d99ab0683a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"Nv1FC0dgilg3ZCybVxx9wftUAKvNVu5U\";}'
+    '_csrf-backend' => '41dbd28b5e4f96b6540d841dc950b289c5dd15e66752aab7931b55b41c06eee6a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"mXXjMM4JwmPNUO2ovl-JGCaCaswIlKnz\";}'
+    'advanced-frontend' => 'i9fek8ota3fqgor303g9dlsfd3'
+    'advanced-backend' => 'ojn1klnhqprhl5dlaueu8k70o6'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.99 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => '_csrf-frontend=2824fe3d63878aeb0fc7d6dd16df9367c09a20e02528efa1d52a2b7d99ab0683a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22Nv1FC0dgilg3ZCybVxx9wftUAKvNVu5U%22%3B%7D; _csrf-backend=41dbd28b5e4f96b6540d841dc950b289c5dd15e66752aab7931b55b41c06eee6a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22mXXjMM4JwmPNUO2ovl-JGCaCaswIlKnz%22%3B%7D; advanced-frontend=i9fek8ota3fqgor303g9dlsfd3; advanced-backend=ojn1klnhqprhl5dlaueu8k70o6'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Windows Kits\\8.1\\Windows Performance Toolkit\\;C:\\Program Files\\Microsoft SQL Server\\110\\Tools\\Binn\\;C:\\Program Files (x86)\\GtkSharp\\2.12\\bin;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\TortoiseSVN\\bin;C:\\xampp\\htdocs\\advanced;C:\\Program Files\\CloudFoundry;C:\\Program Files\\TortoiseGit\\bin;C:\\Users\\mlbel\\AppData\\Local\\Microsoft\\WindowsApps;'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.6.14 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.6.14'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/advanced/backend/web/index.php'
+    'REMOTE_PORT' => '51869'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=admin'
+    'REQUEST_URI' => '/advanced/backend/web/index.php?r=admin'
+    'SCRIPT_NAME' => '/advanced/backend/web/index.php'
+    'PHP_SELF' => '/advanced/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1479734258.062
+    'REQUEST_TIME' => 1479734258
+]
+2016-11-21 14:20:04 [::1][-][-][error][yii\base\ViewNotFoundException] exception 'yii\base\ViewNotFoundException' with message 'The view file does not exist: C:\Users\mlbel\Desktop\Project---Reservation-System\Application\advanced\backend\views\admin\index.php' in C:\Users\mlbel\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2\base\View.php:227
+Stack trace:
+#0 C:\Users\mlbel\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2\base\View.php(150): yii\base\View->renderFile('C:\\Users\\mlbel\\...', Array, Object(backend\controllers\AdminController))
+#1 C:\Users\mlbel\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2\base\Controller.php(378): yii\base\View->render('index', Array, Object(backend\controllers\AdminController))
+#2 C:\Users\mlbel\Desktop\Project---Reservation-System\Application\advanced\backend\controllers\AdminController.php(44): yii\base\Controller->render('index', Array)
+#3 [internal function]: backend\controllers\AdminController->actionIndex()
+#4 C:\Users\mlbel\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#5 C:\Users\mlbel\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#6 C:\Users\mlbel\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('', Array)
+#7 C:\Users\mlbel\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2\web\Application.php(100): yii\base\Module->runAction('admin', Array)
+#8 C:\Users\mlbel\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 C:\Users\mlbel\Desktop\Project---Reservation-System\Application\advanced\backend\web\index.php(17): yii\base\Application->run()
+#10 {main}
+2016-11-21 14:20:04 [::1][-][-][info][application] $_GET = [
+    'r' => 'admin'
+]
+
+$_COOKIE = [
+    '_csrf-frontend' => '2824fe3d63878aeb0fc7d6dd16df9367c09a20e02528efa1d52a2b7d99ab0683a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"Nv1FC0dgilg3ZCybVxx9wftUAKvNVu5U\";}'
+    '_csrf-backend' => '41dbd28b5e4f96b6540d841dc950b289c5dd15e66752aab7931b55b41c06eee6a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"mXXjMM4JwmPNUO2ovl-JGCaCaswIlKnz\";}'
+    'advanced-frontend' => 'i9fek8ota3fqgor303g9dlsfd3'
+    'advanced-backend' => 'ojn1klnhqprhl5dlaueu8k70o6'
+    'PHPFRONTSESSID' => 'vlala4smgep8051fse06mmgma0'
+    '_frontendCSRF' => '343d1463c3abd2fe11fbf4f27e90468218fd5a005a3c2c22b361215d198b5aaaa:2:{i:0;s:13:\"_frontendCSRF\";i:1;s:32:\"KlUKoRh7KvUycqDEgkBuK3uaZ-TufZIi\";}'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.99 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => '_csrf-frontend=2824fe3d63878aeb0fc7d6dd16df9367c09a20e02528efa1d52a2b7d99ab0683a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22Nv1FC0dgilg3ZCybVxx9wftUAKvNVu5U%22%3B%7D; _csrf-backend=41dbd28b5e4f96b6540d841dc950b289c5dd15e66752aab7931b55b41c06eee6a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22mXXjMM4JwmPNUO2ovl-JGCaCaswIlKnz%22%3B%7D; advanced-frontend=i9fek8ota3fqgor303g9dlsfd3; advanced-backend=ojn1klnhqprhl5dlaueu8k70o6; PHPFRONTSESSID=vlala4smgep8051fse06mmgma0; _frontendCSRF=343d1463c3abd2fe11fbf4f27e90468218fd5a005a3c2c22b361215d198b5aaaa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_frontendCSRF%22%3Bi%3A1%3Bs%3A32%3A%22KlUKoRh7KvUycqDEgkBuK3uaZ-TufZIi%22%3B%7D'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Windows Kits\\8.1\\Windows Performance Toolkit\\;C:\\Program Files\\Microsoft SQL Server\\110\\Tools\\Binn\\;C:\\Program Files (x86)\\GtkSharp\\2.12\\bin;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\TortoiseSVN\\bin;C:\\xampp\\htdocs\\advanced;C:\\Program Files\\CloudFoundry;C:\\Program Files\\TortoiseGit\\bin;C:\\Users\\mlbel\\AppData\\Local\\Microsoft\\WindowsApps;'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.6.14 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.6.14'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/advanced/backend/web/index.php'
+    'REMOTE_PORT' => '51953'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=admin'
+    'REQUEST_URI' => '/advanced/backend/web/index.php?r=admin'
+    'SCRIPT_NAME' => '/advanced/backend/web/index.php'
+    'PHP_SELF' => '/advanced/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1479734404.68
+    'REQUEST_TIME' => 1479734404
+]
+2016-11-21 14:41:24 [::1][-][-][error][yii\base\ViewNotFoundException] exception 'yii\base\ViewNotFoundException' with message 'The view file does not exist: C:\Users\mlbel\Desktop\Project---Reservation-System\Application\advanced\backend\views\admin\index.php' in C:\Users\mlbel\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2\base\View.php:227
+Stack trace:
+#0 C:\Users\mlbel\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2\base\View.php(150): yii\base\View->renderFile('C:\\Users\\mlbel\\...', Array, Object(backend\controllers\AdminController))
+#1 C:\Users\mlbel\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2\base\Controller.php(378): yii\base\View->render('index', Array, Object(backend\controllers\AdminController))
+#2 C:\Users\mlbel\Desktop\Project---Reservation-System\Application\advanced\backend\controllers\AdminController.php(44): yii\base\Controller->render('index', Array)
+#3 [internal function]: backend\controllers\AdminController->actionIndex()
+#4 C:\Users\mlbel\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#5 C:\Users\mlbel\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#6 C:\Users\mlbel\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('', Array)
+#7 C:\Users\mlbel\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2\web\Application.php(100): yii\base\Module->runAction('admin', Array)
+#8 C:\Users\mlbel\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 C:\Users\mlbel\Desktop\Project---Reservation-System\Application\advanced\backend\web\index.php(17): yii\base\Application->run()
+#10 {main}
+2016-11-21 14:41:24 [::1][-][-][info][application] $_GET = [
+    'r' => 'admin'
+]
+
+$_COOKIE = [
+    '_csrf-frontend' => '2824fe3d63878aeb0fc7d6dd16df9367c09a20e02528efa1d52a2b7d99ab0683a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"Nv1FC0dgilg3ZCybVxx9wftUAKvNVu5U\";}'
+    '_csrf-backend' => '41dbd28b5e4f96b6540d841dc950b289c5dd15e66752aab7931b55b41c06eee6a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"mXXjMM4JwmPNUO2ovl-JGCaCaswIlKnz\";}'
+    'advanced-frontend' => 'i9fek8ota3fqgor303g9dlsfd3'
+    'advanced-backend' => 'ojn1klnhqprhl5dlaueu8k70o6'
+    'PHPFRONTSESSID' => 'vlala4smgep8051fse06mmgma0'
+    '_frontendCSRF' => '343d1463c3abd2fe11fbf4f27e90468218fd5a005a3c2c22b361215d198b5aaaa:2:{i:0;s:13:\"_frontendCSRF\";i:1;s:32:\"KlUKoRh7KvUycqDEgkBuK3uaZ-TufZIi\";}'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.99 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => '_csrf-frontend=2824fe3d63878aeb0fc7d6dd16df9367c09a20e02528efa1d52a2b7d99ab0683a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22Nv1FC0dgilg3ZCybVxx9wftUAKvNVu5U%22%3B%7D; _csrf-backend=41dbd28b5e4f96b6540d841dc950b289c5dd15e66752aab7931b55b41c06eee6a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22mXXjMM4JwmPNUO2ovl-JGCaCaswIlKnz%22%3B%7D; advanced-frontend=i9fek8ota3fqgor303g9dlsfd3; advanced-backend=ojn1klnhqprhl5dlaueu8k70o6; PHPFRONTSESSID=vlala4smgep8051fse06mmgma0; _frontendCSRF=343d1463c3abd2fe11fbf4f27e90468218fd5a005a3c2c22b361215d198b5aaaa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_frontendCSRF%22%3Bi%3A1%3Bs%3A32%3A%22KlUKoRh7KvUycqDEgkBuK3uaZ-TufZIi%22%3B%7D'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Windows Kits\\8.1\\Windows Performance Toolkit\\;C:\\Program Files\\Microsoft SQL Server\\110\\Tools\\Binn\\;C:\\Program Files (x86)\\GtkSharp\\2.12\\bin;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\TortoiseSVN\\bin;C:\\xampp\\htdocs\\advanced;C:\\Program Files\\CloudFoundry;C:\\Program Files\\TortoiseGit\\bin;C:\\Users\\mlbel\\AppData\\Local\\Microsoft\\WindowsApps;'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.6.14 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.6.14'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/advanced/backend/web/index.php'
+    'REMOTE_PORT' => '52248'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=admin'
+    'REQUEST_URI' => '/advanced/backend/web/index.php?r=admin'
+    'SCRIPT_NAME' => '/advanced/backend/web/index.php'
+    'PHP_SELF' => '/advanced/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1479735684.884
+    'REQUEST_TIME' => 1479735684
+]
