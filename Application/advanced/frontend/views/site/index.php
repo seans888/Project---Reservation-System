@@ -7,7 +7,7 @@ $this->title = 'My Yii Application';
 <!DOCTYPE html>
 <html>
 <head>
-<title>hotel-fortune bootstrap Design website | Home :: w3layouts</title>
+<title>Tarangban Falls & Calimbo Farm Resort</title>
 <link href='http://fonts.googleapis.com/css?family=Open+Sans:600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
 <link href='http://fonts.googleapis.com/css?family=Pinyon+Script' rel='stylesheet' type='text/css'>
 <link href='http://fonts.googleapis.com/css?family=Quicksand:400,700' rel='stylesheet' type='text/css'>

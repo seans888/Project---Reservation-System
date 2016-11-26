@@ -16,7 +16,7 @@ AppAsset::register($this);
 <!DOCTYPE html>
 <html>
 <head>
-<title>hotel-fortune bootstrap Design website | Home :: w3layouts</title>
+<title>Tarangban Falls & Calimbo Farm Resort</title>
 <link href='http://fonts.googleapis.com/css?family=Open+Sans:600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
 <link href='http://fonts.googleapis.com/css?family=Pinyon+Script' rel='stylesheet' type='text/css'>
 <link href='http://fonts.googleapis.com/css?family=Quicksand:400,700' rel='stylesheet' type='text/css'>
@@ -55,13 +55,13 @@ AppAsset::register($this);
       </div>
       <div class="banner">
             <div class="banner-info text-center">
-            <h3><label>Hello,</label> You've Reached</h3>
-            <h1>HOTEL FORTUNE</h1>
+            <h3>Welcome to</h3>
+            <h1>Calimbo Farm Resort</h1>
             <span></span>
             <ul>
-             <li><a class="scroll" href="#">HOTEL</a><i class="line"></i></li>
-             <li><a class="scroll" href="#">SPA SALOON</a><i class="line2"></i></li>
-             <li><a class="scroll" href="#">FINE DINING</a></li>
+             <li><a class="scroll" href="#">Nature</a><i class="line"></i></li>
+             <li><a class="scroll" href="#">Relaxation</a><i class="line2"></i></li>
+             <li><a class="scroll" href="#">Adventure</a></li>
              <div class="clearfix"></div>
             </ul>
             </div>
@@ -153,7 +153,7 @@ AppAsset::register($this);
                                     autoPlay : true,
                                     navigation : true,
                                     navigationText :  false,
-                                    pagination : false,
+                                    pagination : true,
                                   });
                                 });
                                 </script>
