@@ -1,9 +1,18 @@
 <?php
 
-/* @var $this yii\web\View */
+/* @var $this \yii\web\View */
+/* @var $content string */
 
-$this->title = 'My Yii Application';
+use yii\helpers\Html;
+use yii\bootstrap\Nav;
+use yii\bootstrap\NavBar;
+use yii\widgets\Breadcrumbs;
+use frontend\assets\AppAsset;
+use common\widgets\Alert;
+
+AppAsset::register($this);
 ?>
+<?php $this->beginPage() ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -46,13 +55,13 @@ $this->title = 'My Yii Application';
       </div>
       <div class="banner">
             <div class="banner-info text-center">
-            <h3><label>Hello,</label> You've Reached</h3>
-            <h1>HOTEL FORTUNE</h1>
+            <h3>Welcome to</h3>
+            <h1>Calimbo Farm Resort</h1>
             <span></span>
             <ul>
-             <li><a class="scroll" href="#">HOTEL</a><i class="line"></i></li>
-             <li><a class="scroll" href="#">SPA SALOON</a><i class="line2"></i></li>
-             <li><a class="scroll" href="#">FINE DINING</a></li>
+             <li><a class="scroll" href="#">Nature</a><i class="line"></i></li>
+             <li><a class="scroll" href="#">Relaxation</a><i class="line2"></i></li>
+             <li><a class="scroll" href="#">Adventure</a></li>
              <div class="clearfix"></div>
             </ul>
             </div>
@@ -144,7 +153,7 @@ $this->title = 'My Yii Application';
                                     autoPlay : true,
                                     navigation : true,
                                     navigationText :  false,
-                                    pagination : false,
+                                    pagination : true,
                                   });
                                 });
                                 </script>
