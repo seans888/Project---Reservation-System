@@ -37,12 +37,12 @@ AppAsset::register($this);
              <div class="m-clear"></div>
              <div class="top-menu">
                 <ul>
-                     <li class="active"><a href="index.html">START</a></li>
-                     <li><a class="scroll" href="facilities.html">FACILITIES</a></li>
-                     <li><a class="scroll" href="restaurant.html">RESTAURANT</a></li>
-                     <li><a class="scroll" href="conference.html">CONFERENCE</a></li>
-                     <li><a class="scroll" href="booking.html">BOOKING</a></li>
-                     <li><a class="scroll" href="contact.html">CONTACT US</a></li>
+                     <li class="active"><a href="index.php?r=site%2Findex">HOME</a></li>
+                     <li><a class="scroll" href="index.php?r=site%2Fabout">ABOUT</a></li>
+                     <li><a class="scroll" href="index.php?r=site%2Frestaurant">RESTAURANT</a></li>
+                     <li><a class="scroll" href="index.php?r=site%2Fconference">CONFERENCE</a></li>
+                     <li><a class="scroll" href="index.php?r=site%2Fbooking">BOOKING</a></li>
+                     <li><a class="scroll" href="index.php?r=site%2Fcontact">CONTACT US</a></li>
                 </ul>
                 <script>
                     $("span.menu").click(function(){
