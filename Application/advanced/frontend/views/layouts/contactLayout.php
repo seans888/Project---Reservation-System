@@ -98,7 +98,7 @@ AppAsset::register($this);
                                 <span><textarea name="userMsg"> </textarea></span>
                             </div>
                            <div>
-                                <input type="submit" value="submit us">
+                                <input type="submit" value="submit">
                           </div>
                         </form>
                     </div>
