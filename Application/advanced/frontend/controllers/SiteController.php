@@ -126,6 +126,7 @@ class SiteController extends Controller
 
             return $this->refresh();
         } else {
+            $this->layout = "contactLayout";
             return $this->render('contact', [
                 'model' => $model,
             ]);
@@ -139,6 +140,8 @@ class SiteController extends Controller
      */
     public function actionAbout()
     {
+
+    $this->layout = "aboutLayout";
         return $this->render('about');
     }
 
@@ -161,6 +164,24 @@ class SiteController extends Controller
         return $this->render('signup', [
             'model' => $model,
         ]);
+    }
+
+    public function actionBooking()
+    {
+        $this->layout = "bookingLayout";
+        return $this->render('booking');
+    }
+
+    public function actionRestaurant()
+    {
+        $this->layout = "restaurantLayout";
+        return $this->render('restaurant');
+    }
+
+    public function actionConference()
+    {
+        $this->layout = "conferenceLayout";
+        return $this->render('conference');
     }
 
     /**
