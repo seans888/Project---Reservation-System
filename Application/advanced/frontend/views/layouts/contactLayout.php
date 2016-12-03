@@ -159,8 +159,7 @@ AppAsset::register($this);
              <div class="clearfix"></div>
          </div>
          <div class="clearfix"></div>
-      </div>      
-      <h6>Template by <a href="http://w3layouts.com/">W3layouts</h6>    
+      </div>
 </div>
 <!---->
 
