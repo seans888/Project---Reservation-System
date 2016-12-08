@@ -181,7 +181,7 @@ $this->title = 'My Yii Application';
          <h3>Our Room Types</h3>
          <div class="room-grids">
              <div class="col-md-4 room-sec">
-                 <img src="images/pic1.jpg" alt=""/>
+                 <img src="http://dwxf316kii2pu.cloudfront.net/photos/es_bcn_0460_057_9.jpg" alt=""/>
                  <h4>Standard Double Room</h4>
                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent scelerisque lectus vitae dui sollicitudin commodo.</p>
                  <div class="items">
