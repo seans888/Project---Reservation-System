@@ -243,9 +243,9 @@ AppAsset::register($this);
                  </div>
              </div>
              <div class="col-md-4 room-sec">
-                 <img src="images/pic5.jpg" alt=""/>
-                 <h4>Supperior Single Room</h4>
-                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent scelerisque lectus vitae dui sollicitudin commodo.</p>
+                 <img src="http://alarun.de/img/images/wechselbilder/EZ_Superior_2.jpg" alt="superior single room" style="width:350px; height:200px"/>
+                 <h4>Superior Single Room</h4>
+                 <p>Our superior single rooms offer an extra long queen-size bed and a large writing desk with many plug sockets. Take a seat in the comfortable armchair and watch television on a larger screen. The bathroom is equipped with a large walk-in shower, a bathrobe is provided.</p>
                  <div class="items">
                      <li><a href="#"><span class="img1"> </span></a></li>
                      <li><a href="#"><span class="img2"> </span></a></li>
@@ -256,9 +256,9 @@ AppAsset::register($this);
                  </div>
              </div>
              <div class="col-md-4 room-sec">
-                 <img src="images/pic6.jpg" alt=""/>
+                 <img src="http://www.goldenstarhotel.vn/Images/Room/Full/bizmac_full_28382016_013824.jpg" alt="vip room" style="width:350px; height:200px"/>
                  <h4>VIP Room</h4>
-                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent scelerisque lectus vitae dui sollicitudin commodo.</p>
+                 <p>Our Suite (VIP) Rooms are spacious and efficient. Full-height windows offer expansive vistas of the dramatic cityscape, and king or twin beds provide flexible accommodations. Other thoughtful touches include complimentary Wi-Fi Internet access, and a large, LCD TV with international satellite reception and dozens of choices.</p>
                  <div class="items">
                      <li><a href="#"><span class="img1"> </span></a></li>
                      <li><a href="#"><span class="img2"> </span></a></li>
