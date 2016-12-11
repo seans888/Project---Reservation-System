@@ -216,9 +216,9 @@ AppAsset::register($this);
                  </div>
              </div>
              <div class="col-md-4 room-sec">
-                 <img src="images/pic3.jpg" alt=""/>
+                 <img src="http://www.twinoakshotel.co.uk/wp-content/uploads/2014/10/IMG_9086.jpg" alt="family room" style="width:350px; height:200px"/>
                  <h4>Family Room</h4>
-                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent scelerisque lectus vitae dui sollicitudin commodo.</p>
+                 <p>Our family room is fully en-suite with king size bed, TV, and hospitality tray. Contains a sofa bed suitable for up to 1 small child.</p>
                  <div class="items">
                      <li><a href="#"><span class="img1"> </span></a></li>
                      <li><a href="#"><span class="img2"> </span></a></li>
