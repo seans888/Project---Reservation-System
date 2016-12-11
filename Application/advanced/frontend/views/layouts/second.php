@@ -203,9 +203,9 @@ AppAsset::register($this);
                  </div>
              </div>
              <div class="col-md-4 room-sec">
-                 <img src="images/pic2.jpg" alt=""/>
-                 <h4>Supperior Double Room</h4>
-                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent scelerisque lectus vitae dui sollicitudin commodo.</p>
+                 <img src=http://www.twinoakshotel.co.uk/wp-content/uploads/2014/10/4154127.jpg alt="superior double room" style="width:350px; height:200px"/>
+                 <h4>Superior Double Room</h4>
+                 <p>All our superior double rooms are fully en-suite with king size bed, flat-screen digital TV, free tea and coffee facilities, a desk area, free Wi-Fi access, and a private bathroom with complimentary toiletries.</p>
                  <div class="items">                    
                      <li><a href="#"><span class="img1"> </span></a></li>
                      <li><a href="#"><span class="img2"> </span></a></li>
