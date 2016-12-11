@@ -159,25 +159,26 @@ AppAsset::register($this);
                                 </script>
             <!-- //requried-jsfiles-for owl -->
           <div id="owl-demo" class="owl-carousel">
+             
               <div class="item text-center image-grid"> 
                     <ul>
-                     <li><img src="images/1.jpg" alt=""></li>               
-                     <li><img src="images/2.jpg" alt=""></li>                
-                     <li><img src="images/3.jpg" alt=""></li>
+                    <li> <img src="https://media-cdn.tripadvisor.com/media/photo-s/08/b0/81/af/dulang-resort-and-resto.jpg" alt=""></li>               
+                     <li><img src="https://edge.media.datahc.com/HI135223823.jpg" alt=""></li>                
+                     <li><img src="http://pix4.agoda.net/hotelimages/280/280746/280746_15082010240034667209.jpg?s=800x" alt=""></li>
+                     </ul>
+              </div>
+			  <div class="item text-center image-grid"> 
+                    <ul>
+                    <li><img src="http://housebeauty.net/wp-content/uploads/2014/07/Great-Modern-Home-Office-Design-Interior-in-Minimalist-Ideas-for-Small-Bedrooms-Decoration-Used-Wooden-Furniture.jpg" alt=""></li>               
+                     <li><img src="http://www.sohogrand.com/wp-content/uploads/sites/2/2015/01/deluxesuitelivingroom-1200x800-c-default.jpg" alt=""></li>                
+                     <li><img src="http://www.bega-hotel.ru/upload/iblock/7e7/7e74433722f9338cbf045c5d17b2a3cc.JPG" alt=""></li>
                      </ul>
               </div>
               <div class="item text-center image-grid"> 
                     <ul>
-                    <li> <img src="images/3.jpg" alt=""></li>               
-                     <li><img src="images/4.jpg" alt=""></li>                
-                     <li><img src="images/5.jpg" alt=""></li>
-                     </ul>
-              </div>
-              <div class="item text-center image-grid"> 
-                    <ul>
-                    <li> <img src="images/6.jpg" alt=""></li>               
-                     <li><img src="images/2.jpg" alt=""></li>                
-                     <li><img src="images/8.jpg" alt=""></li>
+                    <li> <img src="http://eaglepointresort.com.ph/wp-content/uploads/EPR-Resto-and-Bar-3_mini-a76e7f6de91.jpg" alt=""></li>               
+                     <li><img src="http://assets.inhabitat.com/wp-content/blogs.dir/1/files/2012/01/Villa-Escudero-Waterfalls-Restauran.jpg" alt=""></li>                
+                     <li><img src="http://3.bp.blogspot.com/-NH78XhxcBoI/Vp4_gdYK98I/AAAAAAAARyo/b2iDRMW6U8s/s1600/DSC_7090.JPG" alt=""></li>
                      </ul>
               </div>
           </div>        
