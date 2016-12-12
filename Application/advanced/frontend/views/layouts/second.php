@@ -159,25 +159,26 @@ AppAsset::register($this);
                                 </script>
             <!-- //requried-jsfiles-for owl -->
           <div id="owl-demo" class="owl-carousel">
+             
               <div class="item text-center image-grid"> 
                     <ul>
-                     <li><img src="images/1.jpg" alt=""></li>               
-                     <li><img src="images/2.jpg" alt=""></li>                
-                     <li><img src="images/3.jpg" alt=""></li>
+                    <li> <img src="https://media-cdn.tripadvisor.com/media/photo-s/08/b0/81/af/dulang-resort-and-resto.jpg" alt=""></li>               
+                     <li><img src="https://edge.media.datahc.com/HI135223823.jpg" alt=""></li>                
+                     <li><img src="http://pix4.agoda.net/hotelimages/280/280746/280746_15082010240034667209.jpg?s=800x" alt=""></li>
+                     </ul>
+              </div>
+			  <div class="item text-center image-grid"> 
+                    <ul>
+                    <li><img src="http://housebeauty.net/wp-content/uploads/2014/07/Great-Modern-Home-Office-Design-Interior-in-Minimalist-Ideas-for-Small-Bedrooms-Decoration-Used-Wooden-Furniture.jpg" alt=""></li>               
+                     <li><img src="http://www.sohogrand.com/wp-content/uploads/sites/2/2015/01/deluxesuitelivingroom-1200x800-c-default.jpg" alt=""></li>                
+                     <li><img src="http://www.bega-hotel.ru/upload/iblock/7e7/7e74433722f9338cbf045c5d17b2a3cc.JPG" alt=""></li>
                      </ul>
               </div>
               <div class="item text-center image-grid"> 
                     <ul>
-                    <li> <img src="images/3.jpg" alt=""></li>               
-                     <li><img src="images/4.jpg" alt=""></li>                
-                     <li><img src="images/5.jpg" alt=""></li>
-                     </ul>
-              </div>
-              <div class="item text-center image-grid"> 
-                    <ul>
-                    <li> <img src="images/6.jpg" alt=""></li>               
-                     <li><img src="images/2.jpg" alt=""></li>                
-                     <li><img src="images/8.jpg" alt=""></li>
+                    <li> <img src="http://eaglepointresort.com.ph/wp-content/uploads/EPR-Resto-and-Bar-3_mini-a76e7f6de91.jpg" alt=""></li>               
+                     <li><img src="http://assets.inhabitat.com/wp-content/blogs.dir/1/files/2012/01/Villa-Escudero-Waterfalls-Restauran.jpg" alt=""></li>                
+                     <li><img src="http://3.bp.blogspot.com/-NH78XhxcBoI/Vp4_gdYK98I/AAAAAAAARyo/b2iDRMW6U8s/s1600/DSC_7090.JPG" alt=""></li>
                      </ul>
               </div>
           </div>        
@@ -190,9 +191,9 @@ AppAsset::register($this);
          <h3>Our Room Types</h3>
          <div class="room-grids">
              <div class="col-md-4 room-sec">
-                 <img src="images/pic1.jpg" alt=""/>
+                 <img src="http://www.twinoakshotel.co.uk/wp-content/uploads/2014/10/2496207_23_z.jpg" alt="standard double room" style="width:350px; height:200px"/>
                  <h4>Standard Double Room</h4>
-                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent scelerisque lectus vitae dui sollicitudin commodo.</p>
+                 <p>All rooms are equipped with a flat-screen digital TV, free tea and coffee facilities, a desk area, free Wi-Fi access, and a private bathroom with complimentary toiletries.</p>
                  <div class="items">
                      <li><a href="#"><span class="img1"> </span></a></li>
                      <li><a href="#"><span class="img2"> </span></a></li>
@@ -203,9 +204,9 @@ AppAsset::register($this);
                  </div>
              </div>
              <div class="col-md-4 room-sec">
-                 <img src="images/pic2.jpg" alt=""/>
-                 <h4>Supperior Double Room</h4>
-                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent scelerisque lectus vitae dui sollicitudin commodo.</p>
+                 <img src=http://www.twinoakshotel.co.uk/wp-content/uploads/2014/10/4154127.jpg alt="superior double room" style="width:350px; height:200px"/>
+                 <h4>Superior Double Room</h4>
+                 <p>All our superior double rooms are fully en-suite with king size bed, flat-screen digital TV, free tea and coffee facilities, a desk area, free Wi-Fi access, and a private bathroom with complimentary toiletries.</p>
                  <div class="items">                    
                      <li><a href="#"><span class="img1"> </span></a></li>
                      <li><a href="#"><span class="img2"> </span></a></li>
@@ -216,9 +217,9 @@ AppAsset::register($this);
                  </div>
              </div>
              <div class="col-md-4 room-sec">
-                 <img src="images/pic3.jpg" alt=""/>
+                 <img src="http://www.twinoakshotel.co.uk/wp-content/uploads/2014/10/IMG_9086.jpg" alt="family room" style="width:350px; height:200px"/>
                  <h4>Family Room</h4>
-                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent scelerisque lectus vitae dui sollicitudin commodo.</p>
+                 <p>Our family room is fully en-suite with king size bed, TV, and hospitality tray. Contains a sofa bed suitable for up to 1 small child.</p>
                  <div class="items">
                      <li><a href="#"><span class="img1"> </span></a></li>
                      <li><a href="#"><span class="img2"> </span></a></li>
@@ -230,9 +231,9 @@ AppAsset::register($this);
              </div>
              <div class="clearfix"></div>
              <div class="col-md-4 room-sec">
-                 <img src="images/pic4.jpg" alt=""/>
+                 <img src="http://elillyhotel.com/wp-content/uploads/2013/11/single-300x189.jpg" alt="standard single room" style="width:350px; height:200px"/>
                  <h4>Standard Single Room</h4>
-                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent scelerisque lectus vitae dui sollicitudin commodo.</p>
+                 <p>Each standard rooms feature satellite TV, Internet access, world class guest amenities and bathroom supplies.</p>
                  <div class="items">
                      <li><a href="#"><span class="img1"> </span></a></li>
                      <li><a href="#"><span class="img2"> </span></a></li>
@@ -243,9 +244,9 @@ AppAsset::register($this);
                  </div>
              </div>
              <div class="col-md-4 room-sec">
-                 <img src="images/pic5.jpg" alt=""/>
-                 <h4>Supperior Single Room</h4>
-                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent scelerisque lectus vitae dui sollicitudin commodo.</p>
+                 <img src="http://alarun.de/img/images/wechselbilder/EZ_Superior_2.jpg" alt="superior single room" style="width:350px; height:200px"/>
+                 <h4>Superior Single Room</h4>
+                 <p>Our superior single rooms offer an extra long queen-size bed and a large writing desk with many plug sockets. Take a seat in the comfortable armchair and watch television on a larger screen. The bathroom is equipped with a large walk-in shower, a bathrobe is provided.</p>
                  <div class="items">
                      <li><a href="#"><span class="img1"> </span></a></li>
                      <li><a href="#"><span class="img2"> </span></a></li>
@@ -256,9 +257,9 @@ AppAsset::register($this);
                  </div>
              </div>
              <div class="col-md-4 room-sec">
-                 <img src="images/pic6.jpg" alt=""/>
+                 <img src="http://www.goldenstarhotel.vn/Images/Room/Full/bizmac_full_28382016_013824.jpg" alt="vip room" style="width:350px; height:200px"/>
                  <h4>VIP Room</h4>
-                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent scelerisque lectus vitae dui sollicitudin commodo.</p>
+                 <p>Our Suite (VIP) Rooms are spacious and efficient. Full-height windows offer expansive vistas of the dramatic cityscape, and king or twin beds provide flexible accommodations. Other thoughtful touches include complimentary Wi-Fi Internet access, and a large, LCD TV with international satellite reception and dozens of choices.</p>
                  <div class="items">
                      <li><a href="#"><span class="img1"> </span></a></li>
                      <li><a href="#"><span class="img2"> </span></a></li>
