@@ -35,20 +35,39 @@ AppAsset::register($this);
              </div>
              <span class="menu"> </span>
              <div class="m-clear"></div>
-             <div class="top-menu">
-                <ul>
-                     <li class="active"><a href="index.php?r=site%2Findex">HOME</a></li>
-                     <li><a class="scroll" href="index.php?r=site%2Fabout">ABOUT</a></li>
-                     <li><a class="scroll" href="index.php?r=site%2Frestaurant">RESTAURANT</a></li>
-                     <li><a class="scroll" href="index.php?r=site%2Fconference">CONFERENCE</a></li>
-                     <li><a class="scroll" href="index.php?r=site%2Fbooking">BOOKING</a></li>
-                     <li><a class="scroll" href="index.php?r=site%2Fcontact">CONTACT US</a></li>
-                </ul>
-                <script>
-                    $("span.menu").click(function(){
-                        $(".top-menu ul").slideToggle(200);
-                    });
-                </script>
+             <div class="wrap">
+                <?php
+    NavBar::begin([
+        'brandLabel' => 'My Company',
+        'brandUrl' => Yii::$app->homeUrl,
+        'options' => [
+            'class' => 'navbar-inverse navbar-fixed-top',
+        ],
+    ]);
+    $menuItems = [
+        ['label' => 'Home', 'url' => ['/site/index']],
+        ['label' => 'About', 'url' => ['/site/about']],
+        ['label' => 'Contact', 'url' => ['/site/contact']],
+    ];
+    if (Yii::$app->user->isGuest) {
+        $menuItems[] = ['label' => 'Signup', 'url' => ['/site/signup']];
+        $menuItems[] = ['label' => 'Login', 'url' => ['/site/login']];
+    } else {
+        $menuItems[] = '<li>'
+            . Html::beginForm(['/site/logout'], 'post')
+            . Html::submitButton(
+                'Logout (' . Yii::$app->user->identity->username . ')',
+                ['class' => 'btn btn-link logout']
+            )
+            . Html::endForm()
+            . '</li>';
+    }
+    echo Nav::widget([
+        'options' => ['class' => 'navbar-nav navbar-right'],
+        'items' => $menuItems,
+    ]);
+    NavBar::end();
+    ?>
              </div>
              <div class="clearfix"></div>
           </div>

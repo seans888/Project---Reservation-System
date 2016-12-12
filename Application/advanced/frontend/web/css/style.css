@@ -1450,7 +1450,7 @@ border: 1px solid #FFD700;
 transition: all 0.3s ease-in-out;
 }
 .form-control{
-width:10%;
+width:100%;
 }
 .booking-form input[type="submit"],.booking-form input[type="reset"] {
 margin-top: 25px;
