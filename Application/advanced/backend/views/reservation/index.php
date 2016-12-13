@@ -25,13 +25,11 @@ $this->params['breadcrumbs'][] = $this->title;
             ['class' => 'yii\grid\SerialColumn'],
 
             'id',
-            'reservation_date',
             'check_in',
             'check_out',
-            'rooms',
-            // 'adults',
+            'type_of_room',
+            'adults',
             // 'kids',
-            // 'billingstatement_id',
 
             ['class' => 'yii\grid\ActionColumn'],
         ],

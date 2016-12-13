@@ -29,13 +29,11 @@ $this->params['breadcrumbs'][] = $this->title;
         'model' => $model,
         'attributes' => [
             'id',
-            'reservation_date',
             'check_in',
             'check_out',
-            'rooms',
+            'type_of_room',
             'adults',
             'kids',
-            'billingstatement_id',
         ],
     ]) ?>
 
