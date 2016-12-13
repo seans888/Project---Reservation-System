@@ -8,13 +8,16 @@ use Yii;
  * This is the model class for table "reservation".
  *
  * @property integer $id
+ * @property string $reservation_date
  * @property string $check_in
  * @property string $check_out
- * @property string $type_of_room
+ * @property string $rooms
  * @property string $adults
  * @property string $kids
+ * @property integer $billingstatement_id
  *
  * @property CustomerHasReservation[] $customerHasReservations
+ * @property Billingstatement $billingstatement
  * @property ReservationHasRoom[] $reservationHasRooms
  */
 class Reservation extends \yii\db\ActiveRecord
@@ -33,13 +36,12 @@ class Reservation extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['check_in', 'check_out'], 'safe'],
-            [['type_of_room'], 'string', 'max' => 45],
+            [['reservation_date', 'check_in', 'check_out'], 'safe'],
+            [['billingstatement_id'], 'required'],
+            [['billingstatement_id'], 'integer'],
+            [['rooms'], 'string', 'max' => 10],
             [['adults', 'kids'], 'string', 'max' => 50],
-<<<<<<< HEAD
           /*  [['billingstatement_id'], 'exist', 'skipOnError' => true, 'targetClass' => Billingstatement::className(), 'targetAttribute' => ['billingstatement_id' => 'id']],*/
-=======
->>>>>>> origin/master
         ];
     }
 
@@ -50,18 +52,13 @@ class Reservation extends \yii\db\ActiveRecord
     {
         return [
             'id' => 'ID',
+            'reservation_date' => 'Reservation Date',
             'check_in' => 'Check In',
             'check_out' => 'Check Out',
-<<<<<<< HEAD
             'rooms' => 'Room Type',
             'adults' => 'Adults',
             'kids' => 'Kids',
             //'billingstatement_id' => 'Billingstatement ID',
-=======
-            'type_of_room' => 'Type Of Room',
-            'adults' => 'Adults',
-            'kids' => 'Kids',
->>>>>>> origin/master
         ];
     }
 
@@ -76,7 +73,6 @@ class Reservation extends \yii\db\ActiveRecord
     /**
      * @return \yii\db\ActiveQuery
      */
-<<<<<<< HEAD
    /* public function getBillingstatement()
     {
         return $this->hasOne(Billingstatement::className(), ['id' => 'billingstatement_id']);
@@ -85,8 +81,6 @@ class Reservation extends \yii\db\ActiveRecord
     /**
      * @return \yii\db\ActiveQuery
      */
-=======
->>>>>>> origin/master
     public function getReservationHasRooms()
     {
         return $this->hasMany(ReservationHasRoom::className(), ['reservation_id' => 'id']);
