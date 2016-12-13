@@ -17,19 +17,15 @@ use yii\widgets\ActiveForm;
 
     <?= $form->field($model, 'id') ?>
 
-    <?= $form->field($model, 'reservation_date') ?>
-
     <?= $form->field($model, 'check_in') ?>
 
     <?= $form->field($model, 'check_out') ?>
 
-    <?= $form->field($model, 'rooms') ?>
+    <?= $form->field($model, 'type_of_room') ?>
 
-    <?php // echo $form->field($model, 'adults') ?>
+    <?= $form->field($model, 'adults') ?>
 
     <?php // echo $form->field($model, 'kids') ?>
-
-    <?php // echo $form->field($model, 'billingstatement_id') ?>
 
     <div class="form-group">
         <?= Html::submitButton('Search', ['class' => 'btn btn-primary']) ?>

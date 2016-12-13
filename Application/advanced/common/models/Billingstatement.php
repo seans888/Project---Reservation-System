@@ -17,7 +17,6 @@ use Yii;
  *
  * @property Customer $customer
  * @property Employee $employee
- * @property Reservation[] $reservations
  * @property Room[] $rooms
  * @property Service[] $services
  */
@@ -78,14 +77,6 @@ class Billingstatement extends \yii\db\ActiveRecord
     public function getEmployee()
     {
         return $this->hasOne(Employee::className(), ['id' => 'employee_id']);
-    }
-
-    /**
-     * @return \yii\db\ActiveQuery
-     */
-    public function getReservations()
-    {
-        return $this->hasMany(Reservation::className(), ['billingstatement_id' => 'id']);
     }
 
     /**

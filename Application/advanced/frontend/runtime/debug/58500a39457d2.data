@@ -1,0 +1,842 @@
+a:8:{s:6:"config";a:5:{s:10:"phpVersion";s:6:"5.6.14";s:10:"yiiVersion";s:6:"2.0.10";s:11:"application";a:4:{s:3:"yii";s:6:"2.0.10";s:4:"name";s:14:"My Application";s:3:"env";s:3:"dev";s:5:"debug";b:1;}s:3:"php";a:4:{s:7:"version";s:6:"5.6.14";s:6:"xdebug";b:0;s:3:"apc";b:0;s:8:"memcache";b:0;}s:10:"extensions";a:5:{s:24:"yiisoft/yii2-swiftmailer";a:3:{s:4:"name";s:24:"yiisoft/yii2-swiftmailer";s:7:"version";s:7:"2.0.6.0";s:5:"alias";a:1:{s:16:"@yii/swiftmailer";s:104:"C:\Users\mlbel\Desktop\Project---Reservation-System\Application\advanced\vendor/yiisoft/yii2-swiftmailer";}}s:22:"yiisoft/yii2-bootstrap";a:3:{s:4:"name";s:22:"yiisoft/yii2-bootstrap";s:7:"version";s:7:"2.0.6.0";s:5:"alias";a:1:{s:14:"@yii/bootstrap";s:102:"C:\Users\mlbel\Desktop\Project---Reservation-System\Application\advanced\vendor/yiisoft/yii2-bootstrap";}}s:18:"yiisoft/yii2-debug";a:3:{s:4:"name";s:18:"yiisoft/yii2-debug";s:7:"version";s:7:"2.0.6.0";s:5:"alias";a:1:{s:10:"@yii/debug";s:98:"C:\Users\mlbel\Desktop\Project---Reservation-System\Application\advanced\vendor/yiisoft/yii2-debug";}}s:16:"yiisoft/yii2-gii";a:3:{s:4:"name";s:16:"yiisoft/yii2-gii";s:7:"version";s:7:"2.0.5.0";s:5:"alias";a:1:{s:8:"@yii/gii";s:96:"C:\Users\mlbel\Desktop\Project---Reservation-System\Application\advanced\vendor/yiisoft/yii2-gii";}}s:18:"yiisoft/yii2-faker";a:3:{s:4:"name";s:18:"yiisoft/yii2-faker";s:7:"version";s:7:"2.0.3.0";s:5:"alias";a:1:{s:10:"@yii/faker";s:98:"C:\Users\mlbel\Desktop\Project---Reservation-System\Application\advanced\vendor/yiisoft/yii2-faker";}}}}s:7:"request";a:14:{s:7:"flashes";a:0:{}s:10:"statusCode";i:200;s:14:"requestHeaders";a:13:{s:4:"host";s:9:"localhost";s:10:"connection";s:10:"keep-alive";s:14:"content-length";s:3:"707";s:13:"cache-control";s:9:"max-age=0";s:6:"origin";s:16:"http://localhost";s:25:"upgrade-insecure-requests";s:1:"1";s:10:"user-agent";s:109:"Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.99 Safari/537.36";s:12:"content-type";s:33:"application/x-www-form-urlencoded";s:6:"accept";s:74:"text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8";s:7:"referer";s:80:"http://localhost/advanced/frontend/web/index.php?r=gii%2Fdefault%2Fview&id=model";s:15:"accept-encoding";s:17:"gzip, deflate, br";s:15:"accept-language";s:14:"en-US,en;q=0.8";s:6:"cookie";s:421:"PHPFRONTSESSID=g6i4upep6ki133qmn5ip450807; _frontendCSRF=d75de7d6bd03d29bad9bf5f46aad0555578c1702328b2ece83612bd6c4efdca8a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_frontendCSRF%22%3Bi%3A1%3Bs%3A32%3A%22qimx6oYm9IVvY2OX1FbgT0mPqgN2rZwB%22%3B%7D; _backendCSRF=b7edaac34a5fd0be842a41cb01becf3e4cfac278dda195219de4f1b17c0771c5a%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendCSRF%22%3Bi%3A1%3Bs%3A32%3A%22ZbrWot-75Ij0vZlg-Z2IQlegdMBccRvj%22%3B%7D";}s:15:"responseHeaders";a:2:{s:12:"X-Powered-By";s:10:"PHP/5.6.14";s:12:"Content-Type";s:24:"text/html; charset=UTF-8";}s:5:"route";s:16:"gii/default/view";s:6:"action";s:51:"yii\gii\controllers\DefaultController::actionView()";s:12:"actionParams";a:1:{i:0;s:5:"model";}s:11:"requestBody";a:3:{s:12:"Content Type";s:33:"application/x-www-form-urlencoded";s:3:"Raw";s:707:"_frontendCSRF=Xzc3OEszckguXlpAfVwrJWZ.YU4SAT0QbnFVXx8DHxguUHkKOWkFCg%3D%3D&Generator%5BtableName%5D=reservation&Generator%5BmodelClass%5D=Reservation&Generator%5Bns%5D=common%5Cmodels&Generator%5BbaseClass%5D=yii%5Cdb%5CActiveRecord&Generator%5Bdb%5D=db&Generator%5BuseTablePrefix%5D=0&Generator%5BgenerateRelations%5D=all&Generator%5BgenerateLabelsFromComments%5D=0&Generator%5BgenerateQuery%5D=0&Generator%5BqueryNs%5D=common%5Cmodels&Generator%5BqueryClass%5D=ReservationQuery&Generator%5BqueryBaseClass%5D=yii%5Cdb%5CActiveQuery&Generator%5BenableI18N%5D=0&Generator%5BmessageCategory%5D=app&Generator%5BuseSchemaName%5D=0&Generator%5BuseSchemaName%5D=1&Generator%5Btemplate%5D=default&preview=&preview=";s:17:"Decoded to Params";a:3:{s:13:"_frontendCSRF";s:56:"Xzc3OEszckguXlpAfVwrJWZ.YU4SAT0QbnFVXx8DHxguUHkKOWkFCg==";s:9:"Generator";a:16:{s:9:"tableName";s:11:"reservation";s:10:"modelClass";s:11:"Reservation";s:2:"ns";s:13:"common\models";s:9:"baseClass";s:19:"yii\db\ActiveRecord";s:2:"db";s:2:"db";s:14:"useTablePrefix";s:1:"0";s:17:"generateRelations";s:3:"all";s:26:"generateLabelsFromComments";s:1:"0";s:13:"generateQuery";s:1:"0";s:7:"queryNs";s:13:"common\models";s:10:"queryClass";s:16:"ReservationQuery";s:14:"queryBaseClass";s:18:"yii\db\ActiveQuery";s:10:"enableI18N";s:1:"0";s:15:"messageCategory";s:3:"app";s:13:"useSchemaName";s:1:"1";s:8:"template";s:7:"default";}s:7:"preview";s:0:"";}}s:6:"SERVER";a:46:{s:7:"MIBDIRS";s:24:"C:/xampp/php/extras/mibs";s:10:"MYSQL_HOME";s:16:"\xampp\mysql\bin";s:12:"OPENSSL_CONF";s:31:"C:/xampp/apache/bin/openssl.cnf";s:20:"PHP_PEAR_SYSCONF_DIR";s:10:"\xampp\php";s:5:"PHPRC";s:10:"\xampp\php";s:3:"TMP";s:10:"\xampp\tmp";s:9:"HTTP_HOST";s:9:"localhost";s:15:"HTTP_CONNECTION";s:10:"keep-alive";s:14:"CONTENT_LENGTH";s:3:"707";s:18:"HTTP_CACHE_CONTROL";s:9:"max-age=0";s:11:"HTTP_ORIGIN";s:16:"http://localhost";s:30:"HTTP_UPGRADE_INSECURE_REQUESTS";s:1:"1";s:15:"HTTP_USER_AGENT";s:109:"Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.99 Safari/537.36";s:12:"CONTENT_TYPE";s:33:"application/x-www-form-urlencoded";s:11:"HTTP_ACCEPT";s:74:"text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8";s:12:"HTTP_REFERER";s:80:"http://localhost/advanced/frontend/web/index.php?r=gii%2Fdefault%2Fview&id=model";s:20:"HTTP_ACCEPT_ENCODING";s:17:"gzip, deflate, br";s:20:"HTTP_ACCEPT_LANGUAGE";s:14:"en-US,en;q=0.8";s:11:"HTTP_COOKIE";s:421:"PHPFRONTSESSID=g6i4upep6ki133qmn5ip450807; _frontendCSRF=d75de7d6bd03d29bad9bf5f46aad0555578c1702328b2ece83612bd6c4efdca8a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_frontendCSRF%22%3Bi%3A1%3Bs%3A32%3A%22qimx6oYm9IVvY2OX1FbgT0mPqgN2rZwB%22%3B%7D; _backendCSRF=b7edaac34a5fd0be842a41cb01becf3e4cfac278dda195219de4f1b17c0771c5a%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendCSRF%22%3Bi%3A1%3Bs%3A32%3A%22ZbrWot-75Ij0vZlg-Z2IQlegdMBccRvj%22%3B%7D";s:4:"PATH";s:932:"C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Windows Kits\8.1\Windows Performance Toolkit\;C:\Program Files\Microsoft SQL Server\110\Tools\Binn\;C:\Program Files (x86)\GtkSharp\2.12\bin;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files\Git\cmd;C:\Program Files\TortoiseSVN\bin;C:\xampp\htdocs\advanced;C:\Program Files\CloudFoundry;C:\Program Files\TortoiseGit\bin;C:\Users\mlbel\AppData\Local\Microsoft\WindowsApps;";s:10:"SystemRoot";s:10:"C:\WINDOWS";s:7:"COMSPEC";s:27:"C:\WINDOWS\system32\cmd.exe";s:7:"PATHEXT";s:53:".COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC";s:6:"WINDIR";s:10:"C:\WINDOWS";s:16:"SERVER_SIGNATURE";s:95:"<address>Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.6.14 Server at localhost Port 80</address>
+";s:15:"SERVER_SOFTWARE";s:47:"Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.6.14";s:11:"SERVER_NAME";s:9:"localhost";s:11:"SERVER_ADDR";s:3:"::1";s:11:"SERVER_PORT";s:2:"80";s:11:"REMOTE_ADDR";s:3:"::1";s:13:"DOCUMENT_ROOT";s:15:"C:/xampp/htdocs";s:14:"REQUEST_SCHEME";s:4:"http";s:14:"CONTEXT_PREFIX";s:0:"";s:21:"CONTEXT_DOCUMENT_ROOT";s:15:"C:/xampp/htdocs";s:12:"SERVER_ADMIN";s:20:"postmaster@localhost";s:15:"SCRIPT_FILENAME";s:47:"C:/xampp/htdocs/advanced/frontend/web/index.php";s:11:"REMOTE_PORT";s:5:"52363";s:17:"GATEWAY_INTERFACE";s:7:"CGI/1.1";s:15:"SERVER_PROTOCOL";s:8:"HTTP/1.1";s:14:"REQUEST_METHOD";s:4:"POST";s:12:"QUERY_STRING";s:31:"r=gii%2Fdefault%2Fview&id=model";s:11:"REQUEST_URI";s:64:"/advanced/frontend/web/index.php?r=gii%2Fdefault%2Fview&id=model";s:11:"SCRIPT_NAME";s:32:"/advanced/frontend/web/index.php";s:8:"PHP_SELF";s:32:"/advanced/frontend/web/index.php";s:18:"REQUEST_TIME_FLOAT";d:1481640505.243999958038330078125;s:12:"REQUEST_TIME";i:1481640505;}s:3:"GET";a:2:{s:1:"r";s:16:"gii/default/view";s:2:"id";s:5:"model";}s:4:"POST";a:3:{s:13:"_frontendCSRF";s:56:"Xzc3OEszckguXlpAfVwrJWZ.YU4SAT0QbnFVXx8DHxguUHkKOWkFCg==";s:9:"Generator";a:16:{s:9:"tableName";s:11:"reservation";s:10:"modelClass";s:11:"Reservation";s:2:"ns";s:13:"common\models";s:9:"baseClass";s:19:"yii\db\ActiveRecord";s:2:"db";s:2:"db";s:14:"useTablePrefix";s:1:"0";s:17:"generateRelations";s:3:"all";s:26:"generateLabelsFromComments";s:1:"0";s:13:"generateQuery";s:1:"0";s:7:"queryNs";s:13:"common\models";s:10:"queryClass";s:16:"ReservationQuery";s:14:"queryBaseClass";s:18:"yii\db\ActiveQuery";s:10:"enableI18N";s:1:"0";s:15:"messageCategory";s:3:"app";s:13:"useSchemaName";s:1:"1";s:8:"template";s:7:"default";}s:7:"preview";s:0:"";}s:6:"COOKIE";a:3:{s:14:"PHPFRONTSESSID";s:26:"g6i4upep6ki133qmn5ip450807";s:13:"_frontendCSRF";s:139:"d75de7d6bd03d29bad9bf5f46aad0555578c1702328b2ece83612bd6c4efdca8a:2:{i:0;s:13:"_frontendCSRF";i:1;s:32:"qimx6oYm9IVvY2OX1FbgT0mPqgN2rZwB";}";s:12:"_backendCSRF";s:138:"b7edaac34a5fd0be842a41cb01becf3e4cfac278dda195219de4f1b17c0771c5a:2:{i:0;s:12:"_backendCSRF";i:1;s:32:"ZbrWot-75Ij0vZlg-Z2IQlegdMBccRvj";}";}s:5:"FILES";a:0:{}s:7:"SESSION";a:0:{}}s:3:"log";a:1:{s:8:"messages";a:60:{i:0;a:5:{i:0;s:33:"Bootstrap with yii\log\Dispatcher";i:1;i:8;i:2;s:31:"yii\base\Application::bootstrap";i:3;d:1481640505.273521900177001953125;i:4;a:0:{}}i:1;a:5:{i:0;s:21:"Loading module: debug";i:1;i:8;i:2;s:26:"yii\base\Module::getModule";i:3;d:1481640505.273560047149658203125;i:4;a:0:{}}i:2;a:5:{i:0;s:44:"Bootstrap with yii\debug\Module::bootstrap()";i:1;i:8;i:2;s:31:"yii\base\Application::bootstrap";i:3;d:1481640505.283586025238037109375;i:4;a:0:{}}i:3;a:5:{i:0;s:19:"Loading module: gii";i:1;i:8;i:2;s:26:"yii\base\Module::getModule";i:3;d:1481640505.285748004913330078125;i:4;a:0:{}}i:4;a:5:{i:0;s:42:"Bootstrap with yii\gii\Module::bootstrap()";i:1;i:8;i:2;s:31:"yii\base\Application::bootstrap";i:3;d:1481640505.2866389751434326171875;i:4;a:0:{}}i:5;a:5:{i:0;s:56:"Pretty URL not enabled. Using default URL parsing logic.";i:1;i:8;i:2;s:32:"yii\web\UrlManager::parseRequest";i:3;d:1481640505.28864192962646484375;i:4;a:0:{}}i:6;a:5:{i:0;s:35:"Route requested: 'gii/default/view'";i:1;i:8;i:2;s:34:"yii\web\Application::handleRequest";i:3;d:1481640505.288690090179443359375;i:4;a:0:{}}i:7;a:5:{i:0;s:30:"Route to run: gii/default/view";i:1;i:8;i:2;s:30:"yii\base\Controller::runAction";i:3;d:1481640505.2919700145721435546875;i:4;a:0:{}}i:8;a:5:{i:0;s:67:"Running action: yii\gii\controllers\DefaultController::actionView()";i:1;i:8;i:2;s:36:"yii\base\InlineAction::runWithParams";i:3;d:1481640505.3080589771270751953125;i:4;a:0:{}}i:9;a:5:{i:0;s:36:"SHOW FULL COLUMNS FROM `reservation`";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1481640505.3241178989410400390625;i:4;a:0:{}}i:10;a:5:{i:0;s:76:"Opening DB connection: mysql:host=localhost;dbname=resort_reservation_system";i:1;i:4;i:2;s:23:"yii\db\Connection::open";i:3;d:1481640505.32419490814208984375;i:4;a:0:{}}i:15;a:5:{i:0;s:609:"SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'reservation' AND kcu.table_name = 'reservation'";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1481640505.3376009464263916015625;i:4;a:0:{}}i:18;a:5:{i:0;s:11:"SHOW TABLES";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1481640505.3404300212860107421875;i:4;a:0:{}}i:21;a:5:{i:0;s:30:"SHOW FULL COLUMNS FROM `admin`";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1481640505.3411719799041748046875;i:4;a:0:{}}i:24;a:5:{i:0;s:597:"SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'admin' AND kcu.table_name = 'admin'";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1481640505.3482658863067626953125;i:4;a:0:{}}i:27;a:5:{i:0;s:41:"SHOW FULL COLUMNS FROM `billingstatement`";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1481640505.3488810062408447265625;i:4;a:0:{}}i:30;a:5:{i:0;s:619:"SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'billingstatement' AND kcu.table_name = 'billingstatement'";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1481640505.356398105621337890625;i:4;a:0:{}}i:33;a:5:{i:0;s:33:"SHOW FULL COLUMNS FROM `customer`";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1481640505.3570849895477294921875;i:4;a:0:{}}i:36;a:5:{i:0;s:603:"SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'customer' AND kcu.table_name = 'customer'";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1481640505.3623869419097900390625;i:4;a:0:{}}i:39;a:5:{i:0;s:49:"SHOW FULL COLUMNS FROM `customer_has_reservation`";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1481640505.3632299900054931640625;i:4;a:0:{}}i:42;a:5:{i:0;s:635:"SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'customer_has_reservation' AND kcu.table_name = 'customer_has_reservation'";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1481640505.3685410022735595703125;i:4;a:0:{}}i:45;a:5:{i:0;s:33:"SHOW FULL COLUMNS FROM `employee`";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1481640505.36925411224365234375;i:4;a:0:{}}i:48;a:5:{i:0;s:603:"SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'employee' AND kcu.table_name = 'employee'";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1481640505.3760640621185302734375;i:4;a:0:{}}i:51;a:5:{i:0;s:49:"SHOW FULL COLUMNS FROM `employee_assist_customer`";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1481640505.37668704986572265625;i:4;a:0:{}}i:54;a:5:{i:0;s:635:"SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'employee_assist_customer' AND kcu.table_name = 'employee_assist_customer'";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1481640505.3831350803375244140625;i:4;a:0:{}}i:57;a:5:{i:0;s:34:"SHOW FULL COLUMNS FROM `migration`";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1481640505.383925914764404296875;i:4;a:0:{}}i:60;a:5:{i:0;s:605:"SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'migration' AND kcu.table_name = 'migration'";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1481640505.3909549713134765625;i:4;a:0:{}}i:63;a:5:{i:0;s:45:"SHOW FULL COLUMNS FROM `reservation_has_room`";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1481640505.3915760517120361328125;i:4;a:0:{}}i:66;a:5:{i:0;s:627:"SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'reservation_has_room' AND kcu.table_name = 'reservation_has_room'";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1481640505.3984611034393310546875;i:4;a:0:{}}i:69;a:5:{i:0;s:29:"SHOW FULL COLUMNS FROM `room`";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1481640505.3991069793701171875;i:4;a:0:{}}i:72;a:5:{i:0;s:595:"SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'room' AND kcu.table_name = 'room'";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1481640505.4038460254669189453125;i:4;a:0:{}}i:75;a:5:{i:0;s:32:"SHOW FULL COLUMNS FROM `service`";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1481640505.40466594696044921875;i:4;a:0:{}}i:78;a:5:{i:0;s:601:"SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'service' AND kcu.table_name = 'service'";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1481640505.4100821018218994140625;i:4;a:0:{}}i:81;a:5:{i:0;s:29:"SHOW FULL COLUMNS FROM `user`";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1481640505.411055088043212890625;i:4;a:0:{}}i:84;a:5:{i:0;s:595:"SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'user' AND kcu.table_name = 'user'";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1481640505.41594791412353515625;i:4;a:0:{}}i:87;a:5:{i:0;s:36:"SHOW CREATE TABLE `billingstatement`";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1481640505.4189269542694091796875;i:4;a:0:{}}i:90;a:5:{i:0;s:36:"SHOW CREATE TABLE `billingstatement`";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1481640505.41998004913330078125;i:4;a:0:{}}i:93;a:5:{i:0;s:36:"SHOW CREATE TABLE `billingstatement`";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1481640505.4206659793853759765625;i:4;a:0:{}}i:96;a:5:{i:0;s:44:"SHOW CREATE TABLE `customer_has_reservation`";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1481640505.42123508453369140625;i:4;a:0:{}}i:99;a:5:{i:0;s:44:"SHOW CREATE TABLE `customer_has_reservation`";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1481640505.421883106231689453125;i:4;a:0:{}}i:102;a:5:{i:0;s:44:"SHOW CREATE TABLE `customer_has_reservation`";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1481640505.42284393310546875;i:4;a:0:{}}i:105;a:5:{i:0;s:44:"SHOW CREATE TABLE `employee_assist_customer`";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1481640505.42339992523193359375;i:4;a:0:{}}i:108;a:5:{i:0;s:44:"SHOW CREATE TABLE `employee_assist_customer`";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1481640505.4239919185638427734375;i:4;a:0:{}}i:111;a:5:{i:0;s:44:"SHOW CREATE TABLE `employee_assist_customer`";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1481640505.4245738983154296875;i:4;a:0:{}}i:114;a:5:{i:0;s:40:"SHOW CREATE TABLE `reservation_has_room`";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1481640505.4251019954681396484375;i:4;a:0:{}}i:117;a:5:{i:0;s:40:"SHOW CREATE TABLE `reservation_has_room`";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1481640505.4258029460906982421875;i:4;a:0:{}}i:120;a:5:{i:0;s:40:"SHOW CREATE TABLE `reservation_has_room`";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1481640505.4265830516815185546875;i:4;a:0:{}}i:123;a:5:{i:0;s:24:"SHOW CREATE TABLE `room`";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1481640505.4271070957183837890625;i:4;a:0:{}}i:126;a:5:{i:0;s:27:"SHOW CREATE TABLE `service`";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1481640505.4275400638580322265625;i:4;a:0:{}}i:129;a:5:{i:0;s:27:"SHOW CREATE TABLE `service`";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1481640505.4279839992523193359375;i:4;a:0:{}}i:132;a:5:{i:0;s:27:"SHOW CREATE TABLE `service`";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1481640505.42840290069580078125;i:4;a:0:{}}i:135;a:5:{i:0;s:27:"SHOW CREATE TABLE `service`";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1481640505.4288120269775390625;i:4;a:0:{}}i:138;a:5:{i:0;s:27:"SHOW CREATE TABLE `service`";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1481640505.4291861057281494140625;i:4;a:0:{}}i:141;a:5:{i:0;s:31:"SHOW CREATE TABLE `reservation`";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1481640505.4296419620513916015625;i:4;a:0:{}}i:144;a:5:{i:0;s:152:"Rendering view file: C:\Users\mlbel\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2-gii\generators\model/default/model.php";i:1;i:8;i:2;s:25:"yii\base\View::renderFile";i:3;d:1481640505.4322330951690673828125;i:4;a:0:{}}i:145;a:5:{i:0;s:140:"Rendering view file: C:\Users\mlbel\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2-gii\views\default\view.php";i:1;i:8;i:2;s:25:"yii\base\View::renderFile";i:3;d:1481640505.46220111846923828125;i:4;a:0:{}}i:146;a:5:{i:0;s:143:"Rendering view file: C:\Users\mlbel\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2-gii\generators\model/form.php";i:1;i:8;i:2;s:25:"yii\base\View::renderFile";i:3;d:1481640505.469150066375732421875;i:4;a:0:{}}i:147;a:5:{i:0;s:146:"Rendering view file: C:\Users\mlbel\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2-gii\views\default\view/files.php";i:1;i:8;i:2;s:25:"yii\base\View::renderFile";i:3;d:1481640505.479259014129638671875;i:4;a:0:{}}i:148;a:5:{i:0;s:145:"Rendering view file: C:\Users\mlbel\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2-gii\views\layouts\generator.php";i:1;i:8;i:2;s:25:"yii\base\View::renderFile";i:3;d:1481640505.4805300235748291015625;i:4;a:0:{}}i:149;a:5:{i:0;s:140:"Rendering view file: C:\Users\mlbel\Desktop\Project---Reservation-System\Application\advanced\vendor/yiisoft/yii2-gii/views/layouts/main.php";i:1;i:8;i:2;s:25:"yii\base\View::renderFile";i:3;d:1481640505.481420040130615234375;i:4;a:0:{}}}}s:9:"profiling";a:3:{s:6:"memory";i:6733232;s:4:"time";d:0.2358551025390625;s:8:"messages";a:90:{i:11;a:5:{i:0;s:76:"Opening DB connection: mysql:host=localhost;dbname=resort_reservation_system";i:1;i:80;i:2;s:23:"yii\db\Connection::open";i:3;d:1481640505.324243068695068359375;i:4;a:0:{}}i:12;a:5:{i:0;s:76:"Opening DB connection: mysql:host=localhost;dbname=resort_reservation_system";i:1;i:96;i:2;s:23:"yii\db\Connection::open";i:3;d:1481640505.3259789943695068359375;i:4;a:0:{}}i:13;a:5:{i:0;s:36:"SHOW FULL COLUMNS FROM `reservation`";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1481640505.326077938079833984375;i:4;a:0:{}}i:14;a:5:{i:0;s:36:"SHOW FULL COLUMNS FROM `reservation`";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1481640505.3368151187896728515625;i:4;a:0:{}}i:16;a:5:{i:0;s:609:"SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'reservation' AND kcu.table_name = 'reservation'";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1481640505.337667942047119140625;i:4;a:0:{}}i:17;a:5:{i:0;s:609:"SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'reservation' AND kcu.table_name = 'reservation'";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1481640505.338282108306884765625;i:4;a:0:{}}i:19;a:5:{i:0;s:11:"SHOW TABLES";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1481640505.3405010700225830078125;i:4;a:0:{}}i:20;a:5:{i:0;s:11:"SHOW TABLES";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1481640505.341083049774169921875;i:4;a:0:{}}i:22;a:5:{i:0;s:30:"SHOW FULL COLUMNS FROM `admin`";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1481640505.3412148952484130859375;i:4;a:0:{}}i:23;a:5:{i:0;s:30:"SHOW FULL COLUMNS FROM `admin`";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1481640505.3479011058807373046875;i:4;a:0:{}}i:25;a:5:{i:0;s:597:"SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'admin' AND kcu.table_name = 'admin'";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1481640505.348311901092529296875;i:4;a:0:{}}i:26;a:5:{i:0;s:597:"SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'admin' AND kcu.table_name = 'admin'";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1481640505.3488008975982666015625;i:4;a:0:{}}i:28;a:5:{i:0;s:41:"SHOW FULL COLUMNS FROM `billingstatement`";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1481640505.348918914794921875;i:4;a:0:{}}i:29;a:5:{i:0;s:41:"SHOW FULL COLUMNS FROM `billingstatement`";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1481640505.356091022491455078125;i:4;a:0:{}}i:31;a:5:{i:0;s:619:"SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'billingstatement' AND kcu.table_name = 'billingstatement'";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1481640505.356441974639892578125;i:4;a:0:{}}i:32;a:5:{i:0;s:619:"SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'billingstatement' AND kcu.table_name = 'billingstatement'";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1481640505.3569939136505126953125;i:4;a:0:{}}i:34;a:5:{i:0;s:33:"SHOW FULL COLUMNS FROM `customer`";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1481640505.3571250438690185546875;i:4;a:0:{}}i:35;a:5:{i:0;s:33:"SHOW FULL COLUMNS FROM `customer`";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1481640505.361875057220458984375;i:4;a:0:{}}i:37;a:5:{i:0;s:603:"SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'customer' AND kcu.table_name = 'customer'";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1481640505.362461090087890625;i:4;a:0:{}}i:38;a:5:{i:0;s:603:"SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'customer' AND kcu.table_name = 'customer'";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1481640505.363092899322509765625;i:4;a:0:{}}i:40;a:5:{i:0;s:49:"SHOW FULL COLUMNS FROM `customer_has_reservation`";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1481640505.363298892974853515625;i:4;a:0:{}}i:41;a:5:{i:0;s:49:"SHOW FULL COLUMNS FROM `customer_has_reservation`";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1481640505.36818695068359375;i:4;a:0:{}}i:43;a:5:{i:0;s:635:"SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'customer_has_reservation' AND kcu.table_name = 'customer_has_reservation'";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1481640505.3685970306396484375;i:4;a:0:{}}i:44;a:5:{i:0;s:635:"SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'customer_has_reservation' AND kcu.table_name = 'customer_has_reservation'";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1481640505.36913204193115234375;i:4;a:0:{}}i:46;a:5:{i:0;s:33:"SHOW FULL COLUMNS FROM `employee`";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1481640505.3693110942840576171875;i:4;a:0:{}}i:47;a:5:{i:0;s:33:"SHOW FULL COLUMNS FROM `employee`";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1481640505.3756809234619140625;i:4;a:0:{}}i:49;a:5:{i:0;s:603:"SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'employee' AND kcu.table_name = 'employee'";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1481640505.3761079311370849609375;i:4;a:0:{}}i:50;a:5:{i:0;s:603:"SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'employee' AND kcu.table_name = 'employee'";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1481640505.3765680789947509765625;i:4;a:0:{}}i:52;a:5:{i:0;s:49:"SHOW FULL COLUMNS FROM `employee_assist_customer`";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1481640505.37675189971923828125;i:4;a:0:{}}i:53;a:5:{i:0;s:49:"SHOW FULL COLUMNS FROM `employee_assist_customer`";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1481640505.3828990459442138671875;i:4;a:0:{}}i:55;a:5:{i:0;s:635:"SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'employee_assist_customer' AND kcu.table_name = 'employee_assist_customer'";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1481640505.3831779956817626953125;i:4;a:0:{}}i:56;a:5:{i:0;s:635:"SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'employee_assist_customer' AND kcu.table_name = 'employee_assist_customer'";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1481640505.38383007049560546875;i:4;a:0:{}}i:58;a:5:{i:0;s:34:"SHOW FULL COLUMNS FROM `migration`";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1481640505.3839700222015380859375;i:4;a:0:{}}i:59;a:5:{i:0;s:34:"SHOW FULL COLUMNS FROM `migration`";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1481640505.3907229900360107421875;i:4;a:0:{}}i:61;a:5:{i:0;s:605:"SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'migration' AND kcu.table_name = 'migration'";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1481640505.3910009860992431640625;i:4;a:0:{}}i:62;a:5:{i:0;s:605:"SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'migration' AND kcu.table_name = 'migration'";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1481640505.3914830684661865234375;i:4;a:0:{}}i:64;a:5:{i:0;s:45:"SHOW FULL COLUMNS FROM `reservation_has_room`";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1481640505.3916170597076416015625;i:4;a:0:{}}i:65;a:5:{i:0;s:45:"SHOW FULL COLUMNS FROM `reservation_has_room`";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1481640505.398192882537841796875;i:4;a:0:{}}i:67;a:5:{i:0;s:627:"SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'reservation_has_room' AND kcu.table_name = 'reservation_has_room'";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1481640505.39850902557373046875;i:4;a:0:{}}i:68;a:5:{i:0;s:627:"SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'reservation_has_room' AND kcu.table_name = 'reservation_has_room'";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1481640505.399015903472900390625;i:4;a:0:{}}i:70;a:5:{i:0;s:29:"SHOW FULL COLUMNS FROM `room`";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1481640505.39914608001708984375;i:4;a:0:{}}i:71;a:5:{i:0;s:29:"SHOW FULL COLUMNS FROM `room`";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1481640505.40351200103759765625;i:4;a:0:{}}i:73;a:5:{i:0;s:595:"SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'room' AND kcu.table_name = 'room'";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1481640505.40390110015869140625;i:4;a:0:{}}i:74;a:5:{i:0;s:595:"SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'room' AND kcu.table_name = 'room'";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1481640505.4045619964599609375;i:4;a:0:{}}i:76;a:5:{i:0;s:32:"SHOW FULL COLUMNS FROM `service`";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1481640505.404714107513427734375;i:4;a:0:{}}i:77;a:5:{i:0;s:32:"SHOW FULL COLUMNS FROM `service`";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1481640505.4096090793609619140625;i:4;a:0:{}}i:79;a:5:{i:0;s:601:"SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'service' AND kcu.table_name = 'service'";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1481640505.410150051116943359375;i:4;a:0:{}}i:80;a:5:{i:0;s:601:"SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'service' AND kcu.table_name = 'service'";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1481640505.41088104248046875;i:4;a:0:{}}i:82;a:5:{i:0;s:29:"SHOW FULL COLUMNS FROM `user`";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1481640505.4111258983612060546875;i:4;a:0:{}}i:83;a:5:{i:0;s:29:"SHOW FULL COLUMNS FROM `user`";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1481640505.41539096832275390625;i:4;a:0:{}}i:85;a:5:{i:0;s:595:"SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'user' AND kcu.table_name = 'user'";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1481640505.4160330295562744140625;i:4;a:0:{}}i:86;a:5:{i:0;s:595:"SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'user' AND kcu.table_name = 'user'";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1481640505.4168140888214111328125;i:4;a:0:{}}i:88;a:5:{i:0;s:36:"SHOW CREATE TABLE `billingstatement`";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1481640505.4190390110015869140625;i:4;a:0:{}}i:89;a:5:{i:0;s:36:"SHOW CREATE TABLE `billingstatement`";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1481640505.4195311069488525390625;i:4;a:0:{}}i:91;a:5:{i:0;s:36:"SHOW CREATE TABLE `billingstatement`";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1481640505.4200809001922607421875;i:4;a:0:{}}i:92;a:5:{i:0;s:36:"SHOW CREATE TABLE `billingstatement`";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1481640505.420423984527587890625;i:4;a:0:{}}i:94;a:5:{i:0;s:36:"SHOW CREATE TABLE `billingstatement`";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1481640505.42074108123779296875;i:4;a:0:{}}i:95;a:5:{i:0;s:36:"SHOW CREATE TABLE `billingstatement`";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1481640505.4210350513458251953125;i:4;a:0:{}}i:97;a:5:{i:0;s:44:"SHOW CREATE TABLE `customer_has_reservation`";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1481640505.4213008880615234375;i:4;a:0:{}}i:98;a:5:{i:0;s:44:"SHOW CREATE TABLE `customer_has_reservation`";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1481640505.421598911285400390625;i:4;a:0:{}}i:100;a:5:{i:0;s:44:"SHOW CREATE TABLE `customer_has_reservation`";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1481640505.4219529628753662109375;i:4;a:0:{}}i:101;a:5:{i:0;s:44:"SHOW CREATE TABLE `customer_has_reservation`";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1481640505.4225749969482421875;i:4;a:0:{}}i:103;a:5:{i:0;s:44:"SHOW CREATE TABLE `customer_has_reservation`";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1481640505.4229090213775634765625;i:4;a:0:{}}i:104;a:5:{i:0;s:44:"SHOW CREATE TABLE `customer_has_reservation`";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1481640505.4232161045074462890625;i:4;a:0:{}}i:106;a:5:{i:0;s:44:"SHOW CREATE TABLE `employee_assist_customer`";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1481640505.42345905303955078125;i:4;a:0:{}}i:107;a:5:{i:0;s:44:"SHOW CREATE TABLE `employee_assist_customer`";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1481640505.4237320423126220703125;i:4;a:0:{}}i:109;a:5:{i:0;s:44:"SHOW CREATE TABLE `employee_assist_customer`";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1481640505.42405605316162109375;i:4;a:0:{}}i:110;a:5:{i:0;s:44:"SHOW CREATE TABLE `employee_assist_customer`";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1481640505.4243390560150146484375;i:4;a:0:{}}i:112;a:5:{i:0;s:44:"SHOW CREATE TABLE `employee_assist_customer`";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1481640505.424633026123046875;i:4;a:0:{}}i:113;a:5:{i:0;s:44:"SHOW CREATE TABLE `employee_assist_customer`";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1481640505.4249041080474853515625;i:4;a:0:{}}i:115;a:5:{i:0;s:40:"SHOW CREATE TABLE `reservation_has_room`";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1481640505.4251639842987060546875;i:4;a:0:{}}i:116;a:5:{i:0;s:40:"SHOW CREATE TABLE `reservation_has_room`";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1481640505.42547702789306640625;i:4;a:0:{}}i:118;a:5:{i:0;s:40:"SHOW CREATE TABLE `reservation_has_room`";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1481640505.425880908966064453125;i:4;a:0:{}}i:119;a:5:{i:0;s:40:"SHOW CREATE TABLE `reservation_has_room`";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1481640505.4263060092926025390625;i:4;a:0:{}}i:121;a:5:{i:0;s:40:"SHOW CREATE TABLE `reservation_has_room`";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1481640505.4266569614410400390625;i:4;a:0:{}}i:122;a:5:{i:0;s:40:"SHOW CREATE TABLE `reservation_has_room`";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1481640505.4269731044769287109375;i:4;a:0:{}}i:124;a:5:{i:0;s:24:"SHOW CREATE TABLE `room`";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1481640505.4271490573883056640625;i:4;a:0:{}}i:125;a:5:{i:0;s:24:"SHOW CREATE TABLE `room`";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1481640505.42736911773681640625;i:4;a:0:{}}i:127;a:5:{i:0;s:27:"SHOW CREATE TABLE `service`";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1481640505.4275801181793212890625;i:4;a:0:{}}i:128;a:5:{i:0;s:27:"SHOW CREATE TABLE `service`";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1481640505.427825927734375;i:4;a:0:{}}i:130;a:5:{i:0;s:27:"SHOW CREATE TABLE `service`";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1481640505.4280378818511962890625;i:4;a:0:{}}i:131;a:5:{i:0;s:27:"SHOW CREATE TABLE `service`";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1481640505.4282538890838623046875;i:4;a:0:{}}i:133;a:5:{i:0;s:27:"SHOW CREATE TABLE `service`";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1481640505.428440093994140625;i:4;a:0:{}}i:134;a:5:{i:0;s:27:"SHOW CREATE TABLE `service`";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1481640505.42866611480712890625;i:4;a:0:{}}i:136;a:5:{i:0;s:27:"SHOW CREATE TABLE `service`";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1481640505.4288489818572998046875;i:4;a:0:{}}i:137;a:5:{i:0;s:27:"SHOW CREATE TABLE `service`";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1481640505.42905902862548828125;i:4;a:0:{}}i:139;a:5:{i:0;s:27:"SHOW CREATE TABLE `service`";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1481640505.42922306060791015625;i:4;a:0:{}}i:140;a:5:{i:0;s:27:"SHOW CREATE TABLE `service`";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1481640505.429440021514892578125;i:4;a:0:{}}i:142;a:5:{i:0;s:31:"SHOW CREATE TABLE `reservation`";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1481640505.4296779632568359375;i:4;a:0:{}}i:143;a:5:{i:0;s:31:"SHOW CREATE TABLE `reservation`";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1481640505.4298560619354248046875;i:4;a:0:{}}}}s:2:"db";a:1:{s:8:"messages";a:88:{i:13;a:5:{i:0;s:36:"SHOW FULL COLUMNS FROM `reservation`";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1481640505.326077938079833984375;i:4;a:0:{}}i:14;a:5:{i:0;s:36:"SHOW FULL COLUMNS FROM `reservation`";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1481640505.3368151187896728515625;i:4;a:0:{}}i:16;a:5:{i:0;s:609:"SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'reservation' AND kcu.table_name = 'reservation'";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1481640505.337667942047119140625;i:4;a:0:{}}i:17;a:5:{i:0;s:609:"SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'reservation' AND kcu.table_name = 'reservation'";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1481640505.338282108306884765625;i:4;a:0:{}}i:19;a:5:{i:0;s:11:"SHOW TABLES";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1481640505.3405010700225830078125;i:4;a:0:{}}i:20;a:5:{i:0;s:11:"SHOW TABLES";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1481640505.341083049774169921875;i:4;a:0:{}}i:22;a:5:{i:0;s:30:"SHOW FULL COLUMNS FROM `admin`";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1481640505.3412148952484130859375;i:4;a:0:{}}i:23;a:5:{i:0;s:30:"SHOW FULL COLUMNS FROM `admin`";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1481640505.3479011058807373046875;i:4;a:0:{}}i:25;a:5:{i:0;s:597:"SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'admin' AND kcu.table_name = 'admin'";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1481640505.348311901092529296875;i:4;a:0:{}}i:26;a:5:{i:0;s:597:"SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'admin' AND kcu.table_name = 'admin'";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1481640505.3488008975982666015625;i:4;a:0:{}}i:28;a:5:{i:0;s:41:"SHOW FULL COLUMNS FROM `billingstatement`";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1481640505.348918914794921875;i:4;a:0:{}}i:29;a:5:{i:0;s:41:"SHOW FULL COLUMNS FROM `billingstatement`";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1481640505.356091022491455078125;i:4;a:0:{}}i:31;a:5:{i:0;s:619:"SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'billingstatement' AND kcu.table_name = 'billingstatement'";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1481640505.356441974639892578125;i:4;a:0:{}}i:32;a:5:{i:0;s:619:"SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'billingstatement' AND kcu.table_name = 'billingstatement'";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1481640505.3569939136505126953125;i:4;a:0:{}}i:34;a:5:{i:0;s:33:"SHOW FULL COLUMNS FROM `customer`";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1481640505.3571250438690185546875;i:4;a:0:{}}i:35;a:5:{i:0;s:33:"SHOW FULL COLUMNS FROM `customer`";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1481640505.361875057220458984375;i:4;a:0:{}}i:37;a:5:{i:0;s:603:"SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'customer' AND kcu.table_name = 'customer'";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1481640505.362461090087890625;i:4;a:0:{}}i:38;a:5:{i:0;s:603:"SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'customer' AND kcu.table_name = 'customer'";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1481640505.363092899322509765625;i:4;a:0:{}}i:40;a:5:{i:0;s:49:"SHOW FULL COLUMNS FROM `customer_has_reservation`";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1481640505.363298892974853515625;i:4;a:0:{}}i:41;a:5:{i:0;s:49:"SHOW FULL COLUMNS FROM `customer_has_reservation`";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1481640505.36818695068359375;i:4;a:0:{}}i:43;a:5:{i:0;s:635:"SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'customer_has_reservation' AND kcu.table_name = 'customer_has_reservation'";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1481640505.3685970306396484375;i:4;a:0:{}}i:44;a:5:{i:0;s:635:"SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'customer_has_reservation' AND kcu.table_name = 'customer_has_reservation'";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1481640505.36913204193115234375;i:4;a:0:{}}i:46;a:5:{i:0;s:33:"SHOW FULL COLUMNS FROM `employee`";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1481640505.3693110942840576171875;i:4;a:0:{}}i:47;a:5:{i:0;s:33:"SHOW FULL COLUMNS FROM `employee`";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1481640505.3756809234619140625;i:4;a:0:{}}i:49;a:5:{i:0;s:603:"SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'employee' AND kcu.table_name = 'employee'";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1481640505.3761079311370849609375;i:4;a:0:{}}i:50;a:5:{i:0;s:603:"SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'employee' AND kcu.table_name = 'employee'";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1481640505.3765680789947509765625;i:4;a:0:{}}i:52;a:5:{i:0;s:49:"SHOW FULL COLUMNS FROM `employee_assist_customer`";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1481640505.37675189971923828125;i:4;a:0:{}}i:53;a:5:{i:0;s:49:"SHOW FULL COLUMNS FROM `employee_assist_customer`";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1481640505.3828990459442138671875;i:4;a:0:{}}i:55;a:5:{i:0;s:635:"SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'employee_assist_customer' AND kcu.table_name = 'employee_assist_customer'";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1481640505.3831779956817626953125;i:4;a:0:{}}i:56;a:5:{i:0;s:635:"SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'employee_assist_customer' AND kcu.table_name = 'employee_assist_customer'";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1481640505.38383007049560546875;i:4;a:0:{}}i:58;a:5:{i:0;s:34:"SHOW FULL COLUMNS FROM `migration`";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1481640505.3839700222015380859375;i:4;a:0:{}}i:59;a:5:{i:0;s:34:"SHOW FULL COLUMNS FROM `migration`";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1481640505.3907229900360107421875;i:4;a:0:{}}i:61;a:5:{i:0;s:605:"SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'migration' AND kcu.table_name = 'migration'";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1481640505.3910009860992431640625;i:4;a:0:{}}i:62;a:5:{i:0;s:605:"SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'migration' AND kcu.table_name = 'migration'";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1481640505.3914830684661865234375;i:4;a:0:{}}i:64;a:5:{i:0;s:45:"SHOW FULL COLUMNS FROM `reservation_has_room`";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1481640505.3916170597076416015625;i:4;a:0:{}}i:65;a:5:{i:0;s:45:"SHOW FULL COLUMNS FROM `reservation_has_room`";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1481640505.398192882537841796875;i:4;a:0:{}}i:67;a:5:{i:0;s:627:"SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'reservation_has_room' AND kcu.table_name = 'reservation_has_room'";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1481640505.39850902557373046875;i:4;a:0:{}}i:68;a:5:{i:0;s:627:"SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'reservation_has_room' AND kcu.table_name = 'reservation_has_room'";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1481640505.399015903472900390625;i:4;a:0:{}}i:70;a:5:{i:0;s:29:"SHOW FULL COLUMNS FROM `room`";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1481640505.39914608001708984375;i:4;a:0:{}}i:71;a:5:{i:0;s:29:"SHOW FULL COLUMNS FROM `room`";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1481640505.40351200103759765625;i:4;a:0:{}}i:73;a:5:{i:0;s:595:"SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'room' AND kcu.table_name = 'room'";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1481640505.40390110015869140625;i:4;a:0:{}}i:74;a:5:{i:0;s:595:"SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'room' AND kcu.table_name = 'room'";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1481640505.4045619964599609375;i:4;a:0:{}}i:76;a:5:{i:0;s:32:"SHOW FULL COLUMNS FROM `service`";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1481640505.404714107513427734375;i:4;a:0:{}}i:77;a:5:{i:0;s:32:"SHOW FULL COLUMNS FROM `service`";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1481640505.4096090793609619140625;i:4;a:0:{}}i:79;a:5:{i:0;s:601:"SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'service' AND kcu.table_name = 'service'";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1481640505.410150051116943359375;i:4;a:0:{}}i:80;a:5:{i:0;s:601:"SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'service' AND kcu.table_name = 'service'";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1481640505.41088104248046875;i:4;a:0:{}}i:82;a:5:{i:0;s:29:"SHOW FULL COLUMNS FROM `user`";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1481640505.4111258983612060546875;i:4;a:0:{}}i:83;a:5:{i:0;s:29:"SHOW FULL COLUMNS FROM `user`";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1481640505.41539096832275390625;i:4;a:0:{}}i:85;a:5:{i:0;s:595:"SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'user' AND kcu.table_name = 'user'";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1481640505.4160330295562744140625;i:4;a:0:{}}i:86;a:5:{i:0;s:595:"SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'user' AND kcu.table_name = 'user'";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1481640505.4168140888214111328125;i:4;a:0:{}}i:88;a:5:{i:0;s:36:"SHOW CREATE TABLE `billingstatement`";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1481640505.4190390110015869140625;i:4;a:0:{}}i:89;a:5:{i:0;s:36:"SHOW CREATE TABLE `billingstatement`";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1481640505.4195311069488525390625;i:4;a:0:{}}i:91;a:5:{i:0;s:36:"SHOW CREATE TABLE `billingstatement`";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1481640505.4200809001922607421875;i:4;a:0:{}}i:92;a:5:{i:0;s:36:"SHOW CREATE TABLE `billingstatement`";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1481640505.420423984527587890625;i:4;a:0:{}}i:94;a:5:{i:0;s:36:"SHOW CREATE TABLE `billingstatement`";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1481640505.42074108123779296875;i:4;a:0:{}}i:95;a:5:{i:0;s:36:"SHOW CREATE TABLE `billingstatement`";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1481640505.4210350513458251953125;i:4;a:0:{}}i:97;a:5:{i:0;s:44:"SHOW CREATE TABLE `customer_has_reservation`";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1481640505.4213008880615234375;i:4;a:0:{}}i:98;a:5:{i:0;s:44:"SHOW CREATE TABLE `customer_has_reservation`";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1481640505.421598911285400390625;i:4;a:0:{}}i:100;a:5:{i:0;s:44:"SHOW CREATE TABLE `customer_has_reservation`";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1481640505.4219529628753662109375;i:4;a:0:{}}i:101;a:5:{i:0;s:44:"SHOW CREATE TABLE `customer_has_reservation`";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1481640505.4225749969482421875;i:4;a:0:{}}i:103;a:5:{i:0;s:44:"SHOW CREATE TABLE `customer_has_reservation`";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1481640505.4229090213775634765625;i:4;a:0:{}}i:104;a:5:{i:0;s:44:"SHOW CREATE TABLE `customer_has_reservation`";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1481640505.4232161045074462890625;i:4;a:0:{}}i:106;a:5:{i:0;s:44:"SHOW CREATE TABLE `employee_assist_customer`";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1481640505.42345905303955078125;i:4;a:0:{}}i:107;a:5:{i:0;s:44:"SHOW CREATE TABLE `employee_assist_customer`";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1481640505.4237320423126220703125;i:4;a:0:{}}i:109;a:5:{i:0;s:44:"SHOW CREATE TABLE `employee_assist_customer`";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1481640505.42405605316162109375;i:4;a:0:{}}i:110;a:5:{i:0;s:44:"SHOW CREATE TABLE `employee_assist_customer`";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1481640505.4243390560150146484375;i:4;a:0:{}}i:112;a:5:{i:0;s:44:"SHOW CREATE TABLE `employee_assist_customer`";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1481640505.424633026123046875;i:4;a:0:{}}i:113;a:5:{i:0;s:44:"SHOW CREATE TABLE `employee_assist_customer`";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1481640505.4249041080474853515625;i:4;a:0:{}}i:115;a:5:{i:0;s:40:"SHOW CREATE TABLE `reservation_has_room`";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1481640505.4251639842987060546875;i:4;a:0:{}}i:116;a:5:{i:0;s:40:"SHOW CREATE TABLE `reservation_has_room`";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1481640505.42547702789306640625;i:4;a:0:{}}i:118;a:5:{i:0;s:40:"SHOW CREATE TABLE `reservation_has_room`";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1481640505.425880908966064453125;i:4;a:0:{}}i:119;a:5:{i:0;s:40:"SHOW CREATE TABLE `reservation_has_room`";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1481640505.4263060092926025390625;i:4;a:0:{}}i:121;a:5:{i:0;s:40:"SHOW CREATE TABLE `reservation_has_room`";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1481640505.4266569614410400390625;i:4;a:0:{}}i:122;a:5:{i:0;s:40:"SHOW CREATE TABLE `reservation_has_room`";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1481640505.4269731044769287109375;i:4;a:0:{}}i:124;a:5:{i:0;s:24:"SHOW CREATE TABLE `room`";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1481640505.4271490573883056640625;i:4;a:0:{}}i:125;a:5:{i:0;s:24:"SHOW CREATE TABLE `room`";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1481640505.42736911773681640625;i:4;a:0:{}}i:127;a:5:{i:0;s:27:"SHOW CREATE TABLE `service`";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1481640505.4275801181793212890625;i:4;a:0:{}}i:128;a:5:{i:0;s:27:"SHOW CREATE TABLE `service`";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1481640505.427825927734375;i:4;a:0:{}}i:130;a:5:{i:0;s:27:"SHOW CREATE TABLE `service`";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1481640505.4280378818511962890625;i:4;a:0:{}}i:131;a:5:{i:0;s:27:"SHOW CREATE TABLE `service`";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1481640505.4282538890838623046875;i:4;a:0:{}}i:133;a:5:{i:0;s:27:"SHOW CREATE TABLE `service`";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1481640505.428440093994140625;i:4;a:0:{}}i:134;a:5:{i:0;s:27:"SHOW CREATE TABLE `service`";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1481640505.42866611480712890625;i:4;a:0:{}}i:136;a:5:{i:0;s:27:"SHOW CREATE TABLE `service`";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1481640505.4288489818572998046875;i:4;a:0:{}}i:137;a:5:{i:0;s:27:"SHOW CREATE TABLE `service`";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1481640505.42905902862548828125;i:4;a:0:{}}i:139;a:5:{i:0;s:27:"SHOW CREATE TABLE `service`";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1481640505.42922306060791015625;i:4;a:0:{}}i:140;a:5:{i:0;s:27:"SHOW CREATE TABLE `service`";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1481640505.429440021514892578125;i:4;a:0:{}}i:142;a:5:{i:0;s:31:"SHOW CREATE TABLE `reservation`";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1481640505.4296779632568359375;i:4;a:0:{}}i:143;a:5:{i:0;s:31:"SHOW CREATE TABLE `reservation`";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1481640505.4298560619354248046875;i:4;a:0:{}}}}s:6:"assets";a:8:{s:19:"yii\web\JqueryAsset";a:9:{s:10:"sourcePath";s:97:"C:\Users\mlbel\Desktop\Project---Reservation-System\Application\advanced/vendor\bower/jquery/dist";s:2:"js";a:1:{i:0;s:9:"jquery.js";}s:8:"basePath";s:101:"C:\Users\mlbel\Desktop\Project---Reservation-System\Application\advanced\frontend\web\assets\61a72921";s:7:"baseUrl";s:38:"/advanced/frontend/web/assets/61a72921";s:7:"depends";a:0:{}s:3:"css";a:0:{}s:9:"jsOptions";a:0:{}s:10:"cssOptions";a:0:{}s:14:"publishOptions";a:0:{}}s:30:"yii\validators\ValidationAsset";a:9:{s:10:"sourcePath";s:99:"C:\Users\mlbel\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2/assets";s:2:"js";a:1:{i:0;s:17:"yii.validation.js";}s:7:"depends";a:1:{i:0;s:16:"yii\web\YiiAsset";}s:8:"basePath";s:101:"C:\Users\mlbel\Desktop\Project---Reservation-System\Application\advanced\frontend\web\assets\d332e7fb";s:7:"baseUrl";s:38:"/advanced/frontend/web/assets/d332e7fb";s:3:"css";a:0:{}s:9:"jsOptions";a:0:{}s:10:"cssOptions";a:0:{}s:14:"publishOptions";a:0:{}}s:16:"yii\web\YiiAsset";a:9:{s:10:"sourcePath";s:99:"C:\Users\mlbel\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2/assets";s:2:"js";a:1:{i:0;s:6:"yii.js";}s:7:"depends";a:1:{i:0;s:19:"yii\web\JqueryAsset";}s:8:"basePath";s:101:"C:\Users\mlbel\Desktop\Project---Reservation-System\Application\advanced\frontend\web\assets\d332e7fb";s:7:"baseUrl";s:38:"/advanced/frontend/web/assets/d332e7fb";s:3:"css";a:0:{}s:9:"jsOptions";a:0:{}s:10:"cssOptions";a:0:{}s:14:"publishOptions";a:0:{}}s:27:"yii\widgets\ActiveFormAsset";a:9:{s:10:"sourcePath";s:99:"C:\Users\mlbel\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2/assets";s:2:"js";a:1:{i:0;s:17:"yii.activeForm.js";}s:7:"depends";a:1:{i:0;s:16:"yii\web\YiiAsset";}s:8:"basePath";s:101:"C:\Users\mlbel\Desktop\Project---Reservation-System\Application\advanced\frontend\web\assets\d332e7fb";s:7:"baseUrl";s:38:"/advanced/frontend/web/assets/d332e7fb";s:3:"css";a:0:{}s:9:"jsOptions";a:0:{}s:10:"cssOptions";a:0:{}s:14:"publishOptions";a:0:{}}s:16:"yii\gii\GiiAsset";a:9:{s:10:"sourcePath";s:103:"C:\Users\mlbel\Desktop\Project---Reservation-System\Application\advanced\vendor/yiisoft/yii2-gii/assets";s:3:"css";a:1:{i:0;s:8:"main.css";}s:2:"js";a:1:{i:0;s:6:"gii.js";}s:7:"depends";a:4:{i:0;s:16:"yii\web\YiiAsset";i:1;s:28:"yii\bootstrap\BootstrapAsset";i:2;s:34:"yii\bootstrap\BootstrapPluginAsset";i:3;s:22:"yii\gii\TypeAheadAsset";}s:8:"basePath";s:101:"C:\Users\mlbel\Desktop\Project---Reservation-System\Application\advanced\frontend\web\assets\c3bd64de";s:7:"baseUrl";s:38:"/advanced/frontend/web/assets/c3bd64de";s:9:"jsOptions";a:0:{}s:10:"cssOptions";a:0:{}s:14:"publishOptions";a:0:{}}s:28:"yii\bootstrap\BootstrapAsset";a:9:{s:10:"sourcePath";s:100:"C:\Users\mlbel\Desktop\Project---Reservation-System\Application\advanced/vendor\bower/bootstrap/dist";s:3:"css";a:1:{i:0;s:17:"css/bootstrap.css";}s:8:"basePath";s:101:"C:\Users\mlbel\Desktop\Project---Reservation-System\Application\advanced\frontend\web\assets\937c33f1";s:7:"baseUrl";s:38:"/advanced/frontend/web/assets/937c33f1";s:7:"depends";a:0:{}s:2:"js";a:0:{}s:9:"jsOptions";a:0:{}s:10:"cssOptions";a:0:{}s:14:"publishOptions";a:0:{}}s:34:"yii\bootstrap\BootstrapPluginAsset";a:9:{s:10:"sourcePath";s:100:"C:\Users\mlbel\Desktop\Project---Reservation-System\Application\advanced/vendor\bower/bootstrap/dist";s:2:"js";a:1:{i:0;s:15:"js/bootstrap.js";}s:7:"depends";a:2:{i:0;s:19:"yii\web\JqueryAsset";i:1;s:28:"yii\bootstrap\BootstrapAsset";}s:8:"basePath";s:101:"C:\Users\mlbel\Desktop\Project---Reservation-System\Application\advanced\frontend\web\assets\937c33f1";s:7:"baseUrl";s:38:"/advanced/frontend/web/assets/937c33f1";s:3:"css";a:0:{}s:9:"jsOptions";a:0:{}s:10:"cssOptions";a:0:{}s:14:"publishOptions";a:0:{}}s:22:"yii\gii\TypeAheadAsset";a:9:{s:10:"sourcePath";s:103:"C:\Users\mlbel\Desktop\Project---Reservation-System\Application\advanced/vendor\bower/typeahead.js/dist";s:2:"js";a:1:{i:0;s:19:"typeahead.bundle.js";}s:7:"depends";a:2:{i:0;s:28:"yii\bootstrap\BootstrapAsset";i:1;s:34:"yii\bootstrap\BootstrapPluginAsset";}s:8:"basePath";s:101:"C:\Users\mlbel\Desktop\Project---Reservation-System\Application\advanced\frontend\web\assets\4fed349e";s:7:"baseUrl";s:38:"/advanced/frontend/web/assets/4fed349e";s:3:"css";a:0:{}s:9:"jsOptions";a:0:{}s:10:"cssOptions";a:0:{}s:14:"publishOptions";a:0:{}}}s:4:"mail";a:0:{}s:7:"summary";a:9:{s:3:"tag";s:13:"58500a39457d2";s:3:"url";s:80:"http://localhost/advanced/frontend/web/index.php?r=gii%2Fdefault%2Fview&id=model";s:4:"ajax";i:0;s:6:"method";s:4:"POST";s:2:"ip";s:3:"::1";s:4:"time";i:1481640505;s:10:"statusCode";i:200;s:8:"sqlCount";i:44;s:9:"mailCount";i:0;}}
