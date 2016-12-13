@@ -1859,3 +1859,92 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1481639184.289
     'REQUEST_TIME' => 1481639184
 ]
+2016-12-13 16:03:46 [::1][-][g6i4upep6ki133qmn5ip450807][error][yii\base\UnknownPropertyException] exception 'yii\base\UnknownPropertyException' with message 'Setting unknown property: common\models\User::first_name' in C:\Users\mlbel\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2\base\Component.php:197
+Stack trace:
+#0 C:\Users\mlbel\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2\db\BaseActiveRecord.php(306): yii\base\Component->__set('first_name', 'Maica')
+#1 C:\Users\mlbel\Desktop\Project---Reservation-System\Application\advanced\frontend\models\SignupForm.php(55): yii\db\BaseActiveRecord->__set('first_name', 'Maica')
+#2 C:\Users\mlbel\Desktop\Project---Reservation-System\Application\advanced\frontend\controllers\SiteController.php(157): frontend\models\SignupForm->signup()
+#3 [internal function]: frontend\controllers\SiteController->actionSignup()
+#4 C:\Users\mlbel\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#5 C:\Users\mlbel\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#6 C:\Users\mlbel\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('signup', Array)
+#7 C:\Users\mlbel\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2\web\Application.php(100): yii\base\Module->runAction('site/signup', Array)
+#8 C:\Users\mlbel\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 C:\Users\mlbel\Desktop\Project---Reservation-System\Application\advanced\frontend\web\index.php(17): yii\base\Application->run()
+#10 {main}
+2016-12-13 16:03:46 [::1][-][g6i4upep6ki133qmn5ip450807][info][application] $_GET = [
+    'r' => 'site/signup'
+]
+
+$_POST = [
+    '_frontendCSRF' => 'eUlhckJYZGoIIAwKdDc9B0AANwQbaisySA8DFRZoCToILi9AMAITKA=='
+    'SignupForm' => [
+        'first_name' => 'Maica'
+        'last_name' => 'Belchez'
+        'username' => 'macs'
+        'email' => 'm@email.com'
+        'password' => 'qwerty'
+    ]
+    'signup-button' => ''
+]
+
+$_COOKIE = [
+    'PHPFRONTSESSID' => 'g6i4upep6ki133qmn5ip450807'
+    '_frontendCSRF' => 'd75de7d6bd03d29bad9bf5f46aad0555578c1702328b2ece83612bd6c4efdca8a:2:{i:0;s:13:\"_frontendCSRF\";i:1;s:32:\"qimx6oYm9IVvY2OX1FbgT0mPqgN2rZwB\";}'
+    '_backendCSRF' => 'b7edaac34a5fd0be842a41cb01becf3e4cfac278dda195219de4f1b17c0771c5a:2:{i:0;s:12:\"_backendCSRF\";i:1;s:32:\"ZbrWot-75Ij0vZlg-Z2IQlegdMBccRvj\";}'
+    'PHPBACKSESSID' => 'jcc8044dfsh9mp9enuh47sv820'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '254'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.99 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/advanced/frontend/web/index.php?r=site%2Fsignup'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => 'PHPFRONTSESSID=g6i4upep6ki133qmn5ip450807; _frontendCSRF=d75de7d6bd03d29bad9bf5f46aad0555578c1702328b2ece83612bd6c4efdca8a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_frontendCSRF%22%3Bi%3A1%3Bs%3A32%3A%22qimx6oYm9IVvY2OX1FbgT0mPqgN2rZwB%22%3B%7D; _backendCSRF=b7edaac34a5fd0be842a41cb01becf3e4cfac278dda195219de4f1b17c0771c5a%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendCSRF%22%3Bi%3A1%3Bs%3A32%3A%22ZbrWot-75Ij0vZlg-Z2IQlegdMBccRvj%22%3B%7D; PHPBACKSESSID=jcc8044dfsh9mp9enuh47sv820'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Windows Kits\\8.1\\Windows Performance Toolkit\\;C:\\Program Files\\Microsoft SQL Server\\110\\Tools\\Binn\\;C:\\Program Files (x86)\\GtkSharp\\2.12\\bin;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\TortoiseSVN\\bin;C:\\xampp\\htdocs\\advanced;C:\\Program Files\\CloudFoundry;C:\\Program Files\\TortoiseGit\\bin;C:\\Users\\mlbel\\AppData\\Local\\Microsoft\\WindowsApps;'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.6.14 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.6.14'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/advanced/frontend/web/index.php'
+    'REMOTE_PORT' => '52539'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=site%2Fsignup'
+    'REQUEST_URI' => '/advanced/frontend/web/index.php?r=site%2Fsignup'
+    'SCRIPT_NAME' => '/advanced/frontend/web/index.php'
+    'PHP_SELF' => '/advanced/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1481641426.753
+    'REQUEST_TIME' => 1481641426
+]
