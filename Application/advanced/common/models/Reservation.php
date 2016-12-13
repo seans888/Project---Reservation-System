@@ -41,7 +41,7 @@ class Reservation extends \yii\db\ActiveRecord
             [['billingstatement_id'], 'integer'],
             [['rooms'], 'string', 'max' => 10],
             [['adults', 'kids'], 'string', 'max' => 50],
-            [['billingstatement_id'], 'exist', 'skipOnError' => true, 'targetClass' => Billingstatement::className(), 'targetAttribute' => ['billingstatement_id' => 'id']],
+          /*  [['billingstatement_id'], 'exist', 'skipOnError' => true, 'targetClass' => Billingstatement::className(), 'targetAttribute' => ['billingstatement_id' => 'id']],*/
         ];
     }
 
@@ -55,10 +55,10 @@ class Reservation extends \yii\db\ActiveRecord
             'reservation_date' => 'Reservation Date',
             'check_in' => 'Check In',
             'check_out' => 'Check Out',
-            'rooms' => 'Rooms',
+            'rooms' => 'Room Type',
             'adults' => 'Adults',
             'kids' => 'Kids',
-            'billingstatement_id' => 'Billingstatement ID',
+            //'billingstatement_id' => 'Billingstatement ID',
         ];
     }
 
@@ -73,10 +73,10 @@ class Reservation extends \yii\db\ActiveRecord
     /**
      * @return \yii\db\ActiveQuery
      */
-    public function getBillingstatement()
+   /* public function getBillingstatement()
     {
         return $this->hasOne(Billingstatement::className(), ['id' => 'billingstatement_id']);
-    }
+    }*/
 
     /**
      * @return \yii\db\ActiveQuery

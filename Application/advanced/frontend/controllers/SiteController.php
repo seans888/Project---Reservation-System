@@ -126,7 +126,6 @@ class SiteController extends Controller
 
             return $this->refresh();
         } else {
-            $this->layout = "contactLayout";
             return $this->render('contact', [
                 'model' => $model,
             ]);

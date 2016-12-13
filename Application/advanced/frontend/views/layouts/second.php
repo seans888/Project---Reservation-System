@@ -6,6 +6,7 @@
 use yii\helpers\Html;
 use yii\bootstrap\Nav;
 use yii\bootstrap\NavBar;
+use yii\bootstrap\Dropdown;
 use yii\widgets\Breadcrumbs;
 use frontend\assets\AppAsset;
 use common\widgets\Alert;
@@ -22,6 +23,7 @@ AppAsset::register($this);
 <link href='http://fonts.googleapis.com/css?family=Quicksand:400,700' rel='stylesheet' type='text/css'>
 <link href="css/bootstrap.css" rel='stylesheet' type='text/css'/>
 <link href="css/style.css" rel="stylesheet" type="text/css" media="all"/>
+<link rel ="icon" href="images/ResortLogo.png" type="image/jpg"/>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <script src="js/jquery.min.js"></script>
 </head>
@@ -37,52 +39,61 @@ AppAsset::register($this);
              <div class="m-clear"></div>
              <div class="wrap">
                 <?php
-    NavBar::begin([
-        'brandLabel' => 'My Company',
-        'brandUrl' => Yii::$app->homeUrl,
-        'options' => [
-            'class' => 'navbar-inverse navbar-fixed-top',
-        ],
-    ]);
-    $menuItems = [
-        ['label' => 'Home', 'url' => ['/site/index']],
-        ['label' => 'About', 'url' => ['/site/about']],
-        ['label' => 'Contact', 'url' => ['/site/contact']],
-    ];
-    if (Yii::$app->user->isGuest) {
-        $menuItems[] = ['label' => 'Signup', 'url' => ['/site/signup']];
-        $menuItems[] = ['label' => 'Login', 'url' => ['/site/login']];
-    } else {
-        $menuItems[] = '<li>'
-            . Html::beginForm(['/site/logout'], 'post')
-            . Html::submitButton(
-                'Logout (' . Yii::$app->user->identity->username . ')',
-                ['class' => 'btn btn-link logout']
-            )
-            . Html::endForm()
-            . '</li>';
-    }
-    echo Nav::widget([
-        'options' => ['class' => 'navbar-nav navbar-right'],
-        'items' => $menuItems,
-    ]);
-    NavBar::end();
-    ?>
+                    NavBar::begin([
+                        'brandLabel' => Html::img('images/ResortLogo_small.png'),
+                        'brandUrl' => Yii::$app->homeUrl,
+                        'options' => [
+                        'class' => 'navbar-inverse navbar-fixed-top',
+                        ],
+                    ]);
+                    $menuItems = [
+                        ['label' => 'Home', 'url' => ['/site/index']],
+                        ['label' => 'About', 'url' => ['/site/about']],
+                        ['label' => 'Contact', 'url' => ['/site/contact']],
+                    ];
+                    if (Yii::$app->user->isGuest) {
+                        $menuItems[] = ['label' => 'Signup', 'url' => ['/site/signup']];
+                        $menuItems[] = ['label' => 'Login', 'url' => ['/site/login']];
+                    } else {
+                        $menuItems[] = ['label' => 'Services',
+                        'items' => [
+                            ['label' => 'Reservation', 'url' => ['site/about']],
+                        ],
+                        ];
+                        $menuItems[] = '<li>'
+                        . Html::beginForm(['/site/logout'], 'post')
+                        . Html::submitButton(
+                            'Logout (' . Yii::$app->user->identity->username . ')',
+                            ['class' => 'btn btn-link logout']
+                        )
+                        . Html::endForm()
+                        . '</li>';
+                    }
+                    echo Nav::widget([
+                    'options' => ['class' => 'navbar-nav navbar-right'],
+                    'items' => $menuItems,
+                ]);
+                NavBar::end();
+                ?>
              </div>
              <div class="clearfix"></div>
           </div>
       </div>
       <div class="banner">
             <div class="banner-info text-center">
-            <h3>Welcome to</h3>
-            <h1>Calimbo Farm Resort</h1>
+            <h1>Tarangban Falls &
+            CALIMBO FARM RESORT</h1>
             <span></span>
-            <ul>
+            <!--<ul>
              <li><a class="scroll" href="#">Nature</a><i class="line"></i></li>
              <li><a class="scroll" href="#">Relaxation</a><i class="line2"></i></li>
              <li><a class="scroll" href="#">Adventure</a></li>
              <div class="clearfix"></div>
-            </ul>
+            </ul>-->
+            <br />
+            <h3>The majestic place in the city of waterfalls</h3>
+            <br />
+            <div class="clearfix"></div>
             </div>
       </div>
 </div>
@@ -158,7 +169,7 @@ AppAsset::register($this);
 <!---->
 <div class="package text-center">
      <div class="container">
-         <h3>Book A Package</h3>
+         <h3>Book A Reservation</h3>
          <p>Sed euismod sem id consequat rutrum. Ut convallis lorem a orci mollis, eu vulputate libero aliquet. Praesent egestas nisi sed purus tincidunt faucibus. Aliquam lobortis orci lacus, sed faucibus augue dapibus vitae. Ut vitae mi sapien. Phasellus a eros justo.
          Curabitur odio massa, tincidunt nec nibh sit amet</p>
         <!-- requried-jsfiles-for owl -->
@@ -172,7 +183,7 @@ AppAsset::register($this);
                                     autoPlay : true,
                                     navigation : true,
                                     navigationText :  false,
-                                    pagination : true,
+                                    pagination : false,
                                   });
                                 });
                                 </script>
@@ -206,7 +217,7 @@ AppAsset::register($this);
 <!---->
 <!---->
 <div class="rooms text-center">
-     <div class="container">
+     <!--<div class="container">
          <h3>Our Room Types</h3>
          <div class="room-grids">
              <div class="col-md-4 room-sec">
@@ -290,7 +301,7 @@ AppAsset::register($this);
              </div>
              <div class="clearfix"></div>
          </div>
-     </div>
+     </div>-->
 </div>
 <!---->
 <div class="fotter">
@@ -302,50 +313,34 @@ AppAsset::register($this);
 </div>
 <!---->
 <div class="fotter-info">
-      <div class="container">
+     <!-- <div class="container">
           <div class="col-md-5 details">
-             <div class="hotel-info">
-                 <h4>ABOUT THIS HOTEL</h4>
-                 <p>Suspendisse erat mi, tincidunt sit amet massa quis, commodo fermentum diam. Sed nec dui nec nunc tempor interdum.</p>
-                 <p>Ut vulputate augue urna, ut porta dolor imperdiet a. Vestibulum nec leo eu magna aliquam ornare.</p>
+             <div class="hotel-info">-->
+             <center>
+            <div class="banner-follow">
+             <img alt = "Follow us" src = "http://i893.photobucket.com/albums/ac137/thesidewayshouse/followus_zps77de99bc.png" width="250px" height="50px" />
              </div>
-             <div class="news">
-                 <h4>LATEST NEWS</h4>
-                 <h5>Grand Hotel Joins DeluxelHotels</h5>
-                 <a href="#">15 AUG</a>
-                 <h5>Happy Chirstmas To Everyone</h5>
-                 <a href="#">15 AUG</a>
-                 <h5>Best Places To Visit 2014</h5>
-                 <a href="#">15 AUG</a>
-                 <h5>Various Offers</h5>
-                 <a href="#">15 AUG</a>     
+             <div class="icons-social">
+             <a target="_blank" title="find us on Facebook" href="http://www.facebook.com/KyleVLee">
+             <img alt="follow me on facebook" src="https://c866088.ssl.cf3.rackcdn.com/assets/facebook30x30.png" border=0></a>
+
+             <a target="_blank" title="follow us on Twitter" href="http://www.twitter.com/PLACEHOLDER"><img alt="follow me on Twitter" src="https://c866088.ssl.cf3.rackcdn.com/assets/twitter30x30.png" border=0></a>
+
+             <a target="_blank" title="follow us on youtube" href="http://www.youtube.com/PLACEHOLDER"><img alt="follow me on youtube" src="https://c866088.ssl.cf3.rackcdn.com/assets/youtube30x30.png" border=0></a>
+
+             <a target="_blank" title="follow us on instagram" href="http://www.instagram.com/PLACEHOLDER"><img alt="follow me on instagram" src="https://c866088.ssl.cf3.rackcdn.com/assets/instagram30x30.png" border=0></a>
+
+             <a target="_blank" title="follow us on google plus" href="https://plus.google.com/PLACEHOLDER"><img alt="follow me on google plus" src="https://c866088.ssl.cf3.rackcdn.com/assets/googleplus30x30.png" border=0></a>
              </div>
-                <div class="clearfix"></div>
-         </div>
-         <div class="col-md-7 details">
-             <div class="join">
-                 <h4>JOIN DELUXEHOTELS</h4>
-                 <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Phasellus vestibulum blandit egestas. 
-                 Nam id lectus vel orci luctus consectetur eget id elit. In tortor odio, pellentesque eu arcu sit amet, lacinia euismod nisi. Aliquam sodales tristique mauris ac fermentum.
-                 Donec vel varius ipsum. Pellentesque vitae mollis massa. </p>
-                 <p>There is no costs or whatsoever so sign up today!</p>
-                 <a href="#">READ MORE</a>
+             <div class = "copy-info">
+             © 2016 So-Called-Programmers. <br>All rights reserved.
              </div>
-             <div class="member">
-             <h4>MEMBERS AREA</h4>
-             <form>
-             <p>Username</p>
-             <input type="text" placeholder="" required/>
-             <p>Password</p>
-             <input type="password" placeholder="" required/>       
-             <input type="submit" value="LOGIN"/>
-             </form>
-             </div>
+             </center>
+            <!--</div>
              <div class="clearfix"></div>
          </div>
          <div class="clearfix"></div>
-      </div>
-     <h6>Template by <a href="http://w3layouts.com/">W3layouts</h6>   
+      </div> --> 
 </div>
 <!---->
 

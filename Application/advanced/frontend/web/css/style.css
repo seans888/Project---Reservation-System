@@ -97,11 +97,12 @@ font-weight:600;
 .banner-info h1{
 color:#fff;
 font-weight:bold;
-border-top:1px dashed rgba(255, 255, 255, 0.59);
+/*border-top:1px dashed rgba(255, 255, 255, 0.59);*/
 width:30%;
 margin:0 auto;
 padding:16px 0 23px 0;
 font-size:3em;
+font-family: Kristen ITC;
 }
 .banner-info span{
 display:block;
@@ -719,7 +720,6 @@ padding:4em 0;
 }
 .hotel-info{
 width:50%;
-float:left;
 text-align:left;
 }
 .hotel-info h4{
@@ -1450,7 +1450,8 @@ border: 1px solid #FFD700;
 transition: all 0.3s ease-in-out;
 }
 .form-control{
-width:100%;
+width:50%;
+text-align: center;
 }
 .booking-form input[type="submit"],.booking-form input[type="reset"] {
 margin-top: 25px;

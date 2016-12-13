@@ -51,7 +51,7 @@ top: 19%;
 	*display: inline;/*IE7 life-saver */
 }
 .owl-theme .owl-controls .owl-page span{
-	display: block;
+	display: inline-block;
 	width: 10px;
 	height: 10px;
 	margin: 5px 7px;

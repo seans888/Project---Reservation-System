@@ -738,6 +738,7 @@ pre code {
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
+  text-align: center;
 }
 @media (min-width: 768px) {
   .container {
@@ -5667,6 +5668,20 @@ button.close {
   display: none !important;
   visibility: hidden !important;
 }
+
+.icons-social a{
+margin-right: 15px;
+}
+.copy-info{
+  font-size: 14px;
+  text-align: center;
+  color: #FFFFFF;
+  margin-top: 40px;
+}
+#login-form{
+  text-align: center;
+}
+
 .affix {
   position: fixed;
 }
