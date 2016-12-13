@@ -17,7 +17,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `resort_reservation_system`
+-- Database: `resort_reservation_system2`
 --
 
 -- --------------------------------------------------------
