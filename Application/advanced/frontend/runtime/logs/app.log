@@ -5727,3 +5727,235 @@ $_SERVER = [
     'REQUEST_TIME' => 1481641426
 >>>>>>> origin/master
 ]
+2016-12-13 16:38:55 [::1][1][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: PHP Notice 'yii\base\ErrorException' with message 'unserialize(): Error at offset 0 of 24430 bytes' 
+
+in C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2-debug\LogTarget.php:88
+
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(8, 'unserialize(): ...', 'C:\\Users\\gc\\Des...', 88, Array)
+#1 C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2-debug\LogTarget.php(88): unserialize('<<<<<<< HEAD\r\na...')
+#2 C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2-debug\LogTarget.php(63): yii\debug\LogTarget->updateIndexFile('C:\\Users\\gc\\Des...', Array)
+#3 C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2-debug\LogTarget.php(118): yii\debug\LogTarget->export()
+#4 C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2\log\Dispatcher.php(188): yii\debug\LogTarget->collect(Array, true)
+#5 C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2\log\Logger.php(173): yii\log\Dispatcher->dispatch(Array, true)
+#6 [internal function]: yii\log\Logger->flush(true)
+#7 {main}
+2016-12-13 16:38:55 [::1][1][-][info][application] $_GET = [
+    'r' => 'site/index'
+]
+
+$_COOKIE = [
+    '_frontendCSRF' => 'd612373184ec885a1ab97185a6699dcc416ecf4761e5a071fe7e72f93b21fa9ba:2:{i:0;s:13:\"_frontendCSRF\";i:1;s:32:\"lBZwtY3KUVbdZrxsk-Sz_e6sNl0XGiar\";}'
+    'PHPSESSID' => 'es2qdqljcjdln4pj2jte829547'
+    'install_421aa90e079f' => 'sq1eqn732qfcgtg1loa9a4gs65'
+    'JSESSIONID' => 'AA06355B75F44C145A82D1AC8D9B0E74'
+    'Idea-a0f8faa2' => '6e3296b5-300f-475b-a474-cb938480f175'
+    'phpbb3_kn9ek_u' => '1'
+    'phpbb3_kn9ek_k' => ''
+    'phpbb3_kn9ek_sid' => '3c0a8c42e5d448d4ee122e83efaed57b'
+    'PHPFRONTSESSID' => 'celjrd34asvcqr13kkkr9tbfr4'
+    '_frontendUser' => '9311d674e646a6ccb00d10e2670b0282c077ca59c7379763c5a08c9a922a35c7a:2:{i:0;s:13:\"_frontendUser\";i:1;s:46:\"[1,\"2IKIExjdACq0Mt8Vje1CNJtk-FXcOyYE\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'yiviuov'
+    '__captcha/site/captchacount' => 1
+    '__id' => 1
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.99 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost:8080/advanced/frontend/web/index.php?r=site%2Fcontact'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => '_frontendCSRF=d612373184ec885a1ab97185a6699dcc416ecf4761e5a071fe7e72f93b21fa9ba%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_frontendCSRF%22%3Bi%3A1%3Bs%3A32%3A%22lBZwtY3KUVbdZrxsk-Sz_e6sNl0XGiar%22%3B%7D; PHPSESSID=es2qdqljcjdln4pj2jte829547; install_421aa90e079f=sq1eqn732qfcgtg1loa9a4gs65; JSESSIONID=AA06355B75F44C145A82D1AC8D9B0E74; Idea-a0f8faa2=6e3296b5-300f-475b-a474-cb938480f175; phpbb3_kn9ek_u=1; phpbb3_kn9ek_k=; phpbb3_kn9ek_sid=3c0a8c42e5d448d4ee122e83efaed57b; PHPFRONTSESSID=celjrd34asvcqr13kkkr9tbfr4; _frontendUser=9311d674e646a6ccb00d10e2670b0282c077ca59c7379763c5a08c9a922a35c7a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_frontendUser%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%222IKIExjdACq0Mt8Vje1CNJtk-FXcOyYE%22%2C2592000%5D%22%3B%7D'
+    'PATH' => 'C:\\CloudFoundry'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/7.0.8 Server at localhost Port 8080</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/7.0.8'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '8080'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/advanced/frontend/web/index.php'
+    'REMOTE_PORT' => '64982'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Findex'
+    'REQUEST_URI' => '/advanced/frontend/web/index.php?r=site%2Findex'
+    'SCRIPT_NAME' => '/advanced/frontend/web/index.php'
+    'PHP_SELF' => '/advanced/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1481643535.047
+    'REQUEST_TIME' => 1481643535
+]
+2016-12-13 16:39:00 [::1][-][-][error][ParseError] ParseError: syntax error, unexpected '<<' (T_SL), expecting ']' in C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\common\models\Reservation.php:39
+Stack trace:
+#0 [internal function]: yii\BaseYii::autoload('common\\models\\R...')
+#1 C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\common\models\ReservationSearch.php(13): spl_autoload_call('common\\models\\R...')
+#2 C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2\BaseYii.php(288): include('C:\\Users\\gc\\Des...')
+#3 [internal function]: yii\BaseYii::autoload('common\\models\\R...')
+#4 C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\frontend\controllers\ReservationController.php(38): spl_autoload_call('common\\models\\R...')
+#5 [internal function]: frontend\controllers\ReservationController->actionIndex()
+#6 C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#7 C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#8 C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('', Array)
+#9 C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2\web\Application.php(100): yii\base\Module->runAction('reservation', Array)
+#10 C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\frontend\web\index.php(17): yii\base\Application->run()
+#12 {main}
+2016-12-13 16:39:00 [::1][-][-][info][application] $_GET = [
+    'r' => 'reservation'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'es2qdqljcjdln4pj2jte829547'
+    'install_421aa90e079f' => 'sq1eqn732qfcgtg1loa9a4gs65'
+    'JSESSIONID' => 'AA06355B75F44C145A82D1AC8D9B0E74'
+    'Idea-a0f8faa2' => '6e3296b5-300f-475b-a474-cb938480f175'
+    'phpbb3_kn9ek_u' => '1'
+    'phpbb3_kn9ek_k' => ''
+    'phpbb3_kn9ek_sid' => '3c0a8c42e5d448d4ee122e83efaed57b'
+    'PHPFRONTSESSID' => 'celjrd34asvcqr13kkkr9tbfr4'
+    '_frontendUser' => '9311d674e646a6ccb00d10e2670b0282c077ca59c7379763c5a08c9a922a35c7a:2:{i:0;s:13:\"_frontendUser\";i:1;s:46:\"[1,\"2IKIExjdACq0Mt8Vje1CNJtk-FXcOyYE\",2592000]\";}'
+    '_frontendCSRF' => '804ad2754b3b2a40168ca55b35bc053b77d35699ad98e5036332122949edeef2a:2:{i:0;s:13:\"_frontendCSRF\";i:1;s:32:\"myz4e1V3sRISPuuROkcIAK0u9U5jRe3P\";}'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.99 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => 'PHPSESSID=es2qdqljcjdln4pj2jte829547; install_421aa90e079f=sq1eqn732qfcgtg1loa9a4gs65; JSESSIONID=AA06355B75F44C145A82D1AC8D9B0E74; Idea-a0f8faa2=6e3296b5-300f-475b-a474-cb938480f175; phpbb3_kn9ek_u=1; phpbb3_kn9ek_k=; phpbb3_kn9ek_sid=3c0a8c42e5d448d4ee122e83efaed57b; PHPFRONTSESSID=celjrd34asvcqr13kkkr9tbfr4; _frontendUser=9311d674e646a6ccb00d10e2670b0282c077ca59c7379763c5a08c9a922a35c7a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_frontendUser%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%222IKIExjdACq0Mt8Vje1CNJtk-FXcOyYE%22%2C2592000%5D%22%3B%7D; _frontendCSRF=804ad2754b3b2a40168ca55b35bc053b77d35699ad98e5036332122949edeef2a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_frontendCSRF%22%3Bi%3A1%3Bs%3A32%3A%22myz4e1V3sRISPuuROkcIAK0u9U5jRe3P%22%3B%7D'
+    'PATH' => 'C:\\CloudFoundry'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/7.0.8 Server at localhost Port 8080</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/7.0.8'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '8080'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/advanced/frontend/web/index.php'
+    'REMOTE_PORT' => '64983'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=reservation'
+    'REQUEST_URI' => '/advanced/frontend/web/index.php?r=reservation'
+    'SCRIPT_NAME' => '/advanced/frontend/web/index.php'
+    'PHP_SELF' => '/advanced/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1481643540.061
+    'REQUEST_TIME' => 1481643540
+]
+2016-12-13 16:39:00 [::1][-][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: Exception 'Exception' with message 'Serialization of 'Closure' is not allowed' 
+
+in C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2-debug\LogTarget.php:57
+
+Stack trace:
+#0 C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2-debug\LogTarget.php(57): serialize(Array)
+#1 C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2-debug\LogTarget.php(118): yii\debug\LogTarget->export()
+#2 C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2\log\Dispatcher.php(188): yii\debug\LogTarget->collect(Array, true)
+#3 C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2\log\Logger.php(173): yii\log\Dispatcher->dispatch(Array, true)
+#4 C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2\base\ErrorHandler.php(111): yii\log\Logger->flush(true)
+#5 [internal function]: yii\base\ErrorHandler->handleException(Object(ParseError))
+#6 {main}
+2016-12-13 16:39:00 [::1][-][-][info][application] $_GET = [
+    'r' => 'reservation'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'es2qdqljcjdln4pj2jte829547'
+    'install_421aa90e079f' => 'sq1eqn732qfcgtg1loa9a4gs65'
+    'JSESSIONID' => 'AA06355B75F44C145A82D1AC8D9B0E74'
+    'Idea-a0f8faa2' => '6e3296b5-300f-475b-a474-cb938480f175'
+    'phpbb3_kn9ek_u' => '1'
+    'phpbb3_kn9ek_k' => ''
+    'phpbb3_kn9ek_sid' => '3c0a8c42e5d448d4ee122e83efaed57b'
+    'PHPFRONTSESSID' => 'celjrd34asvcqr13kkkr9tbfr4'
+    '_frontendUser' => '9311d674e646a6ccb00d10e2670b0282c077ca59c7379763c5a08c9a922a35c7a:2:{i:0;s:13:\"_frontendUser\";i:1;s:46:\"[1,\"2IKIExjdACq0Mt8Vje1CNJtk-FXcOyYE\",2592000]\";}'
+    '_frontendCSRF' => '804ad2754b3b2a40168ca55b35bc053b77d35699ad98e5036332122949edeef2a:2:{i:0;s:13:\"_frontendCSRF\";i:1;s:32:\"myz4e1V3sRISPuuROkcIAK0u9U5jRe3P\";}'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.99 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => 'PHPSESSID=es2qdqljcjdln4pj2jte829547; install_421aa90e079f=sq1eqn732qfcgtg1loa9a4gs65; JSESSIONID=AA06355B75F44C145A82D1AC8D9B0E74; Idea-a0f8faa2=6e3296b5-300f-475b-a474-cb938480f175; phpbb3_kn9ek_u=1; phpbb3_kn9ek_k=; phpbb3_kn9ek_sid=3c0a8c42e5d448d4ee122e83efaed57b; PHPFRONTSESSID=celjrd34asvcqr13kkkr9tbfr4; _frontendUser=9311d674e646a6ccb00d10e2670b0282c077ca59c7379763c5a08c9a922a35c7a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_frontendUser%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%222IKIExjdACq0Mt8Vje1CNJtk-FXcOyYE%22%2C2592000%5D%22%3B%7D; _frontendCSRF=804ad2754b3b2a40168ca55b35bc053b77d35699ad98e5036332122949edeef2a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_frontendCSRF%22%3Bi%3A1%3Bs%3A32%3A%22myz4e1V3sRISPuuROkcIAK0u9U5jRe3P%22%3B%7D'
+    'PATH' => 'C:\\CloudFoundry'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/7.0.8 Server at localhost Port 8080</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/7.0.8'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '8080'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/advanced/frontend/web/index.php'
+    'REMOTE_PORT' => '64983'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=reservation'
+    'REQUEST_URI' => '/advanced/frontend/web/index.php?r=reservation'
+    'SCRIPT_NAME' => '/advanced/frontend/web/index.php'
+    'PHP_SELF' => '/advanced/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1481643540.061
+    'REQUEST_TIME' => 1481643540
+]
