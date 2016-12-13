@@ -15,9 +15,13 @@ $this->params['breadcrumbs'][] = $this->title;
 
     <p>Please fill out the following fields to signup:</p>
 
-    <div class="row">
+    <div class="row-form">
         <div class="col-lg-5">
             <?php $form = ActiveForm::begin(['id' => 'form-signup']); ?>
+
+                <?= $form->field($model, 'first_name') ?>
+
+                <?= $form->field($model, 'last_name') ?>
 
                 <?= $form->field($model, 'username')->textInput(['autofocus' => true]) ?>
 

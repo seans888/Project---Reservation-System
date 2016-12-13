@@ -2286,7 +2286,7 @@ fieldset[disabled] .btn-danger.active {
 }
 .btn-link {
   font-weight: normal;
-  color: #1B242F;
+  color: #999;
   cursor: pointer;
   border-radius: 0;
 }
