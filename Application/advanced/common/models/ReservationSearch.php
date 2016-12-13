@@ -18,8 +18,8 @@ class ReservationSearch extends Reservation
     public function rules()
     {
         return [
-            [['id', 'billingstatement_id'], 'integer'],
-            [['reservation_date', 'check_in', 'check_out', 'rooms', 'adults', 'kids'], 'safe'],
+            [['id'], 'integer'],
+            [['check_in', 'check_out', 'type_of_room', 'adults', 'kids'], 'safe'],
         ];
     }
 
@@ -60,13 +60,11 @@ class ReservationSearch extends Reservation
         // grid filtering conditions
         $query->andFilterWhere([
             'id' => $this->id,
-            'reservation_date' => $this->reservation_date,
             'check_in' => $this->check_in,
             'check_out' => $this->check_out,
-            'billingstatement_id' => $this->billingstatement_id,
         ]);
 
-        $query->andFilterWhere(['like', 'rooms', $this->rooms])
+        $query->andFilterWhere(['like', 'type_of_room', $this->type_of_room])
             ->andFilterWhere(['like', 'adults', $this->adults])
             ->andFilterWhere(['like', 'kids', $this->kids]);
 
