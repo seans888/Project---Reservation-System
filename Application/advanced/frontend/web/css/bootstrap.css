@@ -5678,8 +5678,8 @@ margin-right: 15px;
   color: #FFFFFF;
   margin-top: 40px;
 }
-#login-form{
-  text-align: center;
+.reservation-form input{
+    width: 50%;
 }
 
 .affix {

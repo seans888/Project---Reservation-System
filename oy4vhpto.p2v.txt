@@ -1,0 +1,97 @@
+﻿Merge remote-tracking branch 'origin/master'
+
+# Conflicts:
+#	Application/advanced/frontend/runtime/debug/index.data
+#
+# It looks like you may be committing a merge.
+# If this is not correct, please remove the file
+#	.git/MERGE_HEAD
+# and try again.
+
+
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+# On branch master
+# Your branch and 'origin/master' have diverged,
+# and have 1 and 2 different commits each, respectively.
+#   (use "git pull" to merge the remote branch into yours)
+#
+# All conflicts fixed but you are still merging.
+#
+# Changes to be committed:
+#	modified:   ../../../common/models/Reservation.php
+#	deleted:    585002c7574b2.data
+#	deleted:    585002c80ffff.data
+#	deleted:    585002cc27edf.data
+#	deleted:    585002de922f1.data
+#	deleted:    585002df355b6.data
+#	deleted:    5850043874cab.data
+#	deleted:    5850043a48d6d.data
+#	deleted:    585007351130d.data
+#	deleted:    585007477aa2d.data
+#	deleted:    585007b17f571.data
+#	deleted:    585008b8d4fea.data
+#	deleted:    585008bc7907e.data
+#	deleted:    585008c186904.data
+#	deleted:    585009e28b3d5.data
+#	deleted:    58500b81ba11d.data
+#	deleted:    58500b8409f42.data
+#	deleted:    58500b8848395.data
+#	deleted:    58500b8a4382c.data
+#	deleted:    58500c344e3d3.data
+#	new file:   585028e249460.data
+#	new file:   58502a930fa34.data
+#	new file:   58502a9516f79.data
+#	new file:   585080d95e16b.data
+#	new file:   5850820d2bcc5.data
+#	new file:   58508211002c7.data
+#	new file:   585082116bffc.data
+#	new file:   5850832a2b677.data
+#	new file:   585083351ae73.data
+#	new file:   58508336550ac.data
+#	new file:   58508338dea15.data
+#	new file:   5850833ec103b.data
+#	new file:   5850833f33f59.data
+#	new file:   58508509defec.data
+#	new file:   5850850b17f33.data
+#	new file:   5850852670c4d.data
+#	new file:   585085a2ce245.data
+#	new file:   585085a3bfe8a.data
+#	new file:   585085e664e17.data
+#	new file:   5850872ae56e8.data
+#	renamed:    585008c31778b.data -> 58508732d01a8.data
+#	renamed:    585009085f95a.data -> 585087bc2f158.data
+#	new file:   585087ee3b307.data
+#	new file:   585087f098c19.data
+#	new file:   585087f5b679f.data
+#	new file:   5850885679568.data
+#	new file:   5850885e0f403.data
+#	new file:   58508861d5572.data
+#	new file:   5850887d1abb7.data
+#	new file:   585088b0dac13.data
+#	new file:   585088c6ae3be.data
+#	new file:   58508949bebc2.data
+#	new file:   5850896a8d9a1.data
+#	new file:   585089bcdc383.data
+#	new file:   585089c9e8e0e.data
+#	new file:   585089cf995dc.data
+#	new file:   585089e5c0ee4.data
+#	new file:   585089e5e07cc.data
+#	new file:   585089e95031c.data
+#	new file:   585089ff06997.data
+#	new file:   585089ff23d3c.data
+#	renamed:    58500b86a46ad.data -> 58508ac9f30c0.data
+#	new file:   58508acbc5f80.data
+#	new file:   58508b3ec32be.data
+#	new file:   58508b413e1c1.data
+#	new file:   58508bf69b4c3.data
+#	new file:   58508bfb27076.data
+#	new file:   58508d7e23e28.data
+#	modified:   index.data
+#	modified:   ../logs/app.log
+#	modified:   ../../views/layouts/second.php
+#	modified:   ../../views/reservation/_form.php
+#	modified:   ../../web/css/bootstrap.css
+#	modified:   ../../web/css/style.css
+#
+

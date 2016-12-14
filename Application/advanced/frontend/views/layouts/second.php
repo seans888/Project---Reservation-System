@@ -55,11 +55,7 @@ AppAsset::register($this);
                         $menuItems[] = ['label' => 'Signup', 'url' => ['/site/signup']];
                         $menuItems[] = ['label' => 'Login', 'url' => ['/site/login']];
                     } else {
-                        $menuItems[] = ['label' => 'Services',
-                        'items' => [
-                            ['label' => 'Reservation', 'url' => ['site/about']],
-                        ],
-                        ];
+                        $menuItems[] = ['label' => 'Reservation', 'url' => ['/reservation']];
                         $menuItems[] = '<li>'
                         . Html::beginForm(['/site/logout'], 'post')
                         . Html::submitButton(
@@ -82,7 +78,7 @@ AppAsset::register($this);
       <div class="banner">
             <div class="banner-info text-center">
             <h1>Tarangban Falls &
-            CALIMBO FARM RESORT</h1>
+            Calimbo Farm Resort</h1>
             <span></span>
             <!--<ul>
              <li><a class="scroll" href="#">Nature</a><i class="line"></i></li>

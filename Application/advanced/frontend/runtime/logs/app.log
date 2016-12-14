@@ -5702,6 +5702,1657 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1481647503.229
     'REQUEST_TIME' => 1481647503
 ]
+2016-12-14 00:32:54 [::1][-][celjrd34asvcqr13kkkr9tbfr4][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Setting unknown property: common\models\User::first_name in C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2\base\Component.php:197
+Stack trace:
+#0 C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2\db\BaseActiveRecord.php(306): yii\base\Component->__set('first_name', 'Kyle')
+#1 C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\frontend\models\SignupForm.php(55): yii\db\BaseActiveRecord->__set('first_name', 'Kyle')
+#2 C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\frontend\controllers\SiteController.php(156): frontend\models\SignupForm->signup()
+#3 [internal function]: frontend\controllers\SiteController->actionSignup()
+#4 C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#5 C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#6 C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('signup', Array)
+#7 C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2\web\Application.php(100): yii\base\Module->runAction('site/signup', Array)
+#8 C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\frontend\web\index.php(17): yii\base\Application->run()
+#10 {main}
+2016-12-14 00:32:54 [::1][-][celjrd34asvcqr13kkkr9tbfr4][info][application] $_GET = [
+    'r' => 'site/signup'
+]
+
+$_POST = [
+    '_frontendCSRF' => 'V0gxa041UUUIHH0bA1s7dQgKUx8geCULMhp/Oit4YQkfK3VfLF0LCw=='
+    'SignupForm' => [
+        'first_name' => 'Kyle'
+        'last_name' => 'Lee'
+        'username' => 'Kyleee'
+        'email' => 'kvlee14@gmail.com'
+        'password' => 'Password'
+    ]
+    'signup-button' => ''
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'es2qdqljcjdln4pj2jte829547'
+    'install_421aa90e079f' => 'sq1eqn732qfcgtg1loa9a4gs65'
+    'JSESSIONID' => 'AA06355B75F44C145A82D1AC8D9B0E74'
+    'Idea-a0f8faa2' => '6e3296b5-300f-475b-a474-cb938480f175'
+    'phpbb3_kn9ek_u' => '1'
+    'phpbb3_kn9ek_k' => ''
+    'phpbb3_kn9ek_sid' => '3c0a8c42e5d448d4ee122e83efaed57b'
+    'PHPFRONTSESSID' => 'celjrd34asvcqr13kkkr9tbfr4'
+    '_frontendUser' => '9311d674e646a6ccb00d10e2670b0282c077ca59c7379763c5a08c9a922a35c7a:2:{i:0;s:13:\"_frontendUser\";i:1;s:46:\"[1,\"2IKIExjdACq0Mt8Vje1CNJtk-FXcOyYE\",2592000]\";}'
+    '_frontendCSRF' => '1127a7394a7484a02997e0c3020a03b7795dcc869682e51add1190824aaee875a:2:{i:0;s:13:\"_frontendCSRF\";i:1;s:32:\"_TLpMnj0_BbtnMtNeRNQeM0LHcD4bhZN\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'yiviuov'
+    '__captcha/site/captchacount' => 1
+    '__id' => 1
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '261'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ORIGIN' => 'http://localhost:8080'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.99 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost:8080/advanced/frontend/web/index.php?r=site%2Fsignup'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => 'PHPSESSID=es2qdqljcjdln4pj2jte829547; install_421aa90e079f=sq1eqn732qfcgtg1loa9a4gs65; JSESSIONID=AA06355B75F44C145A82D1AC8D9B0E74; Idea-a0f8faa2=6e3296b5-300f-475b-a474-cb938480f175; phpbb3_kn9ek_u=1; phpbb3_kn9ek_k=; phpbb3_kn9ek_sid=3c0a8c42e5d448d4ee122e83efaed57b; PHPFRONTSESSID=celjrd34asvcqr13kkkr9tbfr4; _frontendUser=9311d674e646a6ccb00d10e2670b0282c077ca59c7379763c5a08c9a922a35c7a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_frontendUser%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%222IKIExjdACq0Mt8Vje1CNJtk-FXcOyYE%22%2C2592000%5D%22%3B%7D; _frontendCSRF=1127a7394a7484a02997e0c3020a03b7795dcc869682e51add1190824aaee875a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_frontendCSRF%22%3Bi%3A1%3Bs%3A32%3A%22_TLpMnj0_BbtnMtNeRNQeM0LHcD4bhZN%22%3B%7D'
+    'PATH' => 'C:\\CloudFoundry'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/7.0.8 Server at localhost Port 8080</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/7.0.8'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '8080'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/advanced/frontend/web/index.php'
+    'REMOTE_PORT' => '50484'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=site%2Fsignup'
+    'REQUEST_URI' => '/advanced/frontend/web/index.php?r=site%2Fsignup'
+    'SCRIPT_NAME' => '/advanced/frontend/web/index.php'
+    'PHP_SELF' => '/advanced/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1481671974.418
+    'REQUEST_TIME' => 1481671974
+]
+2016-12-14 00:43:27 [::1][-][-][error][ParseError] ParseError: syntax error, unexpected '$menuItems' (T_VARIABLE) in C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\frontend\views\layouts\second.php:59
+Stack trace:
+#0 C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2\base\View.php(248): yii\base\View->renderPhpFile('C:\\Users\\gc\\Des...', Array)
+#1 C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2\base\Controller.php(393): yii\base\View->renderFile('C:\\Users\\gc\\Des...', Array, Object(frontend\controllers\SiteController))
+#2 C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2\base\Controller.php(379): yii\base\Controller->renderContent('<!DOCTYPE html>...')
+#3 C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\frontend\controllers\SiteController.php(76): yii\base\Controller->render('index')
+#4 [internal function]: frontend\controllers\SiteController->actionIndex()
+#5 C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#6 C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#7 C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('', Array)
+#8 C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2\web\Application.php(100): yii\base\Module->runAction('', Array)
+#9 C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\frontend\web\index.php(17): yii\base\Application->run()
+#11 {main}
+2016-12-14 00:43:27 [::1][-][-][info][application] $_COOKIE = [
+    'PHPSESSID' => 'es2qdqljcjdln4pj2jte829547'
+    'install_421aa90e079f' => 'sq1eqn732qfcgtg1loa9a4gs65'
+    'JSESSIONID' => 'AA06355B75F44C145A82D1AC8D9B0E74'
+    'Idea-a0f8faa2' => '6e3296b5-300f-475b-a474-cb938480f175'
+    'phpbb3_kn9ek_u' => '1'
+    'phpbb3_kn9ek_k' => ''
+    'phpbb3_kn9ek_sid' => '3c0a8c42e5d448d4ee122e83efaed57b'
+    '_frontendCSRF' => '1127a7394a7484a02997e0c3020a03b7795dcc869682e51add1190824aaee875a:2:{i:0;s:13:\"_frontendCSRF\";i:1;s:32:\"_TLpMnj0_BbtnMtNeRNQeM0LHcD4bhZN\";}'
+    'PHPFRONTSESSID' => 'ge9bfkgea8aub5sj85oo644573'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.99 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost:8080/advanced/frontend/web/index.php?r=site%2Fsignup'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => 'PHPSESSID=es2qdqljcjdln4pj2jte829547; install_421aa90e079f=sq1eqn732qfcgtg1loa9a4gs65; JSESSIONID=AA06355B75F44C145A82D1AC8D9B0E74; Idea-a0f8faa2=6e3296b5-300f-475b-a474-cb938480f175; phpbb3_kn9ek_u=1; phpbb3_kn9ek_k=; phpbb3_kn9ek_sid=3c0a8c42e5d448d4ee122e83efaed57b; _frontendCSRF=1127a7394a7484a02997e0c3020a03b7795dcc869682e51add1190824aaee875a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_frontendCSRF%22%3Bi%3A1%3Bs%3A32%3A%22_TLpMnj0_BbtnMtNeRNQeM0LHcD4bhZN%22%3B%7D; PHPFRONTSESSID=ge9bfkgea8aub5sj85oo644573'
+    'PATH' => 'C:\\CloudFoundry'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/7.0.8 Server at localhost Port 8080</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/7.0.8'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '8080'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/advanced/frontend/web/index.php'
+    'REMOTE_PORT' => '50832'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/advanced/frontend/web/index.php'
+    'SCRIPT_NAME' => '/advanced/frontend/web/index.php'
+    'PHP_SELF' => '/advanced/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1481672607.189
+    'REQUEST_TIME' => 1481672607
+]
+2016-12-14 00:43:27 [::1][-][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: Exception 'Exception' with message 'Serialization of 'Closure' is not allowed' 
+
+in C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2-debug\LogTarget.php:57
+
+Stack trace:
+#0 C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2-debug\LogTarget.php(57): serialize(Array)
+#1 C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2-debug\LogTarget.php(118): yii\debug\LogTarget->export()
+#2 C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2\log\Dispatcher.php(188): yii\debug\LogTarget->collect(Array, true)
+#3 C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2\log\Logger.php(173): yii\log\Dispatcher->dispatch(Array, true)
+#4 C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2\base\ErrorHandler.php(111): yii\log\Logger->flush(true)
+#5 [internal function]: yii\base\ErrorHandler->handleException(Object(ParseError))
+#6 {main}
+2016-12-14 00:43:27 [::1][-][-][info][application] $_COOKIE = [
+    'PHPSESSID' => 'es2qdqljcjdln4pj2jte829547'
+    'install_421aa90e079f' => 'sq1eqn732qfcgtg1loa9a4gs65'
+    'JSESSIONID' => 'AA06355B75F44C145A82D1AC8D9B0E74'
+    'Idea-a0f8faa2' => '6e3296b5-300f-475b-a474-cb938480f175'
+    'phpbb3_kn9ek_u' => '1'
+    'phpbb3_kn9ek_k' => ''
+    'phpbb3_kn9ek_sid' => '3c0a8c42e5d448d4ee122e83efaed57b'
+    '_frontendCSRF' => '1127a7394a7484a02997e0c3020a03b7795dcc869682e51add1190824aaee875a:2:{i:0;s:13:\"_frontendCSRF\";i:1;s:32:\"_TLpMnj0_BbtnMtNeRNQeM0LHcD4bhZN\";}'
+    'PHPFRONTSESSID' => 'ge9bfkgea8aub5sj85oo644573'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.99 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost:8080/advanced/frontend/web/index.php?r=site%2Fsignup'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => 'PHPSESSID=es2qdqljcjdln4pj2jte829547; install_421aa90e079f=sq1eqn732qfcgtg1loa9a4gs65; JSESSIONID=AA06355B75F44C145A82D1AC8D9B0E74; Idea-a0f8faa2=6e3296b5-300f-475b-a474-cb938480f175; phpbb3_kn9ek_u=1; phpbb3_kn9ek_k=; phpbb3_kn9ek_sid=3c0a8c42e5d448d4ee122e83efaed57b; _frontendCSRF=1127a7394a7484a02997e0c3020a03b7795dcc869682e51add1190824aaee875a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_frontendCSRF%22%3Bi%3A1%3Bs%3A32%3A%22_TLpMnj0_BbtnMtNeRNQeM0LHcD4bhZN%22%3B%7D; PHPFRONTSESSID=ge9bfkgea8aub5sj85oo644573'
+    'PATH' => 'C:\\CloudFoundry'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/7.0.8 Server at localhost Port 8080</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/7.0.8'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '8080'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/advanced/frontend/web/index.php'
+    'REMOTE_PORT' => '50832'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/advanced/frontend/web/index.php'
+    'SCRIPT_NAME' => '/advanced/frontend/web/index.php'
+    'PHP_SELF' => '/advanced/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1481672607.189
+    'REQUEST_TIME' => 1481672607
+]
+2016-12-14 00:43:36 [::1][-][-][error][ParseError] ParseError: syntax error, unexpected ',' in C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\frontend\views\layouts\second.php:58
+Stack trace:
+#0 C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2\base\View.php(248): yii\base\View->renderPhpFile('C:\\Users\\gc\\Des...', Array)
+#1 C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2\base\Controller.php(393): yii\base\View->renderFile('C:\\Users\\gc\\Des...', Array, Object(frontend\controllers\SiteController))
+#2 C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2\base\Controller.php(379): yii\base\Controller->renderContent('<!DOCTYPE html>...')
+#3 C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\frontend\controllers\SiteController.php(76): yii\base\Controller->render('index')
+#4 [internal function]: frontend\controllers\SiteController->actionIndex()
+#5 C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#6 C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#7 C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('', Array)
+#8 C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2\web\Application.php(100): yii\base\Module->runAction('', Array)
+#9 C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\frontend\web\index.php(17): yii\base\Application->run()
+#11 {main}
+2016-12-14 00:43:36 [::1][-][-][info][application] $_COOKIE = [
+    'PHPSESSID' => 'es2qdqljcjdln4pj2jte829547'
+    'install_421aa90e079f' => 'sq1eqn732qfcgtg1loa9a4gs65'
+    'JSESSIONID' => 'AA06355B75F44C145A82D1AC8D9B0E74'
+    'Idea-a0f8faa2' => '6e3296b5-300f-475b-a474-cb938480f175'
+    'phpbb3_kn9ek_u' => '1'
+    'phpbb3_kn9ek_k' => ''
+    'phpbb3_kn9ek_sid' => '3c0a8c42e5d448d4ee122e83efaed57b'
+    '_frontendCSRF' => '1127a7394a7484a02997e0c3020a03b7795dcc869682e51add1190824aaee875a:2:{i:0;s:13:\"_frontendCSRF\";i:1;s:32:\"_TLpMnj0_BbtnMtNeRNQeM0LHcD4bhZN\";}'
+    'PHPFRONTSESSID' => 'ge9bfkgea8aub5sj85oo644573'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.99 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost:8080/advanced/frontend/web/index.php?r=site%2Fsignup'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => 'PHPSESSID=es2qdqljcjdln4pj2jte829547; install_421aa90e079f=sq1eqn732qfcgtg1loa9a4gs65; JSESSIONID=AA06355B75F44C145A82D1AC8D9B0E74; Idea-a0f8faa2=6e3296b5-300f-475b-a474-cb938480f175; phpbb3_kn9ek_u=1; phpbb3_kn9ek_k=; phpbb3_kn9ek_sid=3c0a8c42e5d448d4ee122e83efaed57b; _frontendCSRF=1127a7394a7484a02997e0c3020a03b7795dcc869682e51add1190824aaee875a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_frontendCSRF%22%3Bi%3A1%3Bs%3A32%3A%22_TLpMnj0_BbtnMtNeRNQeM0LHcD4bhZN%22%3B%7D; PHPFRONTSESSID=ge9bfkgea8aub5sj85oo644573'
+    'PATH' => 'C:\\CloudFoundry'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/7.0.8 Server at localhost Port 8080</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/7.0.8'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '8080'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/advanced/frontend/web/index.php'
+    'REMOTE_PORT' => '50833'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/advanced/frontend/web/index.php'
+    'SCRIPT_NAME' => '/advanced/frontend/web/index.php'
+    'PHP_SELF' => '/advanced/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1481672616.835
+    'REQUEST_TIME' => 1481672616
+]
+2016-12-14 00:43:37 [::1][-][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: Exception 'Exception' with message 'Serialization of 'Closure' is not allowed' 
+
+in C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2-debug\LogTarget.php:57
+
+Stack trace:
+#0 C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2-debug\LogTarget.php(57): serialize(Array)
+#1 C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2-debug\LogTarget.php(118): yii\debug\LogTarget->export()
+#2 C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2\log\Dispatcher.php(188): yii\debug\LogTarget->collect(Array, true)
+#3 C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2\log\Logger.php(173): yii\log\Dispatcher->dispatch(Array, true)
+#4 C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2\base\ErrorHandler.php(111): yii\log\Logger->flush(true)
+#5 [internal function]: yii\base\ErrorHandler->handleException(Object(ParseError))
+#6 {main}
+2016-12-14 00:43:36 [::1][-][-][info][application] $_COOKIE = [
+    'PHPSESSID' => 'es2qdqljcjdln4pj2jte829547'
+    'install_421aa90e079f' => 'sq1eqn732qfcgtg1loa9a4gs65'
+    'JSESSIONID' => 'AA06355B75F44C145A82D1AC8D9B0E74'
+    'Idea-a0f8faa2' => '6e3296b5-300f-475b-a474-cb938480f175'
+    'phpbb3_kn9ek_u' => '1'
+    'phpbb3_kn9ek_k' => ''
+    'phpbb3_kn9ek_sid' => '3c0a8c42e5d448d4ee122e83efaed57b'
+    '_frontendCSRF' => '1127a7394a7484a02997e0c3020a03b7795dcc869682e51add1190824aaee875a:2:{i:0;s:13:\"_frontendCSRF\";i:1;s:32:\"_TLpMnj0_BbtnMtNeRNQeM0LHcD4bhZN\";}'
+    'PHPFRONTSESSID' => 'ge9bfkgea8aub5sj85oo644573'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.99 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost:8080/advanced/frontend/web/index.php?r=site%2Fsignup'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => 'PHPSESSID=es2qdqljcjdln4pj2jte829547; install_421aa90e079f=sq1eqn732qfcgtg1loa9a4gs65; JSESSIONID=AA06355B75F44C145A82D1AC8D9B0E74; Idea-a0f8faa2=6e3296b5-300f-475b-a474-cb938480f175; phpbb3_kn9ek_u=1; phpbb3_kn9ek_k=; phpbb3_kn9ek_sid=3c0a8c42e5d448d4ee122e83efaed57b; _frontendCSRF=1127a7394a7484a02997e0c3020a03b7795dcc869682e51add1190824aaee875a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_frontendCSRF%22%3Bi%3A1%3Bs%3A32%3A%22_TLpMnj0_BbtnMtNeRNQeM0LHcD4bhZN%22%3B%7D; PHPFRONTSESSID=ge9bfkgea8aub5sj85oo644573'
+    'PATH' => 'C:\\CloudFoundry'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/7.0.8 Server at localhost Port 8080</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/7.0.8'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '8080'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/advanced/frontend/web/index.php'
+    'REMOTE_PORT' => '50833'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/advanced/frontend/web/index.php'
+    'SCRIPT_NAME' => '/advanced/frontend/web/index.php'
+    'PHP_SELF' => '/advanced/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1481672616.835
+    'REQUEST_TIME' => 1481672616
+]
+2016-12-14 00:44:53 [::1][-][-][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Getting unknown property: common\models\Reservation::reservation_date in C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2\base\Component.php:143
+Stack trace:
+#0 C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2\db\BaseActiveRecord.php(286): yii\base\Component->__get('reservation_dat...')
+#1 C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2\helpers\BaseHtml.php(2044): yii\db\BaseActiveRecord->__get('reservation_dat...')
+#2 C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2\helpers\BaseHtml.php(1246): yii\helpers\BaseHtml::getAttributeValue(Object(common\models\Reservation), 'reservation_dat...')
+#3 C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2\helpers\BaseHtml.php(1295): yii\helpers\BaseHtml::activeInput('text', Object(common\models\Reservation), 'reservation_dat...', Array)
+#4 C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2\widgets\ActiveField.php(386): yii\helpers\BaseHtml::activeTextInput(Object(common\models\Reservation), 'reservation_dat...', Array)
+#5 C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\frontend\views\reservation\_form.php(15): yii\widgets\ActiveField->textInput()
+#6 C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2\base\View.php(326): require('C:\\Users\\gc\\Des...')
+#7 C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2\base\View.php(248): yii\base\View->renderPhpFile('C:\\Users\\gc\\Des...', Array)
+#8 C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2\base\View.php(150): yii\base\View->renderFile('C:\\Users\\gc\\Des...', Array, NULL)
+#9 C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\frontend\views\reservation\create.php(18): yii\base\View->render('_form', Array)
+#10 C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2\base\View.php(326): require('C:\\Users\\gc\\Des...')
+#11 C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2\base\View.php(248): yii\base\View->renderPhpFile('C:\\Users\\gc\\Des...', Array)
+#12 C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2\base\View.php(150): yii\base\View->renderFile('C:\\Users\\gc\\Des...', Array, Object(frontend\controllers\ReservationController))
+#13 C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2\base\Controller.php(378): yii\base\View->render('create', Array, Object(frontend\controllers\ReservationController))
+#14 C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\frontend\controllers\ReservationController.php(72): yii\base\Controller->render('create', Array)
+#15 [internal function]: frontend\controllers\ReservationController->actionCreate()
+#16 C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#17 C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#18 C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('create', Array)
+#19 C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2\web\Application.php(100): yii\base\Module->runAction('reservation/cre...', Array)
+#20 C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#21 C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\frontend\web\index.php(17): yii\base\Application->run()
+#22 {main}
+2016-12-14 00:44:53 [::1][-][-][info][application] $_GET = [
+    'r' => 'reservation/create'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'es2qdqljcjdln4pj2jte829547'
+    'install_421aa90e079f' => 'sq1eqn732qfcgtg1loa9a4gs65'
+    'JSESSIONID' => 'AA06355B75F44C145A82D1AC8D9B0E74'
+    'Idea-a0f8faa2' => '6e3296b5-300f-475b-a474-cb938480f175'
+    'phpbb3_kn9ek_u' => '1'
+    'phpbb3_kn9ek_k' => ''
+    'phpbb3_kn9ek_sid' => '3c0a8c42e5d448d4ee122e83efaed57b'
+    '_frontendCSRF' => '1127a7394a7484a02997e0c3020a03b7795dcc869682e51add1190824aaee875a:2:{i:0;s:13:\"_frontendCSRF\";i:1;s:32:\"_TLpMnj0_BbtnMtNeRNQeM0LHcD4bhZN\";}'
+    'PHPFRONTSESSID' => 'ge9bfkgea8aub5sj85oo644573'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.99 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost:8080/advanced/frontend/web/index.php?r=reservation'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => 'PHPSESSID=es2qdqljcjdln4pj2jte829547; install_421aa90e079f=sq1eqn732qfcgtg1loa9a4gs65; JSESSIONID=AA06355B75F44C145A82D1AC8D9B0E74; Idea-a0f8faa2=6e3296b5-300f-475b-a474-cb938480f175; phpbb3_kn9ek_u=1; phpbb3_kn9ek_k=; phpbb3_kn9ek_sid=3c0a8c42e5d448d4ee122e83efaed57b; _frontendCSRF=1127a7394a7484a02997e0c3020a03b7795dcc869682e51add1190824aaee875a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_frontendCSRF%22%3Bi%3A1%3Bs%3A32%3A%22_TLpMnj0_BbtnMtNeRNQeM0LHcD4bhZN%22%3B%7D; PHPFRONTSESSID=ge9bfkgea8aub5sj85oo644573'
+    'PATH' => 'C:\\CloudFoundry'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/7.0.8 Server at localhost Port 8080</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/7.0.8'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '8080'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/advanced/frontend/web/index.php'
+    'REMOTE_PORT' => '50844'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=reservation%2Fcreate'
+    'REQUEST_URI' => '/advanced/frontend/web/index.php?r=reservation%2Fcreate'
+    'SCRIPT_NAME' => '/advanced/frontend/web/index.php'
+    'PHP_SELF' => '/advanced/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1481672693.702
+    'REQUEST_TIME' => 1481672693
+]
+2016-12-14 00:46:30 [::1][-][-][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Getting unknown property: common\models\Reservation::reservation_date in C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2\base\Component.php:143
+Stack trace:
+#0 C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2\db\BaseActiveRecord.php(286): yii\base\Component->__get('reservation_dat...')
+#1 C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2\helpers\BaseHtml.php(2044): yii\db\BaseActiveRecord->__get('reservation_dat...')
+#2 C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2\helpers\BaseHtml.php(1246): yii\helpers\BaseHtml::getAttributeValue(Object(common\models\Reservation), 'reservation_dat...')
+#3 C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2\helpers\BaseHtml.php(1295): yii\helpers\BaseHtml::activeInput('text', Object(common\models\Reservation), 'reservation_dat...', Array)
+#4 C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2\widgets\ActiveField.php(386): yii\helpers\BaseHtml::activeTextInput(Object(common\models\Reservation), 'reservation_dat...', Array)
+#5 C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\frontend\views\reservation\_form.php(15): yii\widgets\ActiveField->textInput()
+#6 C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2\base\View.php(326): require('C:\\Users\\gc\\Des...')
+#7 C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2\base\View.php(248): yii\base\View->renderPhpFile('C:\\Users\\gc\\Des...', Array)
+#8 C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2\base\View.php(150): yii\base\View->renderFile('C:\\Users\\gc\\Des...', Array, NULL)
+#9 C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\frontend\views\reservation\create.php(18): yii\base\View->render('_form', Array)
+#10 C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2\base\View.php(326): require('C:\\Users\\gc\\Des...')
+#11 C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2\base\View.php(248): yii\base\View->renderPhpFile('C:\\Users\\gc\\Des...', Array)
+#12 C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2\base\View.php(150): yii\base\View->renderFile('C:\\Users\\gc\\Des...', Array, Object(frontend\controllers\ReservationController))
+#13 C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2\base\Controller.php(378): yii\base\View->render('create', Array, Object(frontend\controllers\ReservationController))
+#14 C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\frontend\controllers\ReservationController.php(72): yii\base\Controller->render('create', Array)
+#15 [internal function]: frontend\controllers\ReservationController->actionCreate()
+#16 C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#17 C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#18 C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('create', Array)
+#19 C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2\web\Application.php(100): yii\base\Module->runAction('reservation/cre...', Array)
+#20 C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#21 C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\frontend\web\index.php(17): yii\base\Application->run()
+#22 {main}
+2016-12-14 00:46:30 [::1][-][-][info][application] $_GET = [
+    'r' => 'reservation/create'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'es2qdqljcjdln4pj2jte829547'
+    'install_421aa90e079f' => 'sq1eqn732qfcgtg1loa9a4gs65'
+    'JSESSIONID' => 'AA06355B75F44C145A82D1AC8D9B0E74'
+    'Idea-a0f8faa2' => '6e3296b5-300f-475b-a474-cb938480f175'
+    'phpbb3_kn9ek_u' => '1'
+    'phpbb3_kn9ek_k' => ''
+    'phpbb3_kn9ek_sid' => '3c0a8c42e5d448d4ee122e83efaed57b'
+    '_frontendCSRF' => '1127a7394a7484a02997e0c3020a03b7795dcc869682e51add1190824aaee875a:2:{i:0;s:13:\"_frontendCSRF\";i:1;s:32:\"_TLpMnj0_BbtnMtNeRNQeM0LHcD4bhZN\";}'
+    'PHPFRONTSESSID' => 'ge9bfkgea8aub5sj85oo644573'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.99 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost:8080/advanced/frontend/web/index.php?r=reservation'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => 'PHPSESSID=es2qdqljcjdln4pj2jte829547; install_421aa90e079f=sq1eqn732qfcgtg1loa9a4gs65; JSESSIONID=AA06355B75F44C145A82D1AC8D9B0E74; Idea-a0f8faa2=6e3296b5-300f-475b-a474-cb938480f175; phpbb3_kn9ek_u=1; phpbb3_kn9ek_k=; phpbb3_kn9ek_sid=3c0a8c42e5d448d4ee122e83efaed57b; _frontendCSRF=1127a7394a7484a02997e0c3020a03b7795dcc869682e51add1190824aaee875a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_frontendCSRF%22%3Bi%3A1%3Bs%3A32%3A%22_TLpMnj0_BbtnMtNeRNQeM0LHcD4bhZN%22%3B%7D; PHPFRONTSESSID=ge9bfkgea8aub5sj85oo644573'
+    'PATH' => 'C:\\CloudFoundry'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/7.0.8 Server at localhost Port 8080</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/7.0.8'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '8080'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/advanced/frontend/web/index.php'
+    'REMOTE_PORT' => '50867'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=reservation%2Fcreate'
+    'REQUEST_URI' => '/advanced/frontend/web/index.php?r=reservation%2Fcreate'
+    'SCRIPT_NAME' => '/advanced/frontend/web/index.php'
+    'PHP_SELF' => '/advanced/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1481672790.453
+    'REQUEST_TIME' => 1481672790
+]
+2016-12-14 00:46:38 [::1][-][-][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Getting unknown property: common\models\Reservation::reservation_date in C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2\base\Component.php:143
+Stack trace:
+#0 C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2\db\BaseActiveRecord.php(286): yii\base\Component->__get('reservation_dat...')
+#1 C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2\helpers\BaseHtml.php(2044): yii\db\BaseActiveRecord->__get('reservation_dat...')
+#2 C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2\helpers\BaseHtml.php(1246): yii\helpers\BaseHtml::getAttributeValue(Object(common\models\Reservation), 'reservation_dat...')
+#3 C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2\helpers\BaseHtml.php(1295): yii\helpers\BaseHtml::activeInput('text', Object(common\models\Reservation), 'reservation_dat...', Array)
+#4 C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2\widgets\ActiveField.php(386): yii\helpers\BaseHtml::activeTextInput(Object(common\models\Reservation), 'reservation_dat...', Array)
+#5 C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\frontend\views\reservation\_form.php(15): yii\widgets\ActiveField->textInput()
+#6 C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2\base\View.php(326): require('C:\\Users\\gc\\Des...')
+#7 C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2\base\View.php(248): yii\base\View->renderPhpFile('C:\\Users\\gc\\Des...', Array)
+#8 C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2\base\View.php(150): yii\base\View->renderFile('C:\\Users\\gc\\Des...', Array, NULL)
+#9 C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\frontend\views\reservation\create.php(18): yii\base\View->render('_form', Array)
+#10 C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2\base\View.php(326): require('C:\\Users\\gc\\Des...')
+#11 C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2\base\View.php(248): yii\base\View->renderPhpFile('C:\\Users\\gc\\Des...', Array)
+#12 C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2\base\View.php(150): yii\base\View->renderFile('C:\\Users\\gc\\Des...', Array, Object(frontend\controllers\ReservationController))
+#13 C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2\base\Controller.php(378): yii\base\View->render('create', Array, Object(frontend\controllers\ReservationController))
+#14 C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\frontend\controllers\ReservationController.php(72): yii\base\Controller->render('create', Array)
+#15 [internal function]: frontend\controllers\ReservationController->actionCreate()
+#16 C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#17 C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#18 C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('create', Array)
+#19 C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2\web\Application.php(100): yii\base\Module->runAction('reservation/cre...', Array)
+#20 C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#21 C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\frontend\web\index.php(17): yii\base\Application->run()
+#22 {main}
+2016-12-14 00:46:38 [::1][-][-][info][application] $_GET = [
+    'r' => 'reservation/create'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'es2qdqljcjdln4pj2jte829547'
+    'install_421aa90e079f' => 'sq1eqn732qfcgtg1loa9a4gs65'
+    'JSESSIONID' => 'AA06355B75F44C145A82D1AC8D9B0E74'
+    'Idea-a0f8faa2' => '6e3296b5-300f-475b-a474-cb938480f175'
+    'phpbb3_kn9ek_u' => '1'
+    'phpbb3_kn9ek_k' => ''
+    'phpbb3_kn9ek_sid' => '3c0a8c42e5d448d4ee122e83efaed57b'
+    '_frontendCSRF' => '1127a7394a7484a02997e0c3020a03b7795dcc869682e51add1190824aaee875a:2:{i:0;s:13:\"_frontendCSRF\";i:1;s:32:\"_TLpMnj0_BbtnMtNeRNQeM0LHcD4bhZN\";}'
+    'PHPFRONTSESSID' => 'ge9bfkgea8aub5sj85oo644573'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.99 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost:8080/advanced/frontend/web/index.php?r=reservation'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => 'PHPSESSID=es2qdqljcjdln4pj2jte829547; install_421aa90e079f=sq1eqn732qfcgtg1loa9a4gs65; JSESSIONID=AA06355B75F44C145A82D1AC8D9B0E74; Idea-a0f8faa2=6e3296b5-300f-475b-a474-cb938480f175; phpbb3_kn9ek_u=1; phpbb3_kn9ek_k=; phpbb3_kn9ek_sid=3c0a8c42e5d448d4ee122e83efaed57b; _frontendCSRF=1127a7394a7484a02997e0c3020a03b7795dcc869682e51add1190824aaee875a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_frontendCSRF%22%3Bi%3A1%3Bs%3A32%3A%22_TLpMnj0_BbtnMtNeRNQeM0LHcD4bhZN%22%3B%7D; PHPFRONTSESSID=ge9bfkgea8aub5sj85oo644573'
+    'PATH' => 'C:\\CloudFoundry'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/7.0.8 Server at localhost Port 8080</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/7.0.8'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '8080'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/advanced/frontend/web/index.php'
+    'REMOTE_PORT' => '50871'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=reservation%2Fcreate'
+    'REQUEST_URI' => '/advanced/frontend/web/index.php?r=reservation%2Fcreate'
+    'SCRIPT_NAME' => '/advanced/frontend/web/index.php'
+    'PHP_SELF' => '/advanced/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1481672798.019
+    'REQUEST_TIME' => 1481672798
+]
+2016-12-14 00:46:41 [::1][-][-][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Getting unknown property: common\models\Reservation::reservation_date in C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2\base\Component.php:143
+Stack trace:
+#0 C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2\db\BaseActiveRecord.php(286): yii\base\Component->__get('reservation_dat...')
+#1 C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2\helpers\BaseHtml.php(2044): yii\db\BaseActiveRecord->__get('reservation_dat...')
+#2 C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2\helpers\BaseHtml.php(1246): yii\helpers\BaseHtml::getAttributeValue(Object(common\models\Reservation), 'reservation_dat...')
+#3 C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2\helpers\BaseHtml.php(1295): yii\helpers\BaseHtml::activeInput('text', Object(common\models\Reservation), 'reservation_dat...', Array)
+#4 C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2\widgets\ActiveField.php(386): yii\helpers\BaseHtml::activeTextInput(Object(common\models\Reservation), 'reservation_dat...', Array)
+#5 C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\frontend\views\reservation\_form.php(15): yii\widgets\ActiveField->textInput()
+#6 C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2\base\View.php(326): require('C:\\Users\\gc\\Des...')
+#7 C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2\base\View.php(248): yii\base\View->renderPhpFile('C:\\Users\\gc\\Des...', Array)
+#8 C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2\base\View.php(150): yii\base\View->renderFile('C:\\Users\\gc\\Des...', Array, NULL)
+#9 C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\frontend\views\reservation\create.php(18): yii\base\View->render('_form', Array)
+#10 C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2\base\View.php(326): require('C:\\Users\\gc\\Des...')
+#11 C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2\base\View.php(248): yii\base\View->renderPhpFile('C:\\Users\\gc\\Des...', Array)
+#12 C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2\base\View.php(150): yii\base\View->renderFile('C:\\Users\\gc\\Des...', Array, Object(frontend\controllers\ReservationController))
+#13 C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2\base\Controller.php(378): yii\base\View->render('create', Array, Object(frontend\controllers\ReservationController))
+#14 C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\frontend\controllers\ReservationController.php(72): yii\base\Controller->render('create', Array)
+#15 [internal function]: frontend\controllers\ReservationController->actionCreate()
+#16 C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#17 C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#18 C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('create', Array)
+#19 C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2\web\Application.php(100): yii\base\Module->runAction('reservation/cre...', Array)
+#20 C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#21 C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\frontend\web\index.php(17): yii\base\Application->run()
+#22 {main}
+2016-12-14 00:46:41 [::1][-][-][info][application] $_GET = [
+    'r' => 'reservation/create'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'es2qdqljcjdln4pj2jte829547'
+    'install_421aa90e079f' => 'sq1eqn732qfcgtg1loa9a4gs65'
+    'JSESSIONID' => 'AA06355B75F44C145A82D1AC8D9B0E74'
+    'Idea-a0f8faa2' => '6e3296b5-300f-475b-a474-cb938480f175'
+    'phpbb3_kn9ek_u' => '1'
+    'phpbb3_kn9ek_k' => ''
+    'phpbb3_kn9ek_sid' => '3c0a8c42e5d448d4ee122e83efaed57b'
+    '_frontendCSRF' => '1127a7394a7484a02997e0c3020a03b7795dcc869682e51add1190824aaee875a:2:{i:0;s:13:\"_frontendCSRF\";i:1;s:32:\"_TLpMnj0_BbtnMtNeRNQeM0LHcD4bhZN\";}'
+    'PHPFRONTSESSID' => 'ge9bfkgea8aub5sj85oo644573'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.99 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost:8080/advanced/frontend/web/index.php?r=reservation'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => 'PHPSESSID=es2qdqljcjdln4pj2jte829547; install_421aa90e079f=sq1eqn732qfcgtg1loa9a4gs65; JSESSIONID=AA06355B75F44C145A82D1AC8D9B0E74; Idea-a0f8faa2=6e3296b5-300f-475b-a474-cb938480f175; phpbb3_kn9ek_u=1; phpbb3_kn9ek_k=; phpbb3_kn9ek_sid=3c0a8c42e5d448d4ee122e83efaed57b; _frontendCSRF=1127a7394a7484a02997e0c3020a03b7795dcc869682e51add1190824aaee875a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_frontendCSRF%22%3Bi%3A1%3Bs%3A32%3A%22_TLpMnj0_BbtnMtNeRNQeM0LHcD4bhZN%22%3B%7D; PHPFRONTSESSID=ge9bfkgea8aub5sj85oo644573'
+    'PATH' => 'C:\\CloudFoundry'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/7.0.8 Server at localhost Port 8080</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/7.0.8'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '8080'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/advanced/frontend/web/index.php'
+    'REMOTE_PORT' => '50873'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=reservation%2Fcreate'
+    'REQUEST_URI' => '/advanced/frontend/web/index.php?r=reservation%2Fcreate'
+    'SCRIPT_NAME' => '/advanced/frontend/web/index.php'
+    'PHP_SELF' => '/advanced/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1481672801.831
+    'REQUEST_TIME' => 1481672801
+]
+2016-12-14 00:47:09 [::1][-][-][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Getting unknown property: common\models\Reservation::reservation_date in C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2\base\Component.php:143
+Stack trace:
+#0 C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2\db\BaseActiveRecord.php(286): yii\base\Component->__get('reservation_dat...')
+#1 C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2\helpers\BaseHtml.php(2044): yii\db\BaseActiveRecord->__get('reservation_dat...')
+#2 C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2\helpers\BaseHtml.php(1246): yii\helpers\BaseHtml::getAttributeValue(Object(common\models\Reservation), 'reservation_dat...')
+#3 C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2\helpers\BaseHtml.php(1295): yii\helpers\BaseHtml::activeInput('text', Object(common\models\Reservation), 'reservation_dat...', Array)
+#4 C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2\widgets\ActiveField.php(386): yii\helpers\BaseHtml::activeTextInput(Object(common\models\Reservation), 'reservation_dat...', Array)
+#5 C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\frontend\views\reservation\_form.php(15): yii\widgets\ActiveField->textInput()
+#6 C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2\base\View.php(326): require('C:\\Users\\gc\\Des...')
+#7 C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2\base\View.php(248): yii\base\View->renderPhpFile('C:\\Users\\gc\\Des...', Array)
+#8 C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2\base\View.php(150): yii\base\View->renderFile('C:\\Users\\gc\\Des...', Array, NULL)
+#9 C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\frontend\views\reservation\create.php(18): yii\base\View->render('_form', Array)
+#10 C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2\base\View.php(326): require('C:\\Users\\gc\\Des...')
+#11 C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2\base\View.php(248): yii\base\View->renderPhpFile('C:\\Users\\gc\\Des...', Array)
+#12 C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2\base\View.php(150): yii\base\View->renderFile('C:\\Users\\gc\\Des...', Array, Object(frontend\controllers\ReservationController))
+#13 C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2\base\Controller.php(378): yii\base\View->render('create', Array, Object(frontend\controllers\ReservationController))
+#14 C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\frontend\controllers\ReservationController.php(72): yii\base\Controller->render('create', Array)
+#15 [internal function]: frontend\controllers\ReservationController->actionCreate()
+#16 C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#17 C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#18 C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('create', Array)
+#19 C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2\web\Application.php(100): yii\base\Module->runAction('reservation/cre...', Array)
+#20 C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#21 C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\frontend\web\index.php(17): yii\base\Application->run()
+#22 {main}
+2016-12-14 00:47:09 [::1][-][-][info][application] $_GET = [
+    'r' => 'reservation/create'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'es2qdqljcjdln4pj2jte829547'
+    'install_421aa90e079f' => 'sq1eqn732qfcgtg1loa9a4gs65'
+    'JSESSIONID' => 'AA06355B75F44C145A82D1AC8D9B0E74'
+    'Idea-a0f8faa2' => '6e3296b5-300f-475b-a474-cb938480f175'
+    'phpbb3_kn9ek_u' => '1'
+    'phpbb3_kn9ek_k' => ''
+    'phpbb3_kn9ek_sid' => '3c0a8c42e5d448d4ee122e83efaed57b'
+    '_frontendCSRF' => '1127a7394a7484a02997e0c3020a03b7795dcc869682e51add1190824aaee875a:2:{i:0;s:13:\"_frontendCSRF\";i:1;s:32:\"_TLpMnj0_BbtnMtNeRNQeM0LHcD4bhZN\";}'
+    'PHPFRONTSESSID' => 'ge9bfkgea8aub5sj85oo644573'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.99 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost:8080/advanced/frontend/web/index.php?r=reservation'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => 'PHPSESSID=es2qdqljcjdln4pj2jte829547; install_421aa90e079f=sq1eqn732qfcgtg1loa9a4gs65; JSESSIONID=AA06355B75F44C145A82D1AC8D9B0E74; Idea-a0f8faa2=6e3296b5-300f-475b-a474-cb938480f175; phpbb3_kn9ek_u=1; phpbb3_kn9ek_k=; phpbb3_kn9ek_sid=3c0a8c42e5d448d4ee122e83efaed57b; _frontendCSRF=1127a7394a7484a02997e0c3020a03b7795dcc869682e51add1190824aaee875a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_frontendCSRF%22%3Bi%3A1%3Bs%3A32%3A%22_TLpMnj0_BbtnMtNeRNQeM0LHcD4bhZN%22%3B%7D; PHPFRONTSESSID=ge9bfkgea8aub5sj85oo644573'
+    'PATH' => 'C:\\CloudFoundry'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/7.0.8 Server at localhost Port 8080</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/7.0.8'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '8080'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/advanced/frontend/web/index.php'
+    'REMOTE_PORT' => '50878'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=reservation%2Fcreate'
+    'REQUEST_URI' => '/advanced/frontend/web/index.php?r=reservation%2Fcreate'
+    'SCRIPT_NAME' => '/advanced/frontend/web/index.php'
+    'PHP_SELF' => '/advanced/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1481672829.062
+    'REQUEST_TIME' => 1481672829
+]
+2016-12-14 00:48:00 [::1][-][-][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Getting unknown property: common\models\Reservation::rooms in C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2\base\Component.php:143
+Stack trace:
+#0 C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2\db\BaseActiveRecord.php(286): yii\base\Component->__get('rooms')
+#1 C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2\helpers\BaseHtml.php(2044): yii\db\BaseActiveRecord->__get('rooms')
+#2 C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2\helpers\BaseHtml.php(1246): yii\helpers\BaseHtml::getAttributeValue(Object(common\models\Reservation), 'rooms')
+#3 C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2\helpers\BaseHtml.php(1295): yii\helpers\BaseHtml::activeInput('text', Object(common\models\Reservation), 'rooms', Array)
+#4 C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2\widgets\ActiveField.php(386): yii\helpers\BaseHtml::activeTextInput(Object(common\models\Reservation), 'rooms', Array)
+#5 C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\frontend\views\reservation\_form.php(19): yii\widgets\ActiveField->textInput(Array)
+#6 C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2\base\View.php(326): require('C:\\Users\\gc\\Des...')
+#7 C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2\base\View.php(248): yii\base\View->renderPhpFile('C:\\Users\\gc\\Des...', Array)
+#8 C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2\base\View.php(150): yii\base\View->renderFile('C:\\Users\\gc\\Des...', Array, NULL)
+#9 C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\frontend\views\reservation\create.php(18): yii\base\View->render('_form', Array)
+#10 C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2\base\View.php(326): require('C:\\Users\\gc\\Des...')
+#11 C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2\base\View.php(248): yii\base\View->renderPhpFile('C:\\Users\\gc\\Des...', Array)
+#12 C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2\base\View.php(150): yii\base\View->renderFile('C:\\Users\\gc\\Des...', Array, Object(frontend\controllers\ReservationController))
+#13 C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2\base\Controller.php(378): yii\base\View->render('create', Array, Object(frontend\controllers\ReservationController))
+#14 C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\frontend\controllers\ReservationController.php(72): yii\base\Controller->render('create', Array)
+#15 [internal function]: frontend\controllers\ReservationController->actionCreate()
+#16 C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#17 C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#18 C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('create', Array)
+#19 C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2\web\Application.php(100): yii\base\Module->runAction('reservation/cre...', Array)
+#20 C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#21 C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\frontend\web\index.php(17): yii\base\Application->run()
+#22 {main}
+2016-12-14 00:48:00 [::1][-][-][info][application] $_GET = [
+    'r' => 'reservation/create'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'es2qdqljcjdln4pj2jte829547'
+    'install_421aa90e079f' => 'sq1eqn732qfcgtg1loa9a4gs65'
+    'JSESSIONID' => 'AA06355B75F44C145A82D1AC8D9B0E74'
+    'Idea-a0f8faa2' => '6e3296b5-300f-475b-a474-cb938480f175'
+    'phpbb3_kn9ek_u' => '1'
+    'phpbb3_kn9ek_k' => ''
+    'phpbb3_kn9ek_sid' => '3c0a8c42e5d448d4ee122e83efaed57b'
+    '_frontendCSRF' => '1127a7394a7484a02997e0c3020a03b7795dcc869682e51add1190824aaee875a:2:{i:0;s:13:\"_frontendCSRF\";i:1;s:32:\"_TLpMnj0_BbtnMtNeRNQeM0LHcD4bhZN\";}'
+    'PHPFRONTSESSID' => 'ge9bfkgea8aub5sj85oo644573'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.99 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost:8080/advanced/frontend/web/index.php?r=reservation'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => 'PHPSESSID=es2qdqljcjdln4pj2jte829547; install_421aa90e079f=sq1eqn732qfcgtg1loa9a4gs65; JSESSIONID=AA06355B75F44C145A82D1AC8D9B0E74; Idea-a0f8faa2=6e3296b5-300f-475b-a474-cb938480f175; phpbb3_kn9ek_u=1; phpbb3_kn9ek_k=; phpbb3_kn9ek_sid=3c0a8c42e5d448d4ee122e83efaed57b; _frontendCSRF=1127a7394a7484a02997e0c3020a03b7795dcc869682e51add1190824aaee875a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_frontendCSRF%22%3Bi%3A1%3Bs%3A32%3A%22_TLpMnj0_BbtnMtNeRNQeM0LHcD4bhZN%22%3B%7D; PHPFRONTSESSID=ge9bfkgea8aub5sj85oo644573'
+    'PATH' => 'C:\\CloudFoundry'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/7.0.8 Server at localhost Port 8080</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/7.0.8'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '8080'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/advanced/frontend/web/index.php'
+    'REMOTE_PORT' => '50881'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=reservation%2Fcreate'
+    'REQUEST_URI' => '/advanced/frontend/web/index.php?r=reservation%2Fcreate'
+    'SCRIPT_NAME' => '/advanced/frontend/web/index.php'
+    'PHP_SELF' => '/advanced/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1481672880.848
+    'REQUEST_TIME' => 1481672880
+]
+2016-12-14 00:48:22 [::1][-][-][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Getting unknown property: common\models\Reservation::billingstatement_id in C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2\base\Component.php:143
+Stack trace:
+#0 C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2\db\BaseActiveRecord.php(286): yii\base\Component->__get('billingstatemen...')
+#1 C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2\helpers\BaseHtml.php(2044): yii\db\BaseActiveRecord->__get('billingstatemen...')
+#2 C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2\helpers\BaseHtml.php(1246): yii\helpers\BaseHtml::getAttributeValue(Object(common\models\Reservation), 'billingstatemen...')
+#3 C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2\helpers\BaseHtml.php(1295): yii\helpers\BaseHtml::activeInput('text', Object(common\models\Reservation), 'billingstatemen...', Array)
+#4 C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2\widgets\ActiveField.php(386): yii\helpers\BaseHtml::activeTextInput(Object(common\models\Reservation), 'billingstatemen...', Array)
+#5 C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\frontend\views\reservation\_form.php(25): yii\widgets\ActiveField->textInput()
+#6 C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2\base\View.php(326): require('C:\\Users\\gc\\Des...')
+#7 C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2\base\View.php(248): yii\base\View->renderPhpFile('C:\\Users\\gc\\Des...', Array)
+#8 C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2\base\View.php(150): yii\base\View->renderFile('C:\\Users\\gc\\Des...', Array, NULL)
+#9 C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\frontend\views\reservation\create.php(18): yii\base\View->render('_form', Array)
+#10 C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2\base\View.php(326): require('C:\\Users\\gc\\Des...')
+#11 C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2\base\View.php(248): yii\base\View->renderPhpFile('C:\\Users\\gc\\Des...', Array)
+#12 C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2\base\View.php(150): yii\base\View->renderFile('C:\\Users\\gc\\Des...', Array, Object(frontend\controllers\ReservationController))
+#13 C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2\base\Controller.php(378): yii\base\View->render('create', Array, Object(frontend\controllers\ReservationController))
+#14 C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\frontend\controllers\ReservationController.php(72): yii\base\Controller->render('create', Array)
+#15 [internal function]: frontend\controllers\ReservationController->actionCreate()
+#16 C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#17 C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#18 C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('create', Array)
+#19 C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2\web\Application.php(100): yii\base\Module->runAction('reservation/cre...', Array)
+#20 C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#21 C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\frontend\web\index.php(17): yii\base\Application->run()
+#22 {main}
+2016-12-14 00:48:22 [::1][-][-][info][application] $_GET = [
+    'r' => 'reservation/create'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'es2qdqljcjdln4pj2jte829547'
+    'install_421aa90e079f' => 'sq1eqn732qfcgtg1loa9a4gs65'
+    'JSESSIONID' => 'AA06355B75F44C145A82D1AC8D9B0E74'
+    'Idea-a0f8faa2' => '6e3296b5-300f-475b-a474-cb938480f175'
+    'phpbb3_kn9ek_u' => '1'
+    'phpbb3_kn9ek_k' => ''
+    'phpbb3_kn9ek_sid' => '3c0a8c42e5d448d4ee122e83efaed57b'
+    '_frontendCSRF' => '1127a7394a7484a02997e0c3020a03b7795dcc869682e51add1190824aaee875a:2:{i:0;s:13:\"_frontendCSRF\";i:1;s:32:\"_TLpMnj0_BbtnMtNeRNQeM0LHcD4bhZN\";}'
+    'PHPFRONTSESSID' => 'ge9bfkgea8aub5sj85oo644573'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.99 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost:8080/advanced/frontend/web/index.php?r=reservation'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => 'PHPSESSID=es2qdqljcjdln4pj2jte829547; install_421aa90e079f=sq1eqn732qfcgtg1loa9a4gs65; JSESSIONID=AA06355B75F44C145A82D1AC8D9B0E74; Idea-a0f8faa2=6e3296b5-300f-475b-a474-cb938480f175; phpbb3_kn9ek_u=1; phpbb3_kn9ek_k=; phpbb3_kn9ek_sid=3c0a8c42e5d448d4ee122e83efaed57b; _frontendCSRF=1127a7394a7484a02997e0c3020a03b7795dcc869682e51add1190824aaee875a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_frontendCSRF%22%3Bi%3A1%3Bs%3A32%3A%22_TLpMnj0_BbtnMtNeRNQeM0LHcD4bhZN%22%3B%7D; PHPFRONTSESSID=ge9bfkgea8aub5sj85oo644573'
+    'PATH' => 'C:\\CloudFoundry'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/7.0.8 Server at localhost Port 8080</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/7.0.8'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '8080'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/advanced/frontend/web/index.php'
+    'REMOTE_PORT' => '50884'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=reservation%2Fcreate'
+    'REQUEST_URI' => '/advanced/frontend/web/index.php?r=reservation%2Fcreate'
+    'SCRIPT_NAME' => '/advanced/frontend/web/index.php'
+    'PHP_SELF' => '/advanced/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1481672902.678
+    'REQUEST_TIME' => 1481672902
+]
+2016-12-14 00:50:33 [::1][-][-][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Getting unknown property: common\models\Reservation::billingstatement_id in C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2\base\Component.php:143
+Stack trace:
+#0 C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2\db\BaseActiveRecord.php(286): yii\base\Component->__get('billingstatemen...')
+#1 C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2\helpers\BaseHtml.php(2044): yii\db\BaseActiveRecord->__get('billingstatemen...')
+#2 C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2\helpers\BaseHtml.php(1246): yii\helpers\BaseHtml::getAttributeValue(Object(common\models\Reservation), 'billingstatemen...')
+#3 C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2\helpers\BaseHtml.php(1295): yii\helpers\BaseHtml::activeInput('text', Object(common\models\Reservation), 'billingstatemen...', Array)
+#4 C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2\widgets\ActiveField.php(386): yii\helpers\BaseHtml::activeTextInput(Object(common\models\Reservation), 'billingstatemen...', Array)
+#5 C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\frontend\views\reservation\_form.php(25): yii\widgets\ActiveField->textInput()
+#6 C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2\base\View.php(326): require('C:\\Users\\gc\\Des...')
+#7 C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2\base\View.php(248): yii\base\View->renderPhpFile('C:\\Users\\gc\\Des...', Array)
+#8 C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2\base\View.php(150): yii\base\View->renderFile('C:\\Users\\gc\\Des...', Array, NULL)
+#9 C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\frontend\views\reservation\create.php(18): yii\base\View->render('_form', Array)
+#10 C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2\base\View.php(326): require('C:\\Users\\gc\\Des...')
+#11 C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2\base\View.php(248): yii\base\View->renderPhpFile('C:\\Users\\gc\\Des...', Array)
+#12 C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2\base\View.php(150): yii\base\View->renderFile('C:\\Users\\gc\\Des...', Array, Object(frontend\controllers\ReservationController))
+#13 C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2\base\Controller.php(378): yii\base\View->render('create', Array, Object(frontend\controllers\ReservationController))
+#14 C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\frontend\controllers\ReservationController.php(72): yii\base\Controller->render('create', Array)
+#15 [internal function]: frontend\controllers\ReservationController->actionCreate()
+#16 C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#17 C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#18 C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('create', Array)
+#19 C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2\web\Application.php(100): yii\base\Module->runAction('reservation/cre...', Array)
+#20 C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#21 C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\frontend\web\index.php(17): yii\base\Application->run()
+#22 {main}
+2016-12-14 00:50:33 [::1][-][-][info][application] $_GET = [
+    'r' => 'reservation/create'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'es2qdqljcjdln4pj2jte829547'
+    'install_421aa90e079f' => 'sq1eqn732qfcgtg1loa9a4gs65'
+    'JSESSIONID' => 'AA06355B75F44C145A82D1AC8D9B0E74'
+    'Idea-a0f8faa2' => '6e3296b5-300f-475b-a474-cb938480f175'
+    'phpbb3_kn9ek_u' => '1'
+    'phpbb3_kn9ek_k' => ''
+    'phpbb3_kn9ek_sid' => '3c0a8c42e5d448d4ee122e83efaed57b'
+    '_frontendCSRF' => '1127a7394a7484a02997e0c3020a03b7795dcc869682e51add1190824aaee875a:2:{i:0;s:13:\"_frontendCSRF\";i:1;s:32:\"_TLpMnj0_BbtnMtNeRNQeM0LHcD4bhZN\";}'
+    'PHPFRONTSESSID' => 'ge9bfkgea8aub5sj85oo644573'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.99 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost:8080/advanced/frontend/web/index.php?r=reservation'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => 'PHPSESSID=es2qdqljcjdln4pj2jte829547; install_421aa90e079f=sq1eqn732qfcgtg1loa9a4gs65; JSESSIONID=AA06355B75F44C145A82D1AC8D9B0E74; Idea-a0f8faa2=6e3296b5-300f-475b-a474-cb938480f175; phpbb3_kn9ek_u=1; phpbb3_kn9ek_k=; phpbb3_kn9ek_sid=3c0a8c42e5d448d4ee122e83efaed57b; _frontendCSRF=1127a7394a7484a02997e0c3020a03b7795dcc869682e51add1190824aaee875a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_frontendCSRF%22%3Bi%3A1%3Bs%3A32%3A%22_TLpMnj0_BbtnMtNeRNQeM0LHcD4bhZN%22%3B%7D; PHPFRONTSESSID=ge9bfkgea8aub5sj85oo644573'
+    'PATH' => 'C:\\CloudFoundry'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/7.0.8 Server at localhost Port 8080</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/7.0.8'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '8080'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/advanced/frontend/web/index.php'
+    'REMOTE_PORT' => '50900'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=reservation%2Fcreate'
+    'REQUEST_URI' => '/advanced/frontend/web/index.php?r=reservation%2Fcreate'
+    'SCRIPT_NAME' => '/advanced/frontend/web/index.php'
+    'PHP_SELF' => '/advanced/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1481673033.741
+    'REQUEST_TIME' => 1481673033
+]
+2016-12-14 00:51:06 [::1][-][-][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Getting unknown property: common\models\Reservation::billingstatement_id in C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2\base\Component.php:143
+Stack trace:
+#0 C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2\db\BaseActiveRecord.php(286): yii\base\Component->__get('billingstatemen...')
+#1 C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2\helpers\BaseHtml.php(2044): yii\db\BaseActiveRecord->__get('billingstatemen...')
+#2 C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2\helpers\BaseHtml.php(1246): yii\helpers\BaseHtml::getAttributeValue(Object(common\models\Reservation), 'billingstatemen...')
+#3 C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2\helpers\BaseHtml.php(1295): yii\helpers\BaseHtml::activeInput('text', Object(common\models\Reservation), 'billingstatemen...', Array)
+#4 C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2\widgets\ActiveField.php(386): yii\helpers\BaseHtml::activeTextInput(Object(common\models\Reservation), 'billingstatemen...', Array)
+#5 C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\frontend\views\reservation\_form.php(25): yii\widgets\ActiveField->textInput()
+#6 C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2\base\View.php(326): require('C:\\Users\\gc\\Des...')
+#7 C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2\base\View.php(248): yii\base\View->renderPhpFile('C:\\Users\\gc\\Des...', Array)
+#8 C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2\base\View.php(150): yii\base\View->renderFile('C:\\Users\\gc\\Des...', Array, NULL)
+#9 C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\frontend\views\reservation\create.php(18): yii\base\View->render('_form', Array)
+#10 C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2\base\View.php(326): require('C:\\Users\\gc\\Des...')
+#11 C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2\base\View.php(248): yii\base\View->renderPhpFile('C:\\Users\\gc\\Des...', Array)
+#12 C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2\base\View.php(150): yii\base\View->renderFile('C:\\Users\\gc\\Des...', Array, Object(frontend\controllers\ReservationController))
+#13 C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2\base\Controller.php(378): yii\base\View->render('create', Array, Object(frontend\controllers\ReservationController))
+#14 C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\frontend\controllers\ReservationController.php(72): yii\base\Controller->render('create', Array)
+#15 [internal function]: frontend\controllers\ReservationController->actionCreate()
+#16 C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#17 C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#18 C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('create', Array)
+#19 C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2\web\Application.php(100): yii\base\Module->runAction('reservation/cre...', Array)
+#20 C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#21 C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\frontend\web\index.php(17): yii\base\Application->run()
+#22 {main}
+2016-12-14 00:51:06 [::1][-][-][info][application] $_GET = [
+    'r' => 'reservation/create'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'es2qdqljcjdln4pj2jte829547'
+    'install_421aa90e079f' => 'sq1eqn732qfcgtg1loa9a4gs65'
+    'JSESSIONID' => 'AA06355B75F44C145A82D1AC8D9B0E74'
+    'Idea-a0f8faa2' => '6e3296b5-300f-475b-a474-cb938480f175'
+    'phpbb3_kn9ek_u' => '1'
+    'phpbb3_kn9ek_k' => ''
+    'phpbb3_kn9ek_sid' => '3c0a8c42e5d448d4ee122e83efaed57b'
+    '_frontendCSRF' => '1127a7394a7484a02997e0c3020a03b7795dcc869682e51add1190824aaee875a:2:{i:0;s:13:\"_frontendCSRF\";i:1;s:32:\"_TLpMnj0_BbtnMtNeRNQeM0LHcD4bhZN\";}'
+    'PHPFRONTSESSID' => 'ge9bfkgea8aub5sj85oo644573'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.99 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost:8080/advanced/frontend/web/index.php?r=reservation'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => 'PHPSESSID=es2qdqljcjdln4pj2jte829547; install_421aa90e079f=sq1eqn732qfcgtg1loa9a4gs65; JSESSIONID=AA06355B75F44C145A82D1AC8D9B0E74; Idea-a0f8faa2=6e3296b5-300f-475b-a474-cb938480f175; phpbb3_kn9ek_u=1; phpbb3_kn9ek_k=; phpbb3_kn9ek_sid=3c0a8c42e5d448d4ee122e83efaed57b; _frontendCSRF=1127a7394a7484a02997e0c3020a03b7795dcc869682e51add1190824aaee875a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_frontendCSRF%22%3Bi%3A1%3Bs%3A32%3A%22_TLpMnj0_BbtnMtNeRNQeM0LHcD4bhZN%22%3B%7D; PHPFRONTSESSID=ge9bfkgea8aub5sj85oo644573'
+    'PATH' => 'C:\\CloudFoundry'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/7.0.8 Server at localhost Port 8080</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/7.0.8'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '8080'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/advanced/frontend/web/index.php'
+    'REMOTE_PORT' => '50903'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=reservation%2Fcreate'
+    'REQUEST_URI' => '/advanced/frontend/web/index.php?r=reservation%2Fcreate'
+    'SCRIPT_NAME' => '/advanced/frontend/web/index.php'
+    'PHP_SELF' => '/advanced/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1481673066.539
+    'REQUEST_TIME' => 1481673066
+]
+2016-12-14 00:52:28 [::1][-][-][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Getting unknown property: common\models\Reservation::billingstatement_id in C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2\base\Component.php:143
+Stack trace:
+#0 C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2\db\BaseActiveRecord.php(286): yii\base\Component->__get('billingstatemen...')
+#1 C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2\helpers\BaseHtml.php(2044): yii\db\BaseActiveRecord->__get('billingstatemen...')
+#2 C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2\helpers\BaseHtml.php(1246): yii\helpers\BaseHtml::getAttributeValue(Object(common\models\Reservation), 'billingstatemen...')
+#3 C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2\helpers\BaseHtml.php(1295): yii\helpers\BaseHtml::activeInput('text', Object(common\models\Reservation), 'billingstatemen...', Array)
+#4 C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2\widgets\ActiveField.php(386): yii\helpers\BaseHtml::activeTextInput(Object(common\models\Reservation), 'billingstatemen...', Array)
+#5 C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\frontend\views\reservation\_form.php(25): yii\widgets\ActiveField->textInput()
+#6 C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2\base\View.php(326): require('C:\\Users\\gc\\Des...')
+#7 C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2\base\View.php(248): yii\base\View->renderPhpFile('C:\\Users\\gc\\Des...', Array)
+#8 C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2\base\View.php(150): yii\base\View->renderFile('C:\\Users\\gc\\Des...', Array, NULL)
+#9 C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\frontend\views\reservation\create.php(18): yii\base\View->render('_form', Array)
+#10 C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2\base\View.php(326): require('C:\\Users\\gc\\Des...')
+#11 C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2\base\View.php(248): yii\base\View->renderPhpFile('C:\\Users\\gc\\Des...', Array)
+#12 C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2\base\View.php(150): yii\base\View->renderFile('C:\\Users\\gc\\Des...', Array, Object(frontend\controllers\ReservationController))
+#13 C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2\base\Controller.php(378): yii\base\View->render('create', Array, Object(frontend\controllers\ReservationController))
+#14 C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\frontend\controllers\ReservationController.php(72): yii\base\Controller->render('create', Array)
+#15 [internal function]: frontend\controllers\ReservationController->actionCreate()
+#16 C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#17 C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#18 C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('create', Array)
+#19 C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2\web\Application.php(100): yii\base\Module->runAction('reservation/cre...', Array)
+#20 C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#21 C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\frontend\web\index.php(17): yii\base\Application->run()
+#22 {main}
+2016-12-14 00:52:28 [::1][-][-][info][application] $_GET = [
+    'r' => 'reservation/create'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'es2qdqljcjdln4pj2jte829547'
+    'install_421aa90e079f' => 'sq1eqn732qfcgtg1loa9a4gs65'
+    'JSESSIONID' => 'AA06355B75F44C145A82D1AC8D9B0E74'
+    'Idea-a0f8faa2' => '6e3296b5-300f-475b-a474-cb938480f175'
+    'phpbb3_kn9ek_u' => '1'
+    'phpbb3_kn9ek_k' => ''
+    'phpbb3_kn9ek_sid' => '3c0a8c42e5d448d4ee122e83efaed57b'
+    '_frontendCSRF' => '1127a7394a7484a02997e0c3020a03b7795dcc869682e51add1190824aaee875a:2:{i:0;s:13:\"_frontendCSRF\";i:1;s:32:\"_TLpMnj0_BbtnMtNeRNQeM0LHcD4bhZN\";}'
+    'PHPFRONTSESSID' => 'ge9bfkgea8aub5sj85oo644573'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.99 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost:8080/advanced/frontend/web/index.php?r=reservation'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => 'PHPSESSID=es2qdqljcjdln4pj2jte829547; install_421aa90e079f=sq1eqn732qfcgtg1loa9a4gs65; JSESSIONID=AA06355B75F44C145A82D1AC8D9B0E74; Idea-a0f8faa2=6e3296b5-300f-475b-a474-cb938480f175; phpbb3_kn9ek_u=1; phpbb3_kn9ek_k=; phpbb3_kn9ek_sid=3c0a8c42e5d448d4ee122e83efaed57b; _frontendCSRF=1127a7394a7484a02997e0c3020a03b7795dcc869682e51add1190824aaee875a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_frontendCSRF%22%3Bi%3A1%3Bs%3A32%3A%22_TLpMnj0_BbtnMtNeRNQeM0LHcD4bhZN%22%3B%7D; PHPFRONTSESSID=ge9bfkgea8aub5sj85oo644573'
+    'PATH' => 'C:\\CloudFoundry'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/7.0.8 Server at localhost Port 8080</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/7.0.8'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '8080'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/advanced/frontend/web/index.php'
+    'REMOTE_PORT' => '50910'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=reservation%2Fcreate'
+    'REQUEST_URI' => '/advanced/frontend/web/index.php?r=reservation%2Fcreate'
+    'SCRIPT_NAME' => '/advanced/frontend/web/index.php'
+    'PHP_SELF' => '/advanced/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1481673148.867
+    'REQUEST_TIME' => 1481673148
+]
+2016-12-14 00:52:47 [::1][-][-][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Getting unknown property: common\models\Reservation::rooms in C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2\base\Component.php:143
+Stack trace:
+#0 C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2\db\BaseActiveRecord.php(286): yii\base\Component->__get('rooms')
+#1 C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2\validators\Validator.php(262): yii\db\BaseActiveRecord->__get('rooms')
+#2 C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2\base\Model.php(356): yii\validators\Validator->validateAttributes(Object(common\models\Reservation), Array)
+#3 C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2\db\ActiveRecord.php(421): yii\base\Model->validate(Array)
+#4 C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2\db\BaseActiveRecord.php(632): yii\db\ActiveRecord->insert(true, NULL)
+#5 C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\frontend\controllers\ReservationController.php(68): yii\db\BaseActiveRecord->save()
+#6 [internal function]: frontend\controllers\ReservationController->actionCreate()
+#7 C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#8 C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#9 C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('create', Array)
+#10 C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2\web\Application.php(100): yii\base\Module->runAction('reservation/cre...', Array)
+#11 C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\frontend\web\index.php(17): yii\base\Application->run()
+#13 {main}
+2016-12-14 00:52:47 [::1][-][-][info][application] $_GET = [
+    'r' => 'reservation/create'
+]
+
+$_POST = [
+    '_frontendCSRF' => 'UEhweVkxX0IPHDwJFF81cg8KEg03fCsMNRo.KDx8bw4YKzRNO1kFDA=='
+    'Reservation' => [
+        'check_in' => ''
+        'check_out' => ''
+        'type_of_room' => ''
+        'adults' => ''
+        'kids' => ''
+    ]
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'es2qdqljcjdln4pj2jte829547'
+    'install_421aa90e079f' => 'sq1eqn732qfcgtg1loa9a4gs65'
+    'JSESSIONID' => 'AA06355B75F44C145A82D1AC8D9B0E74'
+    'Idea-a0f8faa2' => '6e3296b5-300f-475b-a474-cb938480f175'
+    'phpbb3_kn9ek_u' => '1'
+    'phpbb3_kn9ek_k' => ''
+    'phpbb3_kn9ek_sid' => '3c0a8c42e5d448d4ee122e83efaed57b'
+    '_frontendCSRF' => '1127a7394a7484a02997e0c3020a03b7795dcc869682e51add1190824aaee875a:2:{i:0;s:13:\"_frontendCSRF\";i:1;s:32:\"_TLpMnj0_BbtnMtNeRNQeM0LHcD4bhZN\";}'
+    'PHPFRONTSESSID' => 'ge9bfkgea8aub5sj85oo644573'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '208'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ORIGIN' => 'http://localhost:8080'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.99 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost:8080/advanced/frontend/web/index.php?r=reservation%2Fcreate'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => 'PHPSESSID=es2qdqljcjdln4pj2jte829547; install_421aa90e079f=sq1eqn732qfcgtg1loa9a4gs65; JSESSIONID=AA06355B75F44C145A82D1AC8D9B0E74; Idea-a0f8faa2=6e3296b5-300f-475b-a474-cb938480f175; phpbb3_kn9ek_u=1; phpbb3_kn9ek_k=; phpbb3_kn9ek_sid=3c0a8c42e5d448d4ee122e83efaed57b; _frontendCSRF=1127a7394a7484a02997e0c3020a03b7795dcc869682e51add1190824aaee875a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_frontendCSRF%22%3Bi%3A1%3Bs%3A32%3A%22_TLpMnj0_BbtnMtNeRNQeM0LHcD4bhZN%22%3B%7D; PHPFRONTSESSID=ge9bfkgea8aub5sj85oo644573'
+    'PATH' => 'C:\\CloudFoundry'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/7.0.8 Server at localhost Port 8080</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/7.0.8'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '8080'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/advanced/frontend/web/index.php'
+    'REMOTE_PORT' => '50913'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=reservation%2Fcreate'
+    'REQUEST_URI' => '/advanced/frontend/web/index.php?r=reservation%2Fcreate'
+    'SCRIPT_NAME' => '/advanced/frontend/web/index.php'
+    'PHP_SELF' => '/advanced/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1481673167.589
+    'REQUEST_TIME' => 1481673167
+]
+2016-12-14 01:07:15 [::1][-][-][error][ParseError] ParseError: syntax error, unexpected '?>' in C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\frontend\views\reservation\_form.php:25
+Stack trace:
+#0 C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2\base\View.php(248): yii\base\View->renderPhpFile('C:\\Users\\gc\\Des...', Array)
+#1 C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2\base\View.php(150): yii\base\View->renderFile('C:\\Users\\gc\\Des...', Array, NULL)
+#2 C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\frontend\views\reservation\create.php(18): yii\base\View->render('_form', Array)
+#3 C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2\base\View.php(326): require('C:\\Users\\gc\\Des...')
+#4 C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2\base\View.php(248): yii\base\View->renderPhpFile('C:\\Users\\gc\\Des...', Array)
+#5 C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2\base\View.php(150): yii\base\View->renderFile('C:\\Users\\gc\\Des...', Array, Object(frontend\controllers\ReservationController))
+#6 C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2\base\Controller.php(378): yii\base\View->render('create', Array, Object(frontend\controllers\ReservationController))
+#7 C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\frontend\controllers\ReservationController.php(72): yii\base\Controller->render('create', Array)
+#8 [internal function]: frontend\controllers\ReservationController->actionCreate()
+#9 C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#10 C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#11 C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('create', Array)
+#12 C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2\web\Application.php(100): yii\base\Module->runAction('reservation/cre...', Array)
+#13 C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#14 C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\frontend\web\index.php(17): yii\base\Application->run()
+#15 {main}
+2016-12-14 01:07:15 [::1][-][-][info][application] $_GET = [
+    'r' => 'reservation/create'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'es2qdqljcjdln4pj2jte829547'
+    'install_421aa90e079f' => 'sq1eqn732qfcgtg1loa9a4gs65'
+    'JSESSIONID' => 'AA06355B75F44C145A82D1AC8D9B0E74'
+    'Idea-a0f8faa2' => '6e3296b5-300f-475b-a474-cb938480f175'
+    'phpbb3_kn9ek_u' => '1'
+    'phpbb3_kn9ek_k' => ''
+    'phpbb3_kn9ek_sid' => '3c0a8c42e5d448d4ee122e83efaed57b'
+    '_frontendCSRF' => '1127a7394a7484a02997e0c3020a03b7795dcc869682e51add1190824aaee875a:2:{i:0;s:13:\"_frontendCSRF\";i:1;s:32:\"_TLpMnj0_BbtnMtNeRNQeM0LHcD4bhZN\";}'
+    'PHPFRONTSESSID' => 'ge9bfkgea8aub5sj85oo644573'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.99 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost:8080/advanced/frontend/web/index.php?r=reservation'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => 'PHPSESSID=es2qdqljcjdln4pj2jte829547; install_421aa90e079f=sq1eqn732qfcgtg1loa9a4gs65; JSESSIONID=AA06355B75F44C145A82D1AC8D9B0E74; Idea-a0f8faa2=6e3296b5-300f-475b-a474-cb938480f175; phpbb3_kn9ek_u=1; phpbb3_kn9ek_k=; phpbb3_kn9ek_sid=3c0a8c42e5d448d4ee122e83efaed57b; _frontendCSRF=1127a7394a7484a02997e0c3020a03b7795dcc869682e51add1190824aaee875a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_frontendCSRF%22%3Bi%3A1%3Bs%3A32%3A%22_TLpMnj0_BbtnMtNeRNQeM0LHcD4bhZN%22%3B%7D; PHPFRONTSESSID=ge9bfkgea8aub5sj85oo644573'
+    'PATH' => 'C:\\CloudFoundry'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/7.0.8 Server at localhost Port 8080</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/7.0.8'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '8080'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/advanced/frontend/web/index.php'
+    'REMOTE_PORT' => '51276'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=reservation%2Fcreate'
+    'REQUEST_URI' => '/advanced/frontend/web/index.php?r=reservation%2Fcreate'
+    'SCRIPT_NAME' => '/advanced/frontend/web/index.php'
+    'PHP_SELF' => '/advanced/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1481674035.244
+    'REQUEST_TIME' => 1481674035
+]
+2016-12-14 01:07:15 [::1][-][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: Exception 'Exception' with message 'Serialization of 'Closure' is not allowed' 
+
+in C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2-debug\LogTarget.php:57
+
+Stack trace:
+#0 C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2-debug\LogTarget.php(57): serialize(Array)
+#1 C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2-debug\LogTarget.php(118): yii\debug\LogTarget->export()
+#2 C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2\log\Dispatcher.php(188): yii\debug\LogTarget->collect(Array, true)
+#3 C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2\log\Logger.php(173): yii\log\Dispatcher->dispatch(Array, true)
+#4 C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2\base\ErrorHandler.php(111): yii\log\Logger->flush(true)
+#5 [internal function]: yii\base\ErrorHandler->handleException(Object(ParseError))
+#6 {main}
+2016-12-14 01:07:15 [::1][-][-][info][application] $_GET = [
+    'r' => 'reservation/create'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'es2qdqljcjdln4pj2jte829547'
+    'install_421aa90e079f' => 'sq1eqn732qfcgtg1loa9a4gs65'
+    'JSESSIONID' => 'AA06355B75F44C145A82D1AC8D9B0E74'
+    'Idea-a0f8faa2' => '6e3296b5-300f-475b-a474-cb938480f175'
+    'phpbb3_kn9ek_u' => '1'
+    'phpbb3_kn9ek_k' => ''
+    'phpbb3_kn9ek_sid' => '3c0a8c42e5d448d4ee122e83efaed57b'
+    '_frontendCSRF' => '1127a7394a7484a02997e0c3020a03b7795dcc869682e51add1190824aaee875a:2:{i:0;s:13:\"_frontendCSRF\";i:1;s:32:\"_TLpMnj0_BbtnMtNeRNQeM0LHcD4bhZN\";}'
+    'PHPFRONTSESSID' => 'ge9bfkgea8aub5sj85oo644573'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.99 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost:8080/advanced/frontend/web/index.php?r=reservation'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => 'PHPSESSID=es2qdqljcjdln4pj2jte829547; install_421aa90e079f=sq1eqn732qfcgtg1loa9a4gs65; JSESSIONID=AA06355B75F44C145A82D1AC8D9B0E74; Idea-a0f8faa2=6e3296b5-300f-475b-a474-cb938480f175; phpbb3_kn9ek_u=1; phpbb3_kn9ek_k=; phpbb3_kn9ek_sid=3c0a8c42e5d448d4ee122e83efaed57b; _frontendCSRF=1127a7394a7484a02997e0c3020a03b7795dcc869682e51add1190824aaee875a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_frontendCSRF%22%3Bi%3A1%3Bs%3A32%3A%22_TLpMnj0_BbtnMtNeRNQeM0LHcD4bhZN%22%3B%7D; PHPFRONTSESSID=ge9bfkgea8aub5sj85oo644573'
+    'PATH' => 'C:\\CloudFoundry'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/7.0.8 Server at localhost Port 8080</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/7.0.8'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '8080'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/advanced/frontend/web/index.php'
+    'REMOTE_PORT' => '51276'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=reservation%2Fcreate'
+    'REQUEST_URI' => '/advanced/frontend/web/index.php?r=reservation%2Fcreate'
+    'SCRIPT_NAME' => '/advanced/frontend/web/index.php'
+    'PHP_SELF' => '/advanced/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1481674035.244
+    'REQUEST_TIME' => 1481674035
+]
+2016-12-14 01:07:58 [::1][-][-][error][ParseError] ParseError: syntax error, unexpected '?>' in C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\frontend\views\reservation\_form.php:25
+Stack trace:
+#0 C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2\base\View.php(248): yii\base\View->renderPhpFile('C:\\Users\\gc\\Des...', Array)
+#1 C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2\base\View.php(150): yii\base\View->renderFile('C:\\Users\\gc\\Des...', Array, NULL)
+#2 C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\frontend\views\reservation\create.php(18): yii\base\View->render('_form', Array)
+#3 C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2\base\View.php(326): require('C:\\Users\\gc\\Des...')
+#4 C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2\base\View.php(248): yii\base\View->renderPhpFile('C:\\Users\\gc\\Des...', Array)
+#5 C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2\base\View.php(150): yii\base\View->renderFile('C:\\Users\\gc\\Des...', Array, Object(frontend\controllers\ReservationController))
+#6 C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2\base\Controller.php(378): yii\base\View->render('create', Array, Object(frontend\controllers\ReservationController))
+#7 C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\frontend\controllers\ReservationController.php(72): yii\base\Controller->render('create', Array)
+#8 [internal function]: frontend\controllers\ReservationController->actionCreate()
+#9 C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#10 C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#11 C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('create', Array)
+#12 C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2\web\Application.php(100): yii\base\Module->runAction('reservation/cre...', Array)
+#13 C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#14 C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\frontend\web\index.php(17): yii\base\Application->run()
+#15 {main}
+2016-12-14 01:07:58 [::1][-][-][info][application] $_GET = [
+    'r' => 'reservation/create'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'es2qdqljcjdln4pj2jte829547'
+    'install_421aa90e079f' => 'sq1eqn732qfcgtg1loa9a4gs65'
+    'JSESSIONID' => 'AA06355B75F44C145A82D1AC8D9B0E74'
+    'Idea-a0f8faa2' => '6e3296b5-300f-475b-a474-cb938480f175'
+    'phpbb3_kn9ek_u' => '1'
+    'phpbb3_kn9ek_k' => ''
+    'phpbb3_kn9ek_sid' => '3c0a8c42e5d448d4ee122e83efaed57b'
+    '_frontendCSRF' => '1127a7394a7484a02997e0c3020a03b7795dcc869682e51add1190824aaee875a:2:{i:0;s:13:\"_frontendCSRF\";i:1;s:32:\"_TLpMnj0_BbtnMtNeRNQeM0LHcD4bhZN\";}'
+    'PHPFRONTSESSID' => 'ge9bfkgea8aub5sj85oo644573'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.99 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost:8080/advanced/frontend/web/index.php?r=reservation'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => 'PHPSESSID=es2qdqljcjdln4pj2jte829547; install_421aa90e079f=sq1eqn732qfcgtg1loa9a4gs65; JSESSIONID=AA06355B75F44C145A82D1AC8D9B0E74; Idea-a0f8faa2=6e3296b5-300f-475b-a474-cb938480f175; phpbb3_kn9ek_u=1; phpbb3_kn9ek_k=; phpbb3_kn9ek_sid=3c0a8c42e5d448d4ee122e83efaed57b; _frontendCSRF=1127a7394a7484a02997e0c3020a03b7795dcc869682e51add1190824aaee875a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_frontendCSRF%22%3Bi%3A1%3Bs%3A32%3A%22_TLpMnj0_BbtnMtNeRNQeM0LHcD4bhZN%22%3B%7D; PHPFRONTSESSID=ge9bfkgea8aub5sj85oo644573'
+    'PATH' => 'C:\\CloudFoundry'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/7.0.8 Server at localhost Port 8080</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/7.0.8'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '8080'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/advanced/frontend/web/index.php'
+    'REMOTE_PORT' => '51281'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=reservation%2Fcreate'
+    'REQUEST_URI' => '/advanced/frontend/web/index.php?r=reservation%2Fcreate'
+    'SCRIPT_NAME' => '/advanced/frontend/web/index.php'
+    'PHP_SELF' => '/advanced/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1481674078.255
+    'REQUEST_TIME' => 1481674078
+]
+2016-12-14 01:07:58 [::1][-][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: Exception 'Exception' with message 'Serialization of 'Closure' is not allowed' 
+
+in C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2-debug\LogTarget.php:57
+
+Stack trace:
+#0 C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2-debug\LogTarget.php(57): serialize(Array)
+#1 C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2-debug\LogTarget.php(118): yii\debug\LogTarget->export()
+#2 C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2\log\Dispatcher.php(188): yii\debug\LogTarget->collect(Array, true)
+#3 C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2\log\Logger.php(173): yii\log\Dispatcher->dispatch(Array, true)
+#4 C:\Users\gc\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2\base\ErrorHandler.php(111): yii\log\Logger->flush(true)
+#5 [internal function]: yii\base\ErrorHandler->handleException(Object(ParseError))
+#6 {main}
+2016-12-14 01:07:58 [::1][-][-][info][application] $_GET = [
+    'r' => 'reservation/create'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'es2qdqljcjdln4pj2jte829547'
+    'install_421aa90e079f' => 'sq1eqn732qfcgtg1loa9a4gs65'
+    'JSESSIONID' => 'AA06355B75F44C145A82D1AC8D9B0E74'
+    'Idea-a0f8faa2' => '6e3296b5-300f-475b-a474-cb938480f175'
+    'phpbb3_kn9ek_u' => '1'
+    'phpbb3_kn9ek_k' => ''
+    'phpbb3_kn9ek_sid' => '3c0a8c42e5d448d4ee122e83efaed57b'
+    '_frontendCSRF' => '1127a7394a7484a02997e0c3020a03b7795dcc869682e51add1190824aaee875a:2:{i:0;s:13:\"_frontendCSRF\";i:1;s:32:\"_TLpMnj0_BbtnMtNeRNQeM0LHcD4bhZN\";}'
+    'PHPFRONTSESSID' => 'ge9bfkgea8aub5sj85oo644573'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.99 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost:8080/advanced/frontend/web/index.php?r=reservation'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => 'PHPSESSID=es2qdqljcjdln4pj2jte829547; install_421aa90e079f=sq1eqn732qfcgtg1loa9a4gs65; JSESSIONID=AA06355B75F44C145A82D1AC8D9B0E74; Idea-a0f8faa2=6e3296b5-300f-475b-a474-cb938480f175; phpbb3_kn9ek_u=1; phpbb3_kn9ek_k=; phpbb3_kn9ek_sid=3c0a8c42e5d448d4ee122e83efaed57b; _frontendCSRF=1127a7394a7484a02997e0c3020a03b7795dcc869682e51add1190824aaee875a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_frontendCSRF%22%3Bi%3A1%3Bs%3A32%3A%22_TLpMnj0_BbtnMtNeRNQeM0LHcD4bhZN%22%3B%7D; PHPFRONTSESSID=ge9bfkgea8aub5sj85oo644573'
+    'PATH' => 'C:\\CloudFoundry'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/7.0.8 Server at localhost Port 8080</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/7.0.8'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '8080'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/advanced/frontend/web/index.php'
+    'REMOTE_PORT' => '51281'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=reservation%2Fcreate'
+    'REQUEST_URI' => '/advanced/frontend/web/index.php?r=reservation%2Fcreate'
+    'SCRIPT_NAME' => '/advanced/frontend/web/index.php'
+    'PHP_SELF' => '/advanced/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1481674078.255
+    'REQUEST_TIME' => 1481674078
+]
 2016-12-13 23:43:47 [::1][-][abmj2b7hhal856mp2hsd2p7lt7][error][yii\base\UnknownPropertyException] exception 'yii\base\UnknownPropertyException' with message 'Setting unknown property: common\models\User::first_name' in C:\Users\mlbel\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2\base\Component.php:197
 Stack trace:
 #0 C:\Users\mlbel\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2\db\BaseActiveRecord.php(306): yii\base\Component->__set('first_name', 'Maica')
