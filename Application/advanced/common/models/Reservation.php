@@ -36,10 +36,10 @@ class Reservation extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['reservation_date', 'check_in', 'check_out'], 'safe'],
-            [['billingstatement_id'], 'required'],
-            [['billingstatement_id'], 'integer'],
-            [['rooms'], 'string', 'max' => 10],
+            [['check_in', 'check_out'], 'safe'],
+            /*[['billingstatement_id'], 'required'],
+            [['billingstatement_id'], 'integer'],*/
+            [['type_of_room'], 'string', 'max' => 10],
             [['adults', 'kids'], 'string', 'max' => 50],
           /*  [['billingstatement_id'], 'exist', 'skipOnError' => true, 'targetClass' => Billingstatement::className(), 'targetAttribute' => ['billingstatement_id' => 'id']],*/
         ];
@@ -52,10 +52,9 @@ class Reservation extends \yii\db\ActiveRecord
     {
         return [
             'id' => 'ID',
-            'reservation_date' => 'Reservation Date',
             'check_in' => 'Check In',
             'check_out' => 'Check Out',
-            'rooms' => 'Room Type',
+            'type_of_room' => 'Room Type',
             'adults' => 'Adults',
             'kids' => 'Kids',
             //'billingstatement_id' => 'Billingstatement ID',
