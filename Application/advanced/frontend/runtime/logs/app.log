@@ -7764,3 +7764,302 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1481674129.591
     'REQUEST_TIME' => 1481674129
 ]
+2016-12-14 01:20:07 [::1][2][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: PHP Notice 'yii\base\ErrorException' with message 'unserialize(): Error at offset 0 of 14336 bytes' 
+
+in C:\Users\mlbel\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2-debug\LogTarget.php:88
+
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(8, 'unserialize(): ...', 'C:\\Users\\mlbel\\...', 88, Array)
+#1 C:\Users\mlbel\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2-debug\LogTarget.php(88): unserialize('<<<<<<< HEAD\r\na...')
+#2 C:\Users\mlbel\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2-debug\LogTarget.php(63): yii\debug\LogTarget->updateIndexFile('C:\\Users\\mlbel\\...', Array)
+#3 C:\Users\mlbel\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2-debug\LogTarget.php(118): yii\debug\LogTarget->export()
+#4 C:\Users\mlbel\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2\log\Dispatcher.php(188): yii\debug\LogTarget->collect(Array, true)
+#5 C:\Users\mlbel\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2\log\Logger.php(173): yii\log\Dispatcher->dispatch(Array, true)
+#6 [internal function]: yii\log\Logger->flush(true)
+#7 {main}
+2016-12-14 01:20:06 [::1][2][-][info][application] $_GET = [
+    'r' => 'reservation'
+]
+
+$_COOKIE = [
+    '_frontendCSRF' => '0642f00d4b9faa6e89310b92f7a7a0a114746bcafe30c32f87d5eaab25366187a:2:{i:0;s:13:\"_frontendCSRF\";i:1;s:32:\"ra7kjAuxcplxxZGycWAQNOytJUNS3Qx1\";}'
+    'PHPFRONTSESSID' => 'tbnt8la6rbq5rmp3o585pf9j93'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 2
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.99 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => '_frontendCSRF=0642f00d4b9faa6e89310b92f7a7a0a114746bcafe30c32f87d5eaab25366187a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_frontendCSRF%22%3Bi%3A1%3Bs%3A32%3A%22ra7kjAuxcplxxZGycWAQNOytJUNS3Qx1%22%3B%7D; PHPFRONTSESSID=tbnt8la6rbq5rmp3o585pf9j93'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Windows Kits\\8.1\\Windows Performance Toolkit\\;C:\\Program Files\\Microsoft SQL Server\\110\\Tools\\Binn\\;C:\\Program Files (x86)\\GtkSharp\\2.12\\bin;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\TortoiseSVN\\bin;C:\\xampp\\htdocs\\advanced;C:\\Program Files\\CloudFoundry;C:\\Program Files\\TortoiseGit\\bin;C:\\Users\\mlbel\\AppData\\Local\\Microsoft\\WindowsApps;'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.6.14 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.6.14'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/advanced/frontend/web/index.php'
+    'REMOTE_PORT' => '52271'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=reservation'
+    'REQUEST_URI' => '/advanced/frontend/web/index.php?r=reservation'
+    'SCRIPT_NAME' => '/advanced/frontend/web/index.php'
+    'PHP_SELF' => '/advanced/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1481674806.967
+    'REQUEST_TIME' => 1481674806
+]
+2016-12-14 01:20:11 [::1][2][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: PHP Notice 'yii\base\ErrorException' with message 'unserialize(): Error at offset 0 of 14336 bytes' 
+
+in C:\Users\mlbel\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2-debug\LogTarget.php:88
+
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(8, 'unserialize(): ...', 'C:\\Users\\mlbel\\...', 88, Array)
+#1 C:\Users\mlbel\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2-debug\LogTarget.php(88): unserialize('<<<<<<< HEAD\r\na...')
+#2 C:\Users\mlbel\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2-debug\LogTarget.php(63): yii\debug\LogTarget->updateIndexFile('C:\\Users\\mlbel\\...', Array)
+#3 C:\Users\mlbel\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2-debug\LogTarget.php(118): yii\debug\LogTarget->export()
+#4 C:\Users\mlbel\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2\log\Dispatcher.php(188): yii\debug\LogTarget->collect(Array, true)
+#5 C:\Users\mlbel\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2\log\Logger.php(173): yii\log\Dispatcher->dispatch(Array, true)
+#6 [internal function]: yii\log\Logger->flush(true)
+#7 {main}
+2016-12-14 01:20:11 [::1][2][-][info][application] $_GET = [
+    'r' => 'reservation/create'
+]
+
+$_COOKIE = [
+    '_frontendCSRF' => '0642f00d4b9faa6e89310b92f7a7a0a114746bcafe30c32f87d5eaab25366187a:2:{i:0;s:13:\"_frontendCSRF\";i:1;s:32:\"ra7kjAuxcplxxZGycWAQNOytJUNS3Qx1\";}'
+    'PHPFRONTSESSID' => 'tbnt8la6rbq5rmp3o585pf9j93'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 2
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.99 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/advanced/frontend/web/index.php?r=reservation'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => '_frontendCSRF=0642f00d4b9faa6e89310b92f7a7a0a114746bcafe30c32f87d5eaab25366187a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_frontendCSRF%22%3Bi%3A1%3Bs%3A32%3A%22ra7kjAuxcplxxZGycWAQNOytJUNS3Qx1%22%3B%7D; PHPFRONTSESSID=tbnt8la6rbq5rmp3o585pf9j93'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Windows Kits\\8.1\\Windows Performance Toolkit\\;C:\\Program Files\\Microsoft SQL Server\\110\\Tools\\Binn\\;C:\\Program Files (x86)\\GtkSharp\\2.12\\bin;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\TortoiseSVN\\bin;C:\\xampp\\htdocs\\advanced;C:\\Program Files\\CloudFoundry;C:\\Program Files\\TortoiseGit\\bin;C:\\Users\\mlbel\\AppData\\Local\\Microsoft\\WindowsApps;'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.6.14 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.6.14'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/advanced/frontend/web/index.php'
+    'REMOTE_PORT' => '52271'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=reservation%2Fcreate'
+    'REQUEST_URI' => '/advanced/frontend/web/index.php?r=reservation%2Fcreate'
+    'SCRIPT_NAME' => '/advanced/frontend/web/index.php'
+    'PHP_SELF' => '/advanced/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1481674811.045
+    'REQUEST_TIME' => 1481674811
+]
+2016-12-14 01:20:51 [::1][-][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: PHP Notice 'yii\base\ErrorException' with message 'unserialize(): Error at offset 0 of 14336 bytes' 
+
+in C:\Users\mlbel\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2-debug\LogTarget.php:88
+
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(8, 'unserialize(): ...', 'C:\\Users\\mlbel\\...', 88, Array)
+#1 C:\Users\mlbel\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2-debug\LogTarget.php(88): unserialize('<<<<<<< HEAD\r\na...')
+#2 C:\Users\mlbel\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2-debug\LogTarget.php(63): yii\debug\LogTarget->updateIndexFile('C:\\Users\\mlbel\\...', Array)
+#3 C:\Users\mlbel\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2-debug\LogTarget.php(118): yii\debug\LogTarget->export()
+#4 C:\Users\mlbel\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2\log\Dispatcher.php(188): yii\debug\LogTarget->collect(Array, true)
+#5 C:\Users\mlbel\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2\log\Logger.php(173): yii\log\Dispatcher->dispatch(Array, true)
+#6 [internal function]: yii\log\Logger->flush(true)
+#7 {main}
+2016-12-14 01:20:50 [::1][-][-][info][application] $_GET = [
+    'r' => 'reservation/create'
+]
+
+$_POST = [
+    '_frontendCSRF' => 'eC5nWkNoclgKT1AxKSkHIBteCyI7MjUhG3kmCw0nCywyeykJcDkKaQ=='
+    'Reservation' => [
+        'check_in' => '2016-11-19'
+        'check_out' => '2016-12-03'
+        'type_of_room' => 'Single'
+        'adults' => '1'
+        'kids' => '1'
+    ]
+]
+
+$_COOKIE = [
+    '_frontendCSRF' => '0642f00d4b9faa6e89310b92f7a7a0a114746bcafe30c32f87d5eaab25366187a:2:{i:0;s:13:\"_frontendCSRF\";i:1;s:32:\"ra7kjAuxcplxxZGycWAQNOytJUNS3Qx1\";}'
+    'PHPFRONTSESSID' => 'tbnt8la6rbq5rmp3o585pf9j93'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '236'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.99 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/advanced/frontend/web/index.php?r=reservation%2Fcreate'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => '_frontendCSRF=0642f00d4b9faa6e89310b92f7a7a0a114746bcafe30c32f87d5eaab25366187a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_frontendCSRF%22%3Bi%3A1%3Bs%3A32%3A%22ra7kjAuxcplxxZGycWAQNOytJUNS3Qx1%22%3B%7D; PHPFRONTSESSID=tbnt8la6rbq5rmp3o585pf9j93'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Windows Kits\\8.1\\Windows Performance Toolkit\\;C:\\Program Files\\Microsoft SQL Server\\110\\Tools\\Binn\\;C:\\Program Files (x86)\\GtkSharp\\2.12\\bin;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\TortoiseSVN\\bin;C:\\xampp\\htdocs\\advanced;C:\\Program Files\\CloudFoundry;C:\\Program Files\\TortoiseGit\\bin;C:\\Users\\mlbel\\AppData\\Local\\Microsoft\\WindowsApps;'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.6.14 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.6.14'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/advanced/frontend/web/index.php'
+    'REMOTE_PORT' => '52290'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=reservation%2Fcreate'
+    'REQUEST_URI' => '/advanced/frontend/web/index.php?r=reservation%2Fcreate'
+    'SCRIPT_NAME' => '/advanced/frontend/web/index.php'
+    'PHP_SELF' => '/advanced/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1481674850.901
+    'REQUEST_TIME' => 1481674850
+]
+2016-12-14 01:20:51 [::1][2][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: PHP Notice 'yii\base\ErrorException' with message 'unserialize(): Error at offset 0 of 14336 bytes' 
+
+in C:\Users\mlbel\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2-debug\LogTarget.php:88
+
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(8, 'unserialize(): ...', 'C:\\Users\\mlbel\\...', 88, Array)
+#1 C:\Users\mlbel\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2-debug\LogTarget.php(88): unserialize('<<<<<<< HEAD\r\na...')
+#2 C:\Users\mlbel\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2-debug\LogTarget.php(63): yii\debug\LogTarget->updateIndexFile('C:\\Users\\mlbel\\...', Array)
+#3 C:\Users\mlbel\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2-debug\LogTarget.php(118): yii\debug\LogTarget->export()
+#4 C:\Users\mlbel\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2\log\Dispatcher.php(188): yii\debug\LogTarget->collect(Array, true)
+#5 C:\Users\mlbel\Desktop\Project---Reservation-System\Application\advanced\vendor\yiisoft\yii2\log\Logger.php(173): yii\log\Dispatcher->dispatch(Array, true)
+#6 [internal function]: yii\log\Logger->flush(true)
+#7 {main}
+2016-12-14 01:20:51 [::1][2][-][info][application] $_GET = [
+    'r' => 'reservation/view'
+    'id' => '2'
+]
+
+$_COOKIE = [
+    '_frontendCSRF' => '0642f00d4b9faa6e89310b92f7a7a0a114746bcafe30c32f87d5eaab25366187a:2:{i:0;s:13:\"_frontendCSRF\";i:1;s:32:\"ra7kjAuxcplxxZGycWAQNOytJUNS3Qx1\";}'
+    'PHPFRONTSESSID' => 'tbnt8la6rbq5rmp3o585pf9j93'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 2
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.99 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/advanced/frontend/web/index.php?r=reservation%2Fcreate'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => '_frontendCSRF=0642f00d4b9faa6e89310b92f7a7a0a114746bcafe30c32f87d5eaab25366187a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_frontendCSRF%22%3Bi%3A1%3Bs%3A32%3A%22ra7kjAuxcplxxZGycWAQNOytJUNS3Qx1%22%3B%7D; PHPFRONTSESSID=tbnt8la6rbq5rmp3o585pf9j93'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Windows Kits\\8.1\\Windows Performance Toolkit\\;C:\\Program Files\\Microsoft SQL Server\\110\\Tools\\Binn\\;C:\\Program Files (x86)\\GtkSharp\\2.12\\bin;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\TortoiseSVN\\bin;C:\\xampp\\htdocs\\advanced;C:\\Program Files\\CloudFoundry;C:\\Program Files\\TortoiseGit\\bin;C:\\Users\\mlbel\\AppData\\Local\\Microsoft\\WindowsApps;'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.6.14 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.6.14'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/advanced/frontend/web/index.php'
+    'REMOTE_PORT' => '52290'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=reservation%2Fview&id=2'
+    'REQUEST_URI' => '/advanced/frontend/web/index.php?r=reservation%2Fview&id=2'
+    'SCRIPT_NAME' => '/advanced/frontend/web/index.php'
+    'PHP_SELF' => '/advanced/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1481674851.278
+    'REQUEST_TIME' => 1481674851
+]
